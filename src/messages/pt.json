@@ -1,0 +1,2404 @@
+{
+  "ui": {
+    "tacticalOverview": "Visão Geral Tática",
+    "productionIntelligence": "Inteligência de Produção",
+    "facility": "Instalação",
+    "techRequirements": "Requisitos Tecnológicos",
+    "tacticalAbilities": "Habilidades Táticas",
+    "upgrades": "Melhorias de Combate",
+    "visualRecon": "Reconhecimento Visual",
+    "statusActive": "Status: Ativo",
+    "interactive3dPreview": "Visualização 3D Interativa",
+    "backToRoster": "VOLTAR AO ELENCO {race}",
+    "dataNotFound": "DADOS NÃO ENCONTRADOS",
+    "returnToCommandCenter": "VOLTAR AO CENTRO DE COMANDO",
+    "searchUnits": "Buscar unidades...",
+    "allRaces": "Todas as raças",
+    "filterByRole": "Filtrar por função",
+    "fanProject": "Projeto de Fãs",
+    "sortBy": "Ordenar por",
+    "name": "Nome",
+    "minerals": "Minerais",
+    "gas": "Gás",
+    "buildTime": "Tempo de constr.",
+    "race": "Raça",
+    "tacticalUnits": "UNIDADES TÁTICAS",
+    "unitsCount": "{count} UNIDADES",
+    "noUnitsFound": "Nenhuma unidade encontrada com esses critérios.",
+    "none": "Nenhum",
+    "strengths": "Forças",
+    "weaknesses": "Fraquezas",
+    "goodAgainst": "Forte Contra",
+    "vulnerableAgainst": "Vulnerável Contra",
+    "usageTip": "Conselho de Uso",
+    "gamePhase": "Fase de Jogo",
+    "disable3D": "Desativar Modelos 3D",
+    "disable3DDesc": "Economize dados móveis carregando imagens 2D em vez de modelos holográficos 3D.",
+    "early": "Inicial",
+    "mid": "Média",
+    "late": "Tardia",
+    "close": "Fechar",
+    "noUnitsFoundSearch": "Nenhuma unidade encontrada para esta busca.",
+    "filterAll": "Todos",
+    "filterWorker": "Operário",
+    "filterBasic": "Básico",
+    "filterMelee": "Corpo a Corpo",
+    "filterRanged": "À Distância",
+    "filterAir": "Aéreo",
+    "filterSiege": "Cerco",
+    "filterSupport": "Suporte",
+    "filterCaster": "Conjurador",
+    "filterCapital": "Nave Capital",
+    "filterDetector": "Detector",
+    "filterTransport": "Transporte",
+    "filterHarassment": "Assédio",
+    "filterSpellcaster": "Conjurador"
+  },
+  "tech": {
+    "Gateway": "Portal (Gateway)",
+    "Warp Gate": "Portal de Transposição (Warp Gate)",
+    "Gateway / Warp Gate": "Portal / Portal de Transposição",
+    "Barracks": "Quartel",
+    "Command Center": "Centro de Comando",
+    "Cybernetics Core": "Núcleo de Cibernética",
+    "Factory": "Fábrica",
+    "Starport": "Porto Estelar",
+    "Nexus": "Nexus",
+    "Hatchery": "Necrotério (Hatchery)",
+    "Lair": "Covil (Lair)",
+    "Hive": "Colmeia (Hive)",
+    "Hatchery / Lair / Hive": "Necrotério / Covil / Colmeia",
+    "Larva": "Larva",
+    "Overlord": "Suserano",
+    "Zergling": "Zergling",
+    "Roach": "Barata",
+    "Hydralisk": "Hydralisca",
+    "Corruptor": "Corruptor",
+    "Templar Fusion": "Fusão de Arconte",
+    "Robotics Facility": "Instalação Robótica",
+    "Stargate": "Portal Estelar",
+    "Dark Shrine": "Santuário das Sombras",
+    "Twilight Council": "Conselho do Crepúsculo",
+    "Templar Archives": "Arquivos dos Templários",
+    "Fleet Beacon": "Farol da Frota",
+    "Fusion Core": "Núcleo de Fusão",
+    "Ghost Academy": "Academia de Fantasmas",
+    "Spawning Pool": "Reserva de Larvas",
+    "Roach Warren": "Criadouro de Baratas",
+    "Hydralisk Den": "Covil de Hidraliscos",
+    "Lurker Den": "Covil de Espreitadores",
+    "Infestation Pit": "Fosso de Infestação",
+    "Spire": "Pináculo",
+    "Greater Spire": "Pináculo Maior",
+    "Great Spire": "Pináculo Maior",
+    "Ultralisk Cavern": "Caverna de Ultraliscos",
+    "Armory": "Armaria",
+    "Engineering Bay": "Baía de Engenharia",
+    "Tech Lab": "Laboratório Tecnológico",
+    "Baneling Nest": "Ninho de Tatus-bomba",
+    "Robotics Bay": "Baía de Robótica"
+  },
+  "stats": {
+    "vitalSystems": "Sistemas Vitais",
+    "hullIntegrity": "Integridade do Casco (Vida)",
+    "plasmaShields": "Escudos de Plasma",
+    "energyReserves": "Reservas de Energia",
+    "baseArmor": "Armadura Base",
+    "attributes": "Atributos",
+    "combatSpecs": "Especificações de Combate",
+    "damageOutput": "Potência de Dano",
+    "attackRange": "Alcance de Ataque",
+    "movementSpeed": "Velocidade de Movimento",
+    "sensorSight": "Visão de Sensores",
+    "minerals": "Minerais",
+    "vespeneGas": "Gás Vespeno",
+    "supply": "Suprimento",
+    "buildTime": "Tempo de Constr."
+  },
+  "races": {
+    "terran": "Terran",
+    "terranDesc": "Os mestres da adaptação tática. Sua infantaria estimulada e divisões mecânicas móveis dominam a guerra industrial e defensiva, apoiados por estruturas capazes de decolar e se reposicionar.",
+    "zerg": "Zerg",
+    "zergDesc": "O vórtice biológico do Enxame. Eles se espalham pelo creep orgânico e se adaptam por meio de larvas e mutações instantâneas, esmagando o inimigo com enxames rápidos e monstruosidades biossintéticas.",
+    "protoss": "Protoss",
+    "protossDesc": "O ápice da tecnologia psiônica ancestral. Seus guerreiros de elite utilizam escudos de plasma recarregáveis e portais de transposição dimensional, invocando um poder devastador diretamente do Nexus com precisão milimétrica.",
+    "protossIntro": "As unidades Protoss dependem de escudos, precisão, mobilidade e picos de poder tecnológico. Seu exército recompensa o posicionamento, o tempo e o uso eficiente de habilidades.",
+    "terranIntro": "As unidades Terran combinam mobilidade, alcance e flexibilidade tática. Seu exército prospera com base no posicionamento, nos ciclos de produção e na pressão multifacetada.",
+    "zergIntro": "As unidades Zerg são baseadas em velocidade, adaptação e números esmagadores. Sua força vem do controle do mapa, ciclos de larvas e transições táticas rápidas."
+  },
+  "landing": {
+    "heroTitle": "EXPLORE A <br></br> <blue>FRONTEIRA TÁTICA</blue>",
+    "heroSubtitle": "O atlas interativo mais avançado para unidades do StarCraft II. Dados de alta fidelidade, percepções táticas e visualização 3D imersiva.",
+    "heroExplanation": "Selecione uma raça, explore suas unidades táticas, compare custos e entenda o papel de cada unidade no campo de batalha.",
+    "selectRace": "Selecione Sua Raça",
+    "commandCenter": "Centro de Comando",
+    "commandCenterSubtitle": "Escolha sua facção para acessar seu banco de dados de unidades táticas.",
+    "tacticalEntry": "Entrada Tática",
+    "precisionData": "Dados de Precisão",
+    "precisionDataDesc": "Acesse estatísticas exatas de dano, armadura e custos para cada unidade, atualizadas para o meta competitivo atual do StarCraft II.",
+    "tacticalAbilities": "Habilidades Táticas",
+    "tacticalAbilitiesDesc": "Descubra o potencial oculto de cada habilidade. Do Blink do Stalker à Matriz do Raven, domine cada micro-manobra.",
+    "advancedView": "Visão Avançada",
+    "advancedViewDesc": "Explore modelos 3D e diagramas técnicos projetados para analistas e jogadores competitivos que buscam a vantagem definitiva."
+  },
+  "footer": {
+    "tagline": "Uma ferramenta de exploração tática premium para unidades do StarCraft II.",
+    "madeBy": "Feito com ❤️ por DataTech H&P. Todos os direitos reservados.",
+    "legalNotice": "StarCraft II e todos os ativos relacionados, marcas registradas e propriedade intelectual pertencem à Blizzard Entertainment. Este é um projeto informativo não oficial feito por fãs."
+  },
+  "units": {
+    "stalker": {
+      "name": "Stalker",
+      "shortDescription": "Unidade de combate móvel com ataque à distância e alta capacidade de reposicionamento.",
+      "longDescription": "O Stalker é uma unidade mecânica de combate Protoss, inspirada nos antigos Dragoons, mas pilotada pela essência psiônica dos Dark Templar. Sua habilidade Blink o torna uma das unidades mais versáteis do jogo.",
+      "tacticalRole": "Unidade móvel de ataque à distância para controle de mapa, pressão e suporte antiaéreo.",
+      "strengths": [
+        "Alta mobilidade com Blink",
+        "Útil contra alvos terrestres e aéreos",
+        "Excelente para fustigamento e reposicionamento"
+      ],
+      "weaknesses": [
+        "Menor DPS bruto que outras unidades de ataque direto",
+        "Vulnerável se o Blink estiver em tempo de recarga",
+        "Exige posicionamento preciso"
+      ],
+      "goodAgainst": [
+        "Unidades aéreas leves",
+        "Unidades à distância expostas",
+        "Alvos de fustigamento"
+      ],
+      "vulnerableAgainst": [
+        "Unidades biológicas massivas com melhorias",
+        "Cercos",
+        "Alto dano de explosão"
+      ],
+      "usageTip": "Use os Stalkers para fustigar, reposicionar-se e punir unidades expostas. Evite combates diretos sem o Blink ou suporte.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ],
+      "upgrades": {
+        "blink": {
+          "name": "Blink",
+          "description": "Teletransporta instantaneamente o Stalker para um local próximo após pesquisar a melhoria no Cybernetics Core."
+        }
+      }
+    },
+    "marine": {
+      "name": "Marine",
+      "shortDescription": "Unidade de infantaria leve versátil, a espinha dorsal de qualquer exército Terrano.",
+      "longDescription": "O Marine é a unidade básica de infantaria Terrana. Equipado com armadura motorizada e rifles Gauss C-14, é capaz de atingir alvos terrestres e aéreos, especialmente com suporte de Medivacs.",
+      "tacticalRole": "Unidade de infantaria básica de alto DPS que escala extremamente bem com melhorias e suporte.",
+      "strengths": [
+        "Excelente relação custo-benefício",
+        "Velocidade de ataque extremamente rápida, especialmente com Stimpack",
+        "Versátil; ataca tanto alvos terrestres quanto aéreos"
+      ],
+      "weaknesses": [
+        "Muito frágil, altamente vulnerável a dano de área (respingo)",
+        "Exige microgerenciamento ativo e suporte constante de Medivacs",
+        "Depende fortemente das melhorias de Escudo de Combate e Stimpack"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Imortais",
+        "Raios do Vazio"
+      ],
+      "vulnerableAgainst": [
+        "Banelings",
+        "Colossos",
+        "Tanques de Cerco"
+      ],
+      "usageTip": "Sempre pesquise Stimpack e Escudo de Combate cedo. Mantenha os Marines emparelhados com Medivacs e separe-os em combate para minimizar o dano de área.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ],
+      "upgrades": {
+        "combat-shield": {
+          "name": "Escudo de Combate",
+          "description": "Aumenta a saúde máxima do Marine em +10 permanentemente."
+        },
+        "stimpack": {
+          "name": "Stimpack",
+          "description": "Aumenta temporariamente a velocidade de ataque e movimento em troca de uma pequena quantidade de saúde."
+        }
+      }
+    },
+    "scv": {
+      "name": "VCE",
+      "shortDescription": "Unidade básica de construção e coleta de recursos dos Terran.",
+      "longDescription": "O Veículo de Construção Espacial (VCE) é a unidade de trabalho essencial dos Terran. Além de coletar recursos, pode reparar unidades mecânicas e estruturas no campo de batalha.",
+      "abilities": {
+        "repair": {
+          "name": "Reparar",
+          "description": "Repara unidades mecânicas e estruturas aliadas por um pequeno custo de recursos."
+        }
+      },
+      "tacticalRole": "Unidade de trabalho básica dos Terran. Coleta recursos, constrói estruturas e repara ativos mecânicos.",
+      "strengths": [
+        "Vida mais alta (45 HP) entre todos os operários",
+        "Capacidade de reparar estruturas e unidades mecânicas",
+        "Pode construir estruturas em qualquer local do mapa"
+      ],
+      "weaknesses": [
+        "Extremamente fraco em combate direto",
+        "Vulnerável a fustigamentos e assédios iniciais"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Ceifadores",
+        "Oráculos",
+        "Tatus-bomba"
+      ],
+      "usageTip": "Ative a auto-reparação para consertar rapidamente unidades mecânicas próximas. Puxe VCEs para reparações sob pressão.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "marauder": {
+      "name": "Marmota",
+      "shortDescription": "Infantaria pesada armada com lançadores de granadas, ideal contra unidades blindadas.",
+      "longDescription": "O Marauder é uma unidade de infantaria robusta capaz de resistir a muito dano. Suas granadas Punisher reduzem a velocidade das unidades inimigas, tornando-o o companheiro perfeito para o Marine.",
+      "abilities": {
+        "stimpack": {
+          "name": "Estimulante",
+          "description": "Aumenta temporariamente a velocidade de ataque e movimento em troca de uma pequena quantidade de vida."
+        }
+      },
+      "upgrades": {
+        "concussive-shells": {
+          "name": "Granadas Concussivas",
+          "description": "Reduz a velocidade de movimento das unidades inimigas atingidas."
+        }
+      },
+      "tacticalRole": "Infantaria blindada pesada de linha de frente. Excelente para absorver dano e anular forças blindadas terrestres.",
+      "strengths": [
+        "Grande quantidade de vida (125 HP)",
+        "Dano bônus massivo contra unidades blindadas",
+        "Granadas Concussivas reduzem a velocidade de alvos inimigos"
+      ],
+      "weaknesses": [
+        "Não pode atacar alvos aéreos",
+        "Dano relativamente baixo contra infantaria leve"
+      ],
+      "goodAgainst": [
+        "Stalkers",
+        "Baratas",
+        "Stalkers"
+      ],
+      "vulnerableAgainst": [
+        "Zerglings",
+        "Zealots",
+        "Mutalistas"
+      ],
+      "usageTip": "Combine Marauders com Marines para absorver a linha de frente e desacelerar inimigos em fuga.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "reaper": {
+      "name": "Ceifador",
+      "shortDescription": "Unidade de reconhecimento rápida capaz de saltar penhascos.",
+      "longDescription": "O Reaper se destaca no assédio inicial e reconhecimento. Equipado com mochilas a jato, pode entrar e sair de bases inimigas rapidamente.",
+      "abilities": {
+        "kd8-charge": {
+          "name": "Carga KD8",
+          "description": "Lança uma carga explosiva que causa dano e repele unidades inimigas."
+        },
+        "jet-pack": {
+          "name": "Propulsores de Jetpack",
+          "description": "Propulsores passivos que permitem ao Ceifador subir e descer penhascos livremente."
+        },
+        "comback-drgs": {
+          "name": "Drogas de Combate",
+          "description": "Nanobôs de combate regeneram rapidamente a vida do Ceifador quando fora de combate por 5 segundos."
+        }
+      },
+      "tacticalRole": "Unidade de reconhecimento e assédio inicial de alta mobilidade. Escala penhascos e regenera vida rapidamente.",
+      "strengths": [
+        "Velocidade de movimento incrivelmente rápida",
+        "Escala e desce penhascos livremente",
+        "Regeneração rápida de vida fora de combate"
+      ],
+      "weaknesses": [
+        "Muito frágil (60 HP)",
+        "Baixa utilidade no meio e fim de jogo"
+      ],
+      "goodAgainst": [
+        "Sondas",
+        "Zangões",
+        "VCEs"
+      ],
+      "vulnerableAgainst": [
+        "Stalkers",
+        "Baratas",
+        "Rainhas"
+      ],
+      "usageTip": "Use as Cargas KD8 para dispersar operários inimigos ou repelir unidades em perseguição.",
+      "gamePhase": [
+        "Inicial"
+      ]
+    },
+    "ghost": {
+      "name": "Fantasma",
+      "shortDescription": "Infantaria de elite com habilidades de camuflagem e ataques nucleares táticos.",
+      "longDescription": "O Ghost é a unidade tática definitiva dos Terran. Capaz de se tornar invisível e lançar mísseis nucleares táticos, pode devastar exércitos inteiros se não for detectado.",
+      "abilities": {
+        "steady-targeting": {
+          "name": "Mira Estável",
+          "description": "Causa dano massivo a uma unidade biológica após um breve período de canalização."
+        },
+        "emp-round": {
+          "name": "Disparo PEM",
+          "description": "Drena energia e escudos em uma área de efeito."
+        }
+      },
+      "upgrades": {
+        "nuclear-sil": {
+          "name": "Silo Nuclear Tático",
+          "description": "Permite que a Academia de Fantasmas arme mísseis nucleares táticos que o Fantasma pode guiar."
+        },
+        "cloak": {
+          "name": "Camuflagem Pessoal",
+          "description": "Permite ao Fantasma camuflar-se para se tornar invisível em troca de consumo contínuo de energia."
+        }
+      },
+      "tacticalRole": "Atirador de elite psionico e conjurador. Drena energia/escudos com PEM e chama ataques nucleares táticos.",
+      "strengths": [
+        "Mira Estável causa dano biológico massivo",
+        "Disparo PEM remove escudos e anula energia de conjuradores",
+        "Camuflagem Pessoal para infiltrações sigilosas"
+      ],
+      "weaknesses": [
+        "Custo de gás muito alto e longo tempo de treino",
+        "Exige alto microgerenciamento e APM"
+      ],
+      "goodAgainst": [
+        "Altos Templários",
+        "Infestadores",
+        "Víboras",
+        "Ultralistas"
+      ],
+      "vulnerableAgainst": [
+        "Observadores",
+        "Vigilantes",
+        "Mecânicos robustos"
+      ],
+      "usageTip": "Lance o PEM sobre exércitos Protoss para evaporar escudos, ou em Víboras e Infestadores para esgotar sua energia.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "hellion": {
+      "name": "Exterminador",
+      "shortDescription": "Veículo rápido com lança-chamas de longo alcance ideal contra infantaria leve.",
+      "longDescription": "O Hellion é a unidade de controle de multidões mais rápida dos Terran. Seu ataque de fogo atravessa múltiplos inimigos em linha reta.",
+      "abilities": {
+        "transform-hellbat": {
+          "name": "Transformar em Hellbat",
+          "description": "Transforma o veículo em uma unidade de infantaria pesada de curto alcance."
+        }
+      },
+      "upgrades": {
+        "infernal-preigniter": {
+          "name": "Pré-ignição Infernal",
+          "description": "Aumenta significativamente o dano do lança-chamas contra unidades leves."
+        },
+        "smart-servos": {
+          "name": "Servo-motores Inteligentes",
+          "description": "Acelera significativamente o processo de transformação entre as formas Hellion e Hellbat."
+        }
+      },
+      "tacticalRole": "Veículo leve e veloz. Seu ataque de chama linear é ideal para limpar grandes ondas de unidades leves.",
+      "strengths": [
+        "Velocidade de mapa excepcional",
+        "Ataque linear de chamas com dano de área",
+        "Extremamente barato (não consome gás)"
+      ],
+      "weaknesses": [
+        "Frágil se for pego em cercos ou sem espaço",
+        "Dano muito baixo contra alvos individuais blindados"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Zealots",
+        "Sondas",
+        "Zangões"
+      ],
+      "vulnerableAgainst": [
+        "Baratas",
+        "Marauders",
+        "Stalkers"
+      ],
+      "usageTip": "Patrulhe caminhos do mapa para conter o creep Zerg e interceptar investidas rápidas.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "hellbat": {
+      "name": "Morcego Infernal",
+      "shortDescription": "Versão de infantaria pesada do Hellion, mais resistente e com ataque em cone.",
+      "longDescription": "O Hellbat combina o poder de fogo do lança-chamas com a resistência de uma unidade de linha de frente. É excelente para proteger unidades frágeis.",
+      "upgrades": {
+        "infernal-preigniter": {
+          "name": "Pre-ignitor Infernal",
+          "description": "Modifica o lança-chamas para causar muito mais dano contra unidades leves."
+        },
+        "smart-servos": {
+          "name": "Servo-motores Inteligentes",
+          "description": "Acelera significativamente o processo de transformação entre as formas Hellion e Hellbat."
+        }
+      },
+      "tacticalRole": "Tanque mecânico de primeira linha. Transforma-se a partir do Hellion para proteger unidades frágeis a distância.",
+      "strengths": [
+        "Dano em área cônico espesso",
+        "Atributos biológico/mecânico duráveis",
+        "Pode ser curado por Medivacs"
+      ],
+      "weaknesses": [
+        "Velocidade de movimento lenta",
+        "Curto alcance de ataque"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Zealots",
+        "Banelings"
+      ],
+      "vulnerableAgainst": [
+        "Tanques de Cerco",
+        "Baratas",
+        "Libertadores"
+      ],
+      "usageTip": "Transforme Hellions em Hellbats contra ondas de Zerglings/Banelings ou cargas de Zealots para erguer um escudo robusto.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "siege-tank": {
+      "name": "Tanque de Cerco",
+      "shortDescription": "O pilar da defesa Terran, capaz de se posicionar para ataques de longo alcance.",
+      "longDescription": "O Siege Tank pode operar em dois modos: Modo Tanque para mobilidade e Modo Cerco para dano de área devastador a longa distância.",
+      "abilities": {
+        "siege-mode": {
+          "name": "Modo Cerco",
+          "description": "Ancorar o tanque para aumentar drasticamente seu alcance e dano, mas perde a capacidade de movimento."
+        }
+      },
+      "tacticalRole": "Controle terrestre dos Terran. Causa dano de área massivo e devastador a distâncias extremas em Modo Cerco.",
+      "strengths": [
+        "Alcance colossal (13) em Modo Cerco",
+        "Dano de ráfaga gigante com respingo em área",
+        "Ergue zonas defensivas e de controle inexpugnáveis"
+      ],
+      "weaknesses": [
+        "Fica imóvel no Modo Cerco",
+        "Vulnerável a ataques aéreos ou investidas repentinas a curta distância"
+      ],
+      "goodAgainst": [
+        "Baratas",
+        "Hydraliscas",
+        "Stalkers",
+        "Marines"
+      ],
+      "vulnerableAgainst": [
+        "Mutalistas",
+        "Quedas de Imortais",
+        "Tempestades",
+        "Víboras"
+      ],
+      "usageTip": "Posicione os tanques em áreas elevadas ou atrás de Bunkers/Hellbats para bombardearem com segurança.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "cyclone": {
+      "name": "Ciclone",
+      "shortDescription": "Veículo de ataque rápido capaz de atirar enquanto se move.",
+      "longDescription": "O Cyclone usa um sistema de mira que permite disparar mísseis em uma unidade inimiga enquanto mantém a distância.",
+      "abilities": {
+        "lock-on": {
+          "name": "Mirar Alvo",
+          "description": "Fixa um alvo inimigo para disparar automaticamente enquanto o Cyclone se move dentro do alcance."
+        }
+      },
+      "upgrades": {
+        "magfield-accelerator": {
+          "name": "Acelerador de Campo Magnético",
+          "description": "Aumenta o dano de Focar Alvo contra unidades blindadas."
+        }
+      },
+      "tacticalRole": "Veículo escaramuçador veloz. Foca alvos e desfere mísseis constantes em movimento.",
+      "strengths": [
+        "Grande dano contra alvo individual com Mirar Alvo",
+        "Dispara enquanto se move",
+        "Ótima defesa inicial contra ameaças aéreas ou terrestres únicas"
+      ],
+      "weaknesses": [
+        "Relativamente frágil",
+        "Baixa eficácia contra hordas massivas de alvos leves"
+      ],
+      "goodAgainst": [
+        "Raios do Vazio",
+        "Baratas",
+        "Oráculos",
+        "Suseranos"
+      ],
+      "vulnerableAgainst": [
+        "Enxames de Zerglings",
+        "Marines em massa",
+        "Escudos de Imortais"
+      ],
+      "usageTip": "Foque o alvo em unidades cruciais inimigas, depois afaste-se para fustigá-las em movimento constante.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "widow-mine": {
+      "name": "Mina Viúva",
+      "shortDescription": "Unidade mecânica de emboscada que lança mísseis a partir de uma posição enterrada.",
+      "longDescription": "A Widow Mine se enterra no solo e dispara um míssil Sentinela quando uma unidade inimiga se aproxima, causando dano massivo de área.",
+      "abilities": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Enterra a mina para que possa carregar seus mísseis e atacar."
+        },
+        "sentinel-missiles": {
+          "name": "Mísseis Sentinela",
+          "description": "Ataque passivo de mísseis guiados disparado quando enterrado, causando dano massivo ao alvo e dano em área."
+        }
+      },
+      "upgrades": {
+        "drilling-claws": {
+          "name": "Garras de Perfuração",
+          "description": "Reduz drasticamente o tempo necessário para enterrar e desenterrar."
+        },
+        "concealment": {
+          "name": "Ocultamento",
+          "description": "Garante que a Mina Viúva permaneça totalmente invisível mesmo após disparar seu Míssil Sentinela."
+        }
+      },
+      "tacticalRole": "Emboscador mecânico enterrado. Despara mísseis teleguiados de grande poder com dano de área.",
+      "strengths": [
+        "Extremamente econômica e fácil de produzir",
+        "Fica completamente invisível ao se enterrar",
+        "Dano explosivo em área altíssimo"
+      ],
+      "weaknesses": [
+        "Pode causar fogo aliado",
+        "Longo intervalo (29s) de recarga dos mísseis"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Zerglings",
+        "Zealots",
+        "Sondas"
+      ],
+      "vulnerableAgainst": [
+        "Detecção",
+        "Unidades de longo alcance como Tempestades"
+      ],
+      "usageTip": "Enterre Minas Viúvas nas linhas de recursos ou em gargalos de terreno para aniquilar investidas surpresa.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "thor": {
+      "name": "Thor",
+      "shortDescription": "Robô de combate massivo com poder de fogo avassalador tanto em terra quanto no ar.",
+      "longDescription": "O Thor é a maior unidade mecânica terrestre dos Terran. Seus martelos esmagam unidades terrestres, enquanto seus lançadores de mísseis limpam os céus.",
+      "abilities": {
+        "high-impact-payload": {
+          "name": "Carga de Alto Impacto",
+          "description": "Troca o armamento antiaéreo por canhões de longo alcance eficazes contra unidades massivas."
+        }
+      },
+      "upgrades": {
+        "smart-servos": {
+          "name": "Servo-motores Inteligentes",
+          "description": "Acelera significativamente o processo de transformação entre cargas de alto impacto e explosivas."
+        }
+      },
+      "tacticalRole": "Bípede de combate massivo. Alto poder de fogo contra alvos de terra e ar a longas distâncias.",
+      "strengths": [
+        "Vida altíssima (400 HP)",
+        "Alcance antiaéreo lendário no Modo Carga de Alto Impacto",
+        "Dano devastador em terra"
+      ],
+      "weaknesses": [
+        "Lento, volumoso e de difícil locomoção",
+        "Altamente suscetível a conjuradores e controle de grupo"
+      ],
+      "goodAgainst": [
+        "Carriers",
+        "Señores de la Prole",
+        "Mutalistas",
+        "Ultralistas"
+      ],
+      "vulnerableAgainst": [
+        "Enxames de Zerglings",
+        "Imortais",
+        "Abdução de Víboras",
+        "Parásito Neural"
+      ],
+      "usageTip": "Use a Carga de Alto Impacto contra naves massivas. Mude para a Carga Explosiva contra Mutalistas.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "viking": {
+      "name": "Viking",
+      "shortDescription": "Caça transformável capaz de dominar o espaço aéreo ou pousar para apoio terrestre.",
+      "longDescription": "O Viking é a solução versátil para o controle aéreo. Pode se transformar entre o Modo de Assalto (terra) e o Modo de Caça (ar) conforme as necessidades táticas.",
+      "abilities": {
+        "assault-mode": {
+          "name": "Modo de Assalto",
+          "description": "Pousa o Viking para atacar alvos terrestres."
+        },
+        "fighter-mode": {
+          "name": "Modo de Caça",
+          "description": "Decola para atacar alvos aéreos com mísseis de longo alcance."
+        }
+      },
+      "upgrades": {
+        "smart-servos": {
+          "name": "Servo-motores Inteligentes",
+          "description": "Acelera significativamente o processo de transformação entre os modos Assalto e Caça."
+        }
+      },
+      "tacticalRole": "Caça voador transformável. Limpa os céus e aterra para prestar apoio no chão.",
+      "strengths": [
+        "Excelente alcance antiaéreo (9)",
+        "Dano bônus contra alvos voadores blindados",
+        "Flexibilidade tática graças às transformações"
+      ],
+      "weaknesses": [
+        "Blindagem frágil no ar",
+        "Dano terrestre ineficaz no Modo de Assalto"
+      ],
+      "goodAgainst": [
+        "Colossos",
+        "Libertadores",
+        "Señores de la Prole",
+        "Raios do Vazio"
+      ],
+      "vulnerableAgainst": [
+        "Fênix",
+        "Tempestades Psionicas",
+        "Corruptores"
+      ],
+      "usageTip": "Use Vikings para alvejar alvos aéreos massivos como Colossos de distâncias confortáveis.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "medivac": {
+      "name": "Navio de Evacuação Médica",
+      "shortDescription": "Transporte aéreo capaz de curar unidades biológicas e fornecer mobilidade.",
+      "longDescription": "A Medivac é crucial para a sobrevivência da infantaria Terran. Cura soldados próximos e pode transportar tropas para ataques rápidos.",
+      "abilities": {
+        "heal": {
+          "name": "Curar",
+          "description": "Cura automaticamente unidades biológicas próximas em troca de energia."
+        },
+        "ignite-afterburners": {
+          "name": "Pós-combustores",
+          "description": "Aumenta temporariamente a velocidade de movimento da Medivac."
+        },
+        "load": {
+          "name": "Carregar",
+          "description": "Carrega unidades aliadas no compartimento de transporte."
+        },
+        "unload-all": {
+          "name": "Descarregar Tudo",
+          "description": "Descarrega todas as unidades transportadas no local selecionado."
+        }
+      },
+      "upgrades": {
+        "caduceus-reactor": {
+          "name": "Reator Caduceu",
+          "description": "Aumenta a energia inicial dos Medivacs em 25 pontos."
+        },
+        "infernal-preigniter": {
+          "name": "Pre-ignitor Infernal",
+          "description": "Equipa os Medivacs com motores térmicos especializados."
+        }
+      },
+      "tacticalRole": "Transporte aéreo e curador. Salva e recupera unidades biológicas, viabilizando drops.",
+      "strengths": [
+        "Cura unidades biológicas continuamente",
+        "Pós-combustores confere picos de velocidade fenomenais",
+        "Elemento chave para infiltrações rápidos"
+      ],
+      "weaknesses": [
+        "Totalmente indefesa e desarmada",
+        "Exige monitoramento e controle da energia"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Stalkers",
+        "Mutalistas",
+        "Hydraliscas",
+        "Vikings"
+      ],
+      "usageTip": "Ative os Pós-combustores para escapar de situações críticas ou invadir áreas com operários.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "liberator": {
+      "name": "Libertador",
+      "shortDescription": "Nave de apoio com potente ataque de área antiaéreo e um modo de cerco terrestre.",
+      "longDescription": "O Liberator é excelente para o controle de zonas. No Modo Defensor, cria uma zona no solo onde causa dano massivo a qualquer inimigo que entrar.",
+      "abilities": {
+        "defender-mode": {
+          "name": "Modo Defensor",
+          "description": "Ancorar a nave sobre uma zona circular para atacar unidades terrestres com grande potência."
+        },
+        "fighter-mode": {
+          "name": "Modo Caça",
+          "description": "Retorna o Libertador à sua configuração aérea móvel, armado com mísseis antiaéreos de dano em área."
+        }
+      },
+      "upgrades": {
+        "advanced-ballistics": {
+          "name": "Balística Avançada",
+          "description": "Aumenta significativamente o alcance do Modo Defensor."
+        }
+      },
+      "tacticalRole": "Nave de cerco e zoneamento. Despara mísseis aéreos em área ou asedia o solo em Modo Defensor.",
+      "strengths": [
+        "Dano massivo contra alvo terrestre singular em Modo Defensor",
+        "Respingo aéreo antiaéreo",
+        "Excelente para aniquilar trabalhadores inimigos"
+      ],
+      "weaknesses": [
+        "Fica estática e vulnerável em Modo Defensor",
+        "Fraca contra caças de longa distância"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Hydraliscas",
+        "Stalkers",
+        "Baratas"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptores",
+        "Tempestades",
+        "Stalkers com Blink"
+      ],
+      "usageTip": "Posicione o asedio do Libertador sobre as expansões de minerais inimigas para estrangular a economia.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "raven": {
+      "name": "Corvo",
+      "shortDescription": "Nave de apoio robótica equipada com sensores avançados e drones de combate.",
+      "longDescription": "O Raven é o detector principal dos Terran e um multiplicador de força. Suas habilidades de apoio podem desabilitar inimigos ou fornecer defesa temporária.",
+      "abilities": {
+        "interference-matrix": {
+          "name": "Matriz de Interferência",
+          "description": "Desabilita temporariamente o ataque e habilidades de uma unidade mecânica ou psiônica."
+        },
+        "anti-armor-missile": {
+          "name": "Míssil Antiblindagem",
+          "description": "Lança um míssil que reduz a armadura de todas as unidades atingidas."
+        },
+        "auto-turret": {
+          "name": "Torreta Automática",
+          "description": "Implanta uma torreta automática temporária no campo de batalha."
+        }
+      },
+      "tacticalRole": "Detector e suporte robótico voador. Desativa mecânicos e fragiliza escudos e armaduras.",
+      "strengths": [
+        "Matriz de Interferência anula temporariamente mecânicos e magos",
+        "Míssil Antiblindagem fragiliza as defesas de um grupo inteiro",
+        "Detecção contínua e permanente no campo"
+      ],
+      "weaknesses": [
+        "Muito frágil e alvo principal de disparos inimigos",
+        "Altos custos de energia"
+      ],
+      "goodAgainst": [
+        "Tanques de Cerco",
+        "Colossos",
+        "Altos Templários",
+        "Banshees"
+      ],
+      "vulnerableAgainst": [
+        "Feedback",
+        "Vikings",
+        "Corruptores"
+      ],
+      "usageTip": "Inutilize alvos de alto custo como Colossos ou Tanques de Cerco com a Matriz antes do início do confronto.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "banshee": {
+      "name": "Banshee",
+      "shortDescription": "Aeronave de ataque terrestre com capacidade de camuflagem.",
+      "longDescription": "A Banshee é a assediadora aérea por excelência. Sua capacidade de se tornar invisível permite destruir linhas de suprimentos inimigas sem ser detectada.",
+      "upgrades": {
+        "cloak": {
+          "name": "Camuflagem",
+          "description": "Torna a Banshee invisível para inimigos sem detectores."
+        }
+      },
+      "tacticalRole": "Nave de ataque terrestre camuflada. Alto dano por segundo contra alvos terrestres.",
+      "strengths": [
+        "Camuflagem Pessoal possibilita incursões invisíveis",
+        "DPS terrestre elevado",
+        "Movimento veloz, maximizado com propulsores"
+      ],
+      "weaknesses": [
+        "Incapaz de atingir alvos aéreos",
+        "Extremamente vulnerável se houver detecção por perto"
+      ],
+      "goodAgainst": [
+        "Baratas",
+        "Imortais",
+        "VCEs",
+        "Zangões",
+        "Sondas"
+      ],
+      "vulnerableAgainst": [
+        "Detectores",
+        "Mutalistas",
+        "Fênix",
+        "Stalkers"
+      ],
+      "usageTip": "Ataque as bases inimigas e recue se houver detectores. Mantenha as Banshees ativas para gastar recursos inimigos em detecção.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "battlecruiser": {
+      "name": "Cruzador de Batalha",
+      "shortDescription": "A nave capital mais imponente do arsenal Terran.",
+      "longDescription": "O Battlecruiser é capaz de enfrentar múltiplos alvos simultaneamente e pode saltar para qualquer parte do mapa instantaneamente.",
+      "abilities": {
+        "tactical-jump": {
+          "name": "Salto Tático",
+          "description": "Teletransporta a nave para qualquer local do mapa após um breve atraso."
+        }
+      },
+      "upgrades": {
+        "yamato-cannon": {
+          "name": "Canhão Yamato",
+          "description": "Carrega e dispara uma rajada de energia concentrada que causa 240 de dano a um único alvo."
+        }
+      },
+      "tacticalRole": "Nave capital definitiva dos Terran. Salta pelo mapa, ataca em movimento e desfere o Canhão Yamato.",
+      "strengths": [
+        "Salto Tático possibilita teletransporte instantâneo para qualquer local",
+        "Canhão Yamato destrói alvos cruciais (240 de dano)",
+        "Pode atirar continuamente enquanto voa"
+      ],
+      "weaknesses": [
+        "Custo de recursos astronômico",
+        "Vulnerável a reduções de armadura massivas"
+      ],
+      "goodAgainst": [
+        "Carriers",
+        "Ultralistas",
+        "Mutalistas",
+        "Tanques de Cerco"
+      ],
+      "vulnerableAgainst": [
+        "Corruptores",
+        "Raios do Vazio",
+        "Tempestades",
+        "Thors"
+      ],
+      "usageTip": "Alveje alvos de alto custo com o Canhão Yamato, depois recue usando o Salto Tático para segurança.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "zergling": {
+      "name": "Zergling",
+      "shortDescription": "Unidade de combate biológica rápida e numerosa, ideal para cercar e dominar o inimigo.",
+      "longDescription": "O Zergling é a menor, mas mais numerosa unidade do Enxame. Sua velocidade e capacidade de mutar asas os tornam mestres em assédio e flanqueamento.",
+      "tacticalRole": "Unidade de combate corpo a corpo rápida usada para reconhecimento, cercos, conter unidades de ataque à distância e assédio.",
+      "strengths": [
+        "Velocidade incomparável sobre a biomassa (creep), especialmente com Impulso Metabólico",
+        "Extremamente barato e econômico em grandes números",
+        "Excelente para controle de mapa e contra-ataques rápidos"
+      ],
+      "weaknesses": [
+        "Saúde e armadura individuais muito baixas",
+        "Altamente vulnerável a dano de área (respingo)",
+        "Dificuldade em gargalos de terreno e contra estruturas defensivas"
+      ],
+      "goodAgainst": [
+        "Marauders",
+        "Stalkers",
+        "Tanques de Cerco (sem cerco)"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Banelings",
+        "Zealots"
+      ],
+      "usageTip": "Use os Zerglings para explorar o mapa, cercar forças inimigas e invadir bases quando o exército inimigo estiver fora de posição.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ],
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite à unidade enterrar-se para ocultar-se do inimigo e regenerar saúde."
+        },
+        "morph-baneling": {
+          "name": "Mutar em Baneling",
+          "description": "Transforma um Zergling em um Baneling explosivo por um pequeno custo de recursos."
+        }
+      }
+    },
+    "drone": {
+      "name": "Zangão",
+      "shortDescription": "Unidade básica de coleta do Enxame que pode sofrer mutação para estruturas.",
+      "longDescription": "O Drone é a base da economia Zerg. Ao contrário de outras raças, o Drone é consumido para se tornar as estruturas biológicas do Enxame.",
+      "abilities": {
+        "basic-mutation": {
+          "name": "Mutação Básica",
+          "description": "Transforma o Drone em estruturas básicas Zerg (Incubadora, Fossa de Desova, Extrator, etc.)."
+        },
+        "advanced-mutation": {
+          "name": "Mutação Avançada",
+          "description": "Transforma o Drone em estruturas avançadas Zerg (Espiral, Cova de Hidraliscos, Fossa de Infestação, etc.)."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite aos Drones se enterrarem no solo para proteção."
+        }
+      },
+      "tacticalRole": "Trabalhador básico dos Zerg. Coleta recursos e sacrifica-se para virar estruturas do Enxame.",
+      "strengths": [
+        "Regeneração passiva de vida fora de combate",
+        "Pode se enterrar para segurança se pesquisado",
+        "Consegue escapar de perigos transformando-se em extrator/defesa"
+      ],
+      "weaknesses": [
+        "Ataque direto mais fraco entre operários (5 de dano)",
+        "Dependência extrema do suporte de exércitos ou defesas"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Ceifadores",
+        "Exterminadores",
+        "Oráculos"
+      ],
+      "usageTip": "Enterre os Zangões sob ataque inicial para ganhar tempo enquanto chegam as Rainhas ou Zerglings.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "overlord": {
+      "name": "Suserano",
+      "shortDescription": "Unidade de suprimento voadora que fornece controle sobre o Enxame.",
+      "longDescription": "Os Overlords fornecem o controle psiônico necessário para manter um grande exército. Podem evoluir para transportar unidades ou gerar creep.",
+      "abilities": {
+        "morph-overseer": {
+          "name": "Morfar em Vigilante",
+          "description": "Transforma o Suserano em um Vigilante detector."
+        },
+        "morph-ventral-sacs": {
+          "name": "Morfar Sacos Ventrais",
+          "description": "Equipa o Suserano com sacos ventrais para permitir o transporte de unidades terrestres aliadas."
+        },
+        "generate-creep": {
+          "name": "Gerar Creep",
+          "description": "Gera creep no solo abaixo, permitindo construir estruturas Zerg e concedendo bônus de velocidade."
+        }
+      },
+      "tacticalRole": "Provedor de suprimentos voador biológico. Gera creep e transporta tropas.",
+      "strengths": [
+        "Concede +8 de suprimento para sustentar o Enxame",
+        "Flutua livremente sobre penhascos e oceanos",
+        "Gera creep para consolidar bases e expansões"
+      ],
+      "weaknesses": [
+        "Movimento muito lento nos estágios iniciais",
+        "Fácil de ser abatido, provocando bloqueios de suprimento incômodos"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Fênix",
+        "Marines",
+        "Stalkers"
+      ],
+      "usageTip": "Posicione os Suseranos iniciais em pilares elevados e seguros perto das saídas inimigas para rastrear movimentos.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "overseer": {
+      "name": "Vigilante",
+      "shortDescription": "Evolução avançada do Overlord com capacidades de detecção e sabotagem.",
+      "longDescription": "O Overseer é o detector principal dos Zerg. Pode gerar Changelings para espionagem e contaminar estruturas inimigas para interromper a produção.",
+      "abilities": {
+        "spawn-changeling": {
+          "name": "Gerar Mutante",
+          "description": "Cria uma unidade de espionagem que imita a aparência da primeira unidade inimiga que vê."
+        },
+        "contaminate": {
+          "name": "Contaminar",
+          "description": "Inutiliza uma estrutura inimiga, interrompendo sua produção ou pesquisa temporariamente."
+        },
+        "oversight": {
+          "name": "Modo Vigilância",
+          "description": "Fixa o Vigilante no local para aumentar seu raio de visão e detecção em 25%."
+        }
+      },
+      "tacticalRole": "Detector Zerg voador veloz. Gera espiões cambiantes e sabota prédios de produção.",
+      "strengths": [
+        "Detector essencial de ameaças camufladas",
+        "Gera Cambiantes sem custo para exploração segura",
+        "Contaminar congela a produção e pesquisas de um prédio"
+      ],
+      "weaknesses": [
+        "Não possui nenhum ataque básico",
+        "Vulnerável a fogo antiaéreo concentrado"
+      ],
+      "goodAgainst": [
+        "Banshees",
+        "Fantasmas",
+        "Templários das Sombras",
+        "Mina Viúva"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Fênix",
+        "Stalkers"
+      ],
+      "usageTip": "Desative prédios cruciais inimigos (como o Portal Estelar) com o Contaminar para atrasar naves caras.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "queen": {
+      "name": "Rainha",
+      "shortDescription": "Unidade de defesa e gerenciamento de base crucial para o crescimento do Enxame.",
+      "longDescription": "A Rainha é vital para qualquer colmeia Zerg. Injeta larvas para acelerar a produção e espalha Creep para dar mobilidade ao exército.",
+      "abilities": {
+        "spawn-larvae": {
+          "name": "Injetar Larvas",
+          "description": "Injeta larvas em uma estrutura central para aumentar a produção de unidades."
+        },
+        "transfuse": {
+          "name": "Transfusão",
+          "description": "Cura instantaneamente uma unidade biológica ou estrutura aliada."
+        },
+        "spawn-creep-tumor": {
+          "name": "Tumor de Creep",
+          "description": "Cria um tumor que espalha biomatéria (creep) pelo terreno."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite à Rainha se enterrar no solo."
+        }
+      },
+      "tacticalRole": "Unidade de suporte e defesa macro. Injeta larvas, estende o creep e cura com Transfusão.",
+      "strengths": [
+        "Injetar Larvas eleva a produção ao nível máximo",
+        "Transfusão reabilita instantaneamente unidades/prédios sob ataque",
+        "Alcance antiaéreo fantástico (8)"
+      ],
+      "weaknesses": [
+        "Movimento extremamente arrastado fora do creep",
+        "Garante a segurança mas não deve ser usada para ataques agressivos distantes"
+      ],
+      "goodAgainst": [
+        "Hellions",
+        "Raios do Vazio",
+        "Mutalistas",
+        "Ceifadores"
+      ],
+      "vulnerableAgainst": [
+        "Tanques de Cerco",
+        "Marauders",
+        "Tatus-bomba"
+      ],
+      "usageTip": "Nunca pare de injetar larvas. Espalhe os tumores de creep continuamente para acelerar suas tropas.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "baneling": {
+      "name": "Tatu-bomba",
+      "shortDescription": "Unidade suicida que explode ao contato, devastadora contra infantaria leve.",
+      "longDescription": "O Baneling é uma mutação do Zergling carregada de ácido volátil. Sua explosão causa dano imenso em área, especialmente a estruturas e unidades leves.",
+      "abilities": {
+        "explode": {
+          "name": "Explodir",
+          "description": "Detona uma autodestruição imediata para causar dano massivo em área aos inimigos próximos."
+        },
+        "enabled-structure-attack": {
+          "name": "Ataque a Estruturas",
+          "description": "Ativa ou desativa se o Baneling focará e explodirá em estruturas."
+        }
+      },
+      "upgrades": {
+        "centrifugal-hooks": {
+          "name": "Ganchos Centrífugos",
+          "description": "Aumenta a velocidade de movimento e a vida máxima do Baneling."
+        },
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite aos Banelings se enterrarem no solo como minas terrestres invisíveis."
+        }
+      },
+      "tacticalRole": "Explosivo biológico suicida. Elimina exércitos de infantaria leve e trabalhadores.",
+      "strengths": [
+        "Respingo massivo contra alvos leves",
+        "Dano altíssimo contra estruturas",
+        "Armadilhas enterradas podem liquidar investidas inimigas"
+      ],
+      "weaknesses": [
+        "Auto-destrói-se para desferir o ataque",
+        "Frágil e fácil de ser abatido à distância antes do impacto"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Tanques de Cerco",
+        "Marauders",
+        "Arcontes",
+        "Baratas"
+      ],
+      "usageTip": "Guie seus Tatus-bomba para atingirem infantarias leves, evitando blindados que minimizam o prejuízo.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "roach": {
+      "name": "Barata",
+      "shortDescription": "Unidade de combate resistente com alta regeneração de vida.",
+      "longDescription": "A Barata (Roach) é o tanque básico do Enxame. Sua capacidade de regenerar vida rapidamente e se mover sob a terra a torna muito difícil de eliminar.",
+      "abilities": {
+        "morph-ravager": {
+          "name": "Morfar em Ravina",
+          "description": "Transforma a Barata em uma Ravina de artilharia ácida."
+        },
+        "rapid-regeneration": {
+          "name": "Regeneração Rápida",
+          "description": "Habilidade passiva que concede regeneração de vida extremamente alta enquanto estiver enterrado."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite às Baratas se enterrarem no solo e se moverem sob a terra após pesquisar a melhoria."
+        }
+      },
+      "tacticalRole": "Tanque biológico robusto. Vida elevada, regeneração incrível e deslocamento subterrâneo.",
+      "strengths": [
+        "Grande quantidade de vida pelo custo (145 HP)",
+        "Regeneração colossal de vida ao se enterrar",
+        "Garras de Perforação permite movimentação enterrada"
+      ],
+      "weaknesses": [
+        "Alcance limitado de ataque (4)",
+        "Eficiência moderada contra alvos robustos não-leves"
+      ],
+      "goodAgainst": [
+        "Hellions",
+        "Zerglings",
+        "Marines"
+      ],
+      "vulnerableAgainst": [
+        "Imortais",
+        "Marauders",
+        "Tanques de Cerco",
+        "Espreitadores"
+      ],
+      "usageTip": "Use as Baratas na frente. Enterre-as sob perigo para recuperar HP instantaneamente e volte ao combate.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "ravager": {
+      "name": "Devastador",
+      "shortDescription": "Mutação da Barata capaz de lançar bile corrosiva a longa distância.",
+      "longDescription": "O Ravager adiciona artilharia ao arsenal Zerg. Sua Bile Corrosiva pode destruir Campos de Força dos protoss e causar dano a unidades em posições elevadas.",
+      "abilities": {
+        "corrosive-bile": {
+          "name": "Bile Corrosiva",
+          "description": "Lança um projétil que causa dano em uma área após um breve atraso, destruindo estruturas e campos de força."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite às Ravinas se enterrarem no solo."
+        }
+      },
+      "tacticalRole": "Artilharia biológica. Despara biles ácidas que cruzam o mapa e quebram campos de força.",
+      "strengths": [
+        "Bile Corrosiva dissolve Campos de Força Protoss e atinge solo",
+        "Sem atributo de blindado, mitigando armas de dano bônus",
+        "Bom alcance e dano base"
+      ],
+      "weaknesses": [
+        "A Bile Corrosiva exige boa leitura e antecipação",
+        "Frágil se for pego com a bile em tempo de recarga"
+      ],
+      "goodAgainst": [
+        "Libertadores",
+        "Tanques sieged",
+        "Campos de Força"
+      ],
+      "vulnerableAgainst": [
+        "Marauders",
+        "Imortais",
+        "Zealots"
+      ],
+      "usageTip": "Force o reposicionamento do rival disparando biles constantemente nas posições que eles querem defender.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "hydralisk": {
+      "name": "Hidralisca",
+      "shortDescription": "Unidade de ataque à distância versátil, eficaz contra ar e terra.",
+      "longDescription": "A Hydralisk é a unidade de dano por segundo (DPS) central do exército Zerg. Seus espinhos podem perfurar as armaduras mais resistentes de longe.",
+      "abilities": {
+        "morph-lurker": {
+          "name": "Morfar em Espreitador",
+          "description": "Transforma o Hidralisco em um Espreitador de cerco subterrâneo."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite aos Hidraliscos se enterrarem no solo."
+        },
+        "lunge": {
+          "name": "Aumentos Musculares / Espinhos Ranhurados",
+          "description": "Combina melhorias para aumentar a velocidade de movimento e alcance do Hidralisco."
+        }
+      },
+      "tacticalRole": "Ranger de alto dano por segundo. Principal força de ataque Zerg contra ameaças no ar e no chão.",
+      "strengths": [
+        "Dano por segundo (DPS) altíssimo",
+        "Atinge alvos de terra e ar com ótimo alcance",
+        "Velocidade explosiva sobre o creep com upgrades"
+      ],
+      "weaknesses": [
+        "Extremamente frágil (90 HP) pelo custo de gás",
+        "Altamente dependente das melhorias de velocidade e alcance"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Raios do Vazio",
+        "Imortais",
+        "Marauders"
+      ],
+      "vulnerableAgainst": [
+        "Colossos",
+        "Tanques de Cerco",
+        "Tatus-bomba",
+        "Tempestades Psionicas"
+      ],
+      "usageTip": "Mantenha sempre as Hydraliscas atrás de um escudo robusto como Baratas ou Ultralistas para atirarem livres.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "lurker": {
+      "name": "Espreitador",
+      "shortDescription": "Unidade de emboscada enterrada que lança espinhos em linha reta.",
+      "longDescription": "O Espreitador (Lurker) ataca da segurança do subsolo. Seus espinhos atravessam múltiplos inimigos, tornando-o devastador em zonas estreitas.",
+      "abilities": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite ao Espreitador se enterrar sob o solo, estado obrigatório para disparar seus espinhos."
+        }
+      },
+      "tacticalRole": "Asediador subterrâneo. Espalha espinhos lineares implacáveis que limpam o solo.",
+      "strengths": [
+        "Respingo linear fortíssimo que ignora armaduras",
+        "Dispara sem ser detectado debaixo da terra",
+        "Alcance superior a defesas estáticas com melhorias"
+      ],
+      "weaknesses": [
+        "Incapaz de atirar desenterrado ou em locomoção",
+        "Vulnerável a naves de longo alcance e detectores"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Hydraliscas",
+        "Stalkers",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Tempestades",
+        "Libertadores",
+        "Señores de la Prole",
+        "Víboras"
+      ],
+      "usageTip": "Enterre Espreitadores em entradas de rampas para impedir qualquer investida terrestre inimiga.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ],
+      "upgrades": {
+        "adaptive-talons": {
+          "name": "Garras Adaptativas",
+          "description": "Reduz o tempo necessário para os Espreitas se enterrarem ou desentarrarem, permitindo um reposicionamento rápido."
+        },
+        "seismic-spines": {
+          "name": "Espinhos Sísmicos",
+          "description": "Aumenta o alcance de ataque do Espreita enterrado de 8 para 10."
+        }
+      }
+    },
+    "infestor": {
+      "name": "Infestador",
+      "shortDescription": "Mestre do controle mental e biológico, capaz de incapacitar exércitos.",
+      "longDescription": "O Infestor não possui ataque direto, mas seus parasitas podem prender unidades (Crescimento Fúngico) ou até mesmo assumir o controle de unidades inimigas.",
+      "abilities": {
+        "fungal-growth": {
+          "name": "Crescimento Fúngico",
+          "description": "Imobiliza e causa dano a unidades inimigas em uma área."
+        },
+        "neural-parasite": {
+          "name": "Parasita Neural",
+          "description": "Assume o controle temporário de uma unidade inimiga."
+        },
+        "microbial-shroud": {
+          "name": "Mortalha Microbiana",
+          "description": "Cria uma nuvem que protege unidades terrestres aliadas de dano aéreo."
+        }
+      },
+      "tacticalRole": "Conjurador de controle biológico. Imobiliza exércitos e rouba o comando de naves gigantes.",
+      "strengths": [
+        "Crescimento Fúngico prende e danifica grupos inteiros",
+        "Parasita Neural assume controle de titãs adversários",
+        "Consegue lançar magias totalmente enterrado"
+      ],
+      "weaknesses": [
+        "Não tem ataque básico",
+        "Custo muito elevado em gás vespene e vida baixa"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Mutalistas",
+        "Thors",
+        "Colossos"
+      ],
+      "vulnerableAgainst": [
+        "Fantasmas (PEM)",
+        "Altos Templários (Feedback)",
+        "Detectores"
+      ],
+      "usageTip": "Prenda alvos rápidos com o Fúngico para facilitar o impacto de Tatus-bomba ou Biles Corrosivas.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "swarm-host": {
+      "name": "Hospedeiro do Enxame",
+      "shortDescription": "Unidade de cerco que gera ondas intermináveis de gafanhotos.",
+      "longDescription": "O Swarm Host lança unidades temporárias chamadas Locusts para atacar o inimigo de uma distância segura.",
+      "abilities": {
+        "spawn-locusts": {
+          "name": "Gerar Gafanhotos",
+          "description": "Gera duas unidades voadoras temporárias que atacam alvos terrestres."
+        },
+        "flying-locusts": {
+          "name": "Gafanhotos Voadores",
+          "description": "Permite que os Gafanhotos gerados voem, possibilitando superar o terreno e escalar obstáculos."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite aos Hospedeiros da Ninhada se enterrarem no solo."
+        }
+      },
+      "tacticalRole": "Asediador indireto. Lança levas de Gafanhotos voadores explosivos sem custo de minerais.",
+      "strengths": [
+        "Cria forças voadoras grátis (Locusts) para agressões seguras",
+        "Ignora montanhas e barreiras de terreno com o voo",
+        "Obriga o oponente a recuar e se trancar"
+      ],
+      "weaknesses": [
+        "Intervalo longo (43s) entre o disparo dos Gafanhotos",
+        "Fica completamente indefeso enquanto espera recarga"
+      ],
+      "goodAgainst": [
+        "Defesas estáticas",
+        "Tanques de Cerco",
+        "Defesas lerdas"
+      ],
+      "vulnerableAgainst": [
+        "Fênix",
+        "Exterminadores",
+        "Assédios velozes"
+      ],
+      "usageTip": "Lance os Gafanhotos à distância e corra imediatamente para se enterrar e esperar a recarga.",
+      "gamePhase": [
+        "Média"
+      ]
+    },
+    "mutalisk": {
+      "name": "Mutalisca",
+      "shortDescription": "Unidade aérea rápida com ataque de ricochete ideal para assédio.",
+      "longDescription": "A Mutalisk é o terror das linhas de suprimentos. Seu ataque de Glaive Wurm ricocheteia entre múltiplos alvos, maximizando o caos em grupos compactos.",
+      "abilities": {
+        "tissue-regeneration": {
+          "name": "Regeneração de Tecido",
+          "description": "Habilidade passiva de alta regeneração que restaura 2 pontos de vida por segundo fora de combate."
+        }
+      },
+      "tacticalRole": "Assediador voador veloz. Ricocheteia disparos para minar operários e espalhar pânico.",
+      "strengths": [
+        "Velocidade e impulsão de voo sem paralelos",
+        "Ataque de Glaive Wurm ricocheteia em até 3 alvos",
+        "Regeneração passiva de vida incrivelmente veloz"
+      ],
+      "weaknesses": [
+        "Muito frágil (120 HP) e cara em gás vespene",
+        "Vulnerável a defesas e mísseis antiaéreos em área"
+      ],
+      "goodAgainst": [
+        "Tanques (unsieged)",
+        "Operários",
+        "Alvos isolados"
+      ],
+      "vulnerableAgainst": [
+        "Thors",
+        "Fênix",
+        "Tempestades Psionicas",
+        "Libertadores"
+      ],
+      "usageTip": "Evite combate direto. Mantenha os Mutalistas circulando as pontas do mapa caçando operários.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "corruptor": {
+      "name": "Corruptor",
+      "shortDescription": "Caça aéreo pesado especializado em derrubar naves capitais.",
+      "longDescription": "O Corruptor é a resposta Zerg às grandes naves inimigas. Pode usar seu Borrifo Cáustico para corroer estruturas a partir do ar.",
+      "abilities": {
+        "caustic-spray": {
+          "name": "Borrifo Cáustico",
+          "description": "Canaliza um ataque corrosivo contra uma estrutura inimiga que aumenta o dano ao longo do tempo."
+        },
+        "morph-broodlord": {
+          "name": "Morfar em Lorde da Ninhada",
+          "description": "Transforma o Corruptor em um Lorde da Ninhada de cerco aéreo massivo."
+        }
+      },
+      "tacticalRole": "Caza antiaéreo pesado. Aniquila naves capital e corrói prédios com Spray Cáustico.",
+      "strengths": [
+        "Excelente blindagem e quantidade de vida",
+        "Dano bônus massivo contra gigantes aéreos",
+        "Spray Cáustico dissolve expansões e bases muito rápido"
+      ],
+      "weaknesses": [
+        "Não pode atacar alvos terrestres sem a habilidade",
+        "Manobrabilidade e velocidade moderadas"
+      ],
+      "goodAgainst": [
+        "Carriers",
+        "Cruceros de Batalla",
+        "Tempestades",
+        "Colossos"
+      ],
+      "vulnerableAgainst": [
+        "Raios do Vazio",
+        "Thors",
+        "Tempestades Psionicas"
+      ],
+      "usageTip": "Ao limpar os céus, use o Spray Cáustico nos Nexos ou Centros de Mando inimigos para destruí-los.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "viper": {
+      "name": "Víbora",
+      "shortDescription": "Unidade de apoio aérea tática para manipular o campo de batalha.",
+      "longDescription": "A Víbora (Viper) pode puxar unidades inimigas em direção ao Enxame ou cegar exércitos inimigos com uma nuvem densa.",
+      "abilities": {
+        "abduct": {
+          "name": "Rapto",
+          "description": "Puxa uma unidade inimiga em direção à posição da Víbora."
+        },
+        "blinding-cloud": {
+          "name": "Nuvem Cegante",
+          "description": "Cria uma nuvem que reduz o alcance de ataque das unidades terrestres inimigas para 1."
+        },
+        "parasitic-bomb": {
+          "name": "Bomba Parasitária",
+          "description": "Lança um parasita em uma unidade aérea inimiga que causa dano constante a ela e às naves próximas."
+        },
+        "consume": {
+          "name": "Consumir",
+          "description": "Suga 200 pontos de vida de uma estrutura Zerg aliada para restaurar rapidamente 50 de energia."
+        }
+      },
+      "tacticalRole": "Suporte aéreo de controle de grupo. Puxa alvos chaves e cega disparos de longo alcance.",
+      "strengths": [
+        "Abdução puxa alvos valiosos direto para a morte",
+        "Nuvem Cegadora reduz o alcance de armas a distância para zero",
+        "Bomba Parasitária pulveriza esquadrões de naves leves"
+      ],
+      "weaknesses": [
+        "Sem armas básicas de ataque",
+        "Frágil e prioridade número 1 de abate"
+      ],
+      "goodAgainst": [
+        "Colossos",
+        "Tanques de Cerco",
+        "Tempestades",
+        "Carriers"
+      ],
+      "vulnerableAgainst": [
+        "Fantasmas (Snipe/PEM)",
+        "Altos Templários (Feedback)",
+        "Vikings"
+      ],
+      "usageTip": "Puxe unidades cruciais como Colossos de trás das defesas inimigas com o Abduzir para seu exército triturá-los.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "ultralisk": {
+      "name": "Ultralisca",
+      "shortDescription": "A besta terrestre mais imponente do Enxame.",
+      "longDescription": "O Ultralisk é uma montanha de músculo e osso capaz de perfurar qualquer linha defensiva com suas lâminas Kaiser que causam dano em área.",
+      "abilities": {
+        "frenzied": {
+          "name": "Frenesi",
+          "description": "Imunidade passiva a atordoamentos, lentidão, controle mental e efeitos que restringem o movimento."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Enterrar",
+          "description": "Permite aos Ultralistos se enterrarem no solo."
+        },
+        "anabolic-synthesis": {
+          "name": "Síntese Anabólica",
+          "description": "Aumenta a velocidade de movimento do Ultralisto."
+        },
+        "chitinous-plating": {
+          "name": "Placa Quitinosa",
+          "description": "Fornece +2 pontos de armadura ao Ultralisto."
+        }
+      },
+      "tacticalRole": "Ameaça terrestre tardia do Enxame. Absorve disparos e corta infantaria com garras de área.",
+      "strengths": [
+        "Vida colossal (500 HP) e alta armadura base",
+        "Casca Quitinosa o torna quase imune a infantaria básica",
+        "Ataque em área dispersa dano biológico em grupos"
+      ],
+      "weaknesses": [
+        "Tamanho gigantesco, fácil de bloquear em rampas",
+        "Vulnerável a defesas de alto dano focado anti-blindados"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Stalkers",
+        "Force Fields"
+      ],
+      "vulnerableAgainst": [
+        "Imortais",
+        "Marauders",
+        "Espreitadores",
+        "Libertadores"
+      ],
+      "usageTip": "Dê suporte aos Ultralistas com Infestadores (Fúngico) para evitar que o inimigo consiga recuar e fustigá-los.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "brood-lord": {
+      "name": "Lorde da Prole",
+      "shortDescription": "Nave de cerco pesada que bombardeia com criaturas parasitas.",
+      "longDescription": "O Brood Lord lança Broodlings contra o inimigo, criando caos constante e bloqueando o movimento terrestre enquanto ataca do ar.",
+      "abilities": {
+        "swarm-seed": {
+          "name": "Semente da Ninhada",
+          "description": "Lança Crias continuamente a cada ataque, gerando unidades corpo a corpo terrestres ativas no impacto."
+        }
+      },
+      "tacticalRole": "Nave de asedio biológica massiva. Lança levas de proles para desgastar o inimigo no solo.",
+      "strengths": [
+        "Alcance colossal de asedio (10)",
+        "Gera Proles que causam dano e barram o movimento terrestre inimigo",
+        "Elevadíssimo poder de intimidação"
+      ],
+      "weaknesses": [
+        "Velocidade de voo extremamente lenta",
+        "Indefeso contra esquadrões de caças rápidos"
+      ],
+      "goodAgainst": [
+        "Tanques de Cerco",
+        "Thors",
+        "Colossos",
+        "Líneas de Inmortales"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptores",
+        "Raios do Vazio",
+        "Tempestades"
+      ],
+      "usageTip": "Proteja os Senhores da Prole com Corruptores ou Hydraliscas para evitar que naves de longo alcance os abatam.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "probe": {
+      "name": "Sonda",
+      "shortDescription": "Unidade de construção robótica que invoca estruturas através de microvórtices.",
+      "longDescription": "A Sonda (Probe) é a unidade de trabalho dos protoss. Sua tecnologia avançada permite iniciar a invocação de estruturas e retirar-se imediatamente para continuar trabalhando.",
+      "tacticalRole": "Operário mecânico Protoss. Coleta recursos e projeta estruturas por meio de balizas.",
+      "strengths": [
+        "Escudos de plasma regeneram automaticamente",
+        "Coloca a baliza e fica livre no mesmo instante",
+        "Excelente para reconhecimento rápido por causa da regeneração"
+      ],
+      "weaknesses": [
+        "Ataque básico fraco (5 de dano)",
+        "Frágil frente a invasões nas linhas de minerais"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Ceifadores",
+        "Exterminadores",
+        "Zerglings"
+      ],
+      "usageTip": "Posicione balizas de forma contínua para manter a Sonda trabalhando sempre sem interrupções.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "zealot": {
+      "name": "Zelote",
+      "shortDescription": "Guerreiro templário formidável armado com lâminas psiônicas.",
+      "longDescription": "O Fanático (Zealot) é o coração da infantaria protoss. Após pesquisar Carga, podem diminuir a distância com o inimigo num piscar de olhos.",
+      "upgrades": {
+        "charge": {
+          "name": "Carga",
+          "description": "Aumenta passivamente a velocidade de movimento e permite carregar contra inimigos próximos."
+        }
+      },
+      "tacticalRole": "Infanteria de choque biológica de frente. Carga confere velocidade extrema e poder de engajamento.",
+      "strengths": [
+        "Vida e escudos sólidos (150 total)",
+        "Melhoria de Carga encurta distâncias instantaneamente",
+        "Excelente sorvedouro de minerais nos estágios finais"
+      ],
+      "weaknesses": [
+        "Fácil de sofrer kiting antes da melhoria de Carga",
+        "Não pode atacar alvos aéreos"
+      ],
+      "goodAgainst": [
+        "Marauders",
+        "Zerglings",
+        "Immortais"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Banelings",
+        "Colossos",
+        "Baratas"
+      ],
+      "usageTip": "Pesquise a Carga no Conselho do Crepúsculo rapidamente. Use-os para proteger conjuradores frágeis.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "sentry": {
+      "name": "Sentinela",
+      "shortDescription": "Unidade de apoio robótica capaz de manipular o terreno com campos de força.",
+      "longDescription": "A Sentinela (Sentry) é fundamental para o controle do mapa. Pode bloquear caminhos com campos de força e proteger o exército com escudos guardiões.",
+      "abilities": {
+        "force-field": {
+          "name": "Campo de Força",
+          "description": "Cria uma barreira temporária que bloqueia o movimento terrestre."
+        },
+        "guardian-shield": {
+          "name": "Escudo Guardião",
+          "description": "Cria uma aura que reduz o dano à distância recebido para unidades aliadas próximas."
+        },
+        "hallucination": {
+          "name": "Alucinação",
+          "description": "Cria uma cópia falsa de uma unidade protoss para enganar o inimigo."
+        }
+      },
+      "tacticalRole": "Suporte e conjurador mecânico. Cria barreiras de energia, escuda aliados e cria ilusões.",
+      "strengths": [
+        "Campos de Força dividem exércitos ou barram rampas",
+        "Escudo Guardião reduz o dano à distância recebido por aliados",
+        "Alucinação permite rastrear o mapa sem perigos"
+      ],
+      "weaknesses": [
+        "Ataque básico fraco",
+        "Dependente de energia e gás vespene"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Marines",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Devastadores (Bile destrói barreiras)",
+        "Ultralistas",
+        "Massivos"
+      ],
+      "usageTip": "Prenda metade do exército adversário com Campos de Força, tornando o confronto isolado e favorável.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "adept": {
+      "name": "Adepta",
+      "shortDescription": "Unidade de assédio tático capaz de projetar uma sombra de si mesma.",
+      "longDescription": "A Adepta se destaca no combate inicial. Sua habilidade de Transferência Psiônica permite projetar uma sombra e se teletransportar para sua localização, ideal para flanquear.",
+      "abilities": {
+        "psionic-transfer": {
+          "name": "Transferência Psiônica",
+          "description": "Projeta uma sombra que se move de forma independente; a Adepta se teletransporta para a posição da sombra após alguns segundos."
+        }
+      },
+      "upgrades": {
+        "resonating-glaives": {
+          "name": "Glaivas Resonantes",
+          "description": "Aumenta permanentemente a velocidade de ataque da Adepta em 45%."
+        }
+      },
+      "tacticalRole": "Assediadora de longo alcance inicial. Cria uma sombra rápida para transposição dimensional.",
+      "strengths": [
+        "Transferência Psionica transpõe muros defensivos",
+        "Dano bônus elevado contra alvos leves",
+        "Vida e escudos robustos para a fase inicial"
+      ],
+      "weaknesses": [
+        "Baixa utilidade em lutas de larga escala tardias",
+        "Incapaz de atingir alvos de ar"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Marines",
+        "Zangões",
+        "VCEs"
+      ],
+      "vulnerableAgainst": [
+        "Baratas",
+        "Marauders",
+        "Stalkers"
+      ],
+      "usageTip": "Envie sombras para dentro das expansões inimigas e transponha-se para limpar operários em massa.",
+      "gamePhase": [
+        "Inicial"
+      ]
+    },
+    "high-templar": {
+      "name": "Alto Templário",
+      "shortDescription": "Poderoso mestre psiônico capaz de desencadear tempestades de energia.",
+      "longDescription": "O Alto Templário (High Templar) é uma das unidades mais temidas. Sua Tempestade Psiônica pode dizimar exércitos inteiros em segundos.",
+      "abilities": {
+        "feedback": {
+          "name": "Retroalimentação",
+          "description": "Drena toda a energia de uma unidade inimiga e causa dano igual à energia drenada."
+        },
+        "archon-warp": {
+          "name": "Fusão de Arconte",
+          "description": "Dois Templários se fundem para se tornarem um poderoso Arconte."
+        },
+        "psi-storm": {
+          "name": "Tempestade Psiônica",
+          "description": "Invoca uma tempestade de energia psiônica que causa 80 de dano em 2,85 segundos em uma área de efeito."
+        }
+      },
+      "upgrades": {},
+      "tacticalRole": "Mago psionico principal. Desata Tempestades Psionicas e drena conjuradores com Feedback.",
+      "strengths": [
+        "Tempestade Psionica causa dano massivo em área contínuo",
+        "Feedback drena energia e pune conjuradores",
+        "Funde-se em Arconte se a energia acabar"
+      ],
+      "weaknesses": [
+        "Sem armas automáticas padrão de ataque",
+        "Velocidade de movimento lenta e vida baixíssima"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Hydraliscas",
+        "Víboras",
+        "Infestadores",
+        "Mutalistas"
+      ],
+      "vulnerableAgainst": [
+        "Fantasmas (PEM/Snipe)",
+        "Atiradores",
+        "Forças dispersas"
+      ],
+      "usageTip": "Mantenha os Altos Templários atrás do exército. Lance Feedback instantaneamente em Víboras que avançarem.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "dark-templar": {
+      "name": "Templário das Trevas",
+      "shortDescription": "Assassino invisível armado com uma poderosa foice de dobra.",
+      "longDescription": "O Templário das Trevas (Dark Templar) é permanentemente invisível. Um único Dark Templar em uma linha de minerais sem detecção pode encerrar o jogo.",
+      "abilities": {
+        "archon-warp": {
+          "name": "Fusão de Arconte",
+          "description": "Dois Templários se fundem para se tornarem um poderoso Arconte."
+        }
+      },
+      "upgrades": {
+        "shadow-stride": {
+          "name": "Passo das Sombras",
+          "description": "Permite ao Templário das Sombras teletransportar-se a curta distância instantaneamente, desviando de obstáculos."
+        }
+      },
+      "tacticalRole": "Assassino furtivo. Infiltra-se de forma invisível e teletransporta-se com Shadow Stride.",
+      "strengths": [
+        "Invisível de forma contínua sem detectores próximos",
+        "Dano físico individual absurdo (45 por golpe)",
+        "Pode se fundir para gerar um Arconte"
+      ],
+      "weaknesses": [
+        "Inútil se houver detecção inimiga ativa",
+        "Custos altos em gás vespene"
+      ],
+      "goodAgainst": [
+        "Trabalhadores",
+        "Tropas isoladas",
+        "Estruturas desprotegidas"
+      ],
+      "vulnerableAgainst": [
+        "Detecção",
+        "Dano em área concentrado"
+      ],
+      "usageTip": "Infiltre Templários das Sombras em várias bases de uma vez. Se o rival trouxer detecção, junte-os em Arcontes.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "archon": {
+      "name": "Arconte",
+      "shortDescription": "Entidade de energia pura com escudos quase impenetráveis e ataque de área.",
+      "longDescription": "O Arconte (Archon) nasce da união de dois templários. Seu poder psiônico é tão imenso que desintegra unidades inimigas próximas com cada ataque.",
+      "tacticalRole": "Titã psionico. Escudos titânicos e dano em área contra alvos biológicos.",
+      "strengths": [
+        "Escudos de plasma gigantescos (350)",
+        "Respingo contra biológicos",
+        "Sem tags de biológico/mecânico, imune a bônus de dano focado"
+      ],
+      "weaknesses": [
+        "Apenas 10 de vida física, muito vulnerável a PEM",
+        "Rango de alcance curto"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Zerglings",
+        "Banelings",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Fantasmas (PEM evapora escudos)",
+        "Espreitadores",
+        "Tanques de Cerco"
+      ],
+      "usageTip": "Posicione os Arcontes junto à infantaria. O respingo deles liquidará Zerglings e impedirá cercos.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "observer": {
+      "name": "Observador",
+      "shortDescription": "Unidade de reconhecimento robótica invisível e detector permanente.",
+      "longDescription": "O Observador (Observer) é a unidade de espionagem definitiva. Flutua invisivelmente sobre o campo de batalha, revelando unidades inimigas escondidas.",
+      "abilities": {
+        "surveillance-mode": {
+          "name": "Modo de Vigilância",
+          "description": "O Observador para, mas aumenta seu alcance de visão em 25%."
+        }
+      },
+      "tacticalRole": "Espião robótico permanente invisível. Concede detecção e visão aérea.",
+      "strengths": [
+        "Invisibilidade camuflada constante",
+        "Rastreia invisíveis e enterrados em tempo real",
+        "Modo Vigilância expande seu campo de visão em 25%"
+      ],
+      "weaknesses": [
+        "Sem nenhuma capacidade de ataque",
+        "Frágil se for detectado pelo oponente"
+      ],
+      "goodAgainst": [
+        "Fantasmas",
+        "Mina Viúva",
+        "Banshees",
+        "Espreitadores"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Fênix",
+        "Corruptores"
+      ],
+      "usageTip": "Use o Modo Vigilância sobre expansões e posições de asedio inimigas para monitorar as reações deles.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "warp-prism": {
+      "name": "Prisma de Dobra",
+      "shortDescription": "Transporte aéreo capaz de projetar um campo de energia para invocações.",
+      "longDescription": "O Prisma de Transmissão (Warp Prism) permite que os protoss implantem exércitos em qualquer ponto do mapa ao se tornar uma fonte de energia móvel.",
+      "abilities": {
+        "phasing-mode": {
+          "name": "Modo de Fase",
+          "description": "Implanta-se para projetar um campo de energia que permite invocar unidades de Warp Gate ao seu redor."
+        }
+      },
+      "tacticalRole": "Transportador de transposição. Carrega tropas e projeta balizas móveis no campo.",
+      "strengths": [
+        "Modo de Fase cria um campo de energia em qualquer lugar",
+        "Salva tropas pegando-as de distâncias enormes",
+        "Melhora muito as rotas de ataque Protoss"
+      ],
+      "weaknesses": [
+        "Indefesa e desprovida de armamentos",
+        "Alvo de alta prioridade para as forças de ar"
+      ],
+      "goodAgainst": [
+        "Nenhum"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Fênix",
+        "Mutalistas",
+        "Stalkers"
+      ],
+      "usageTip": "Leve o Prisma para as costas da base do oponente, mude para Modo Fase e transponha Zealots na economia dele.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "immortal": {
+      "name": "Imortal",
+      "shortDescription": "Unidade robótica pesada com um escudo de barreira especializado contra alvos blindados.",
+      "longDescription": "O Imortal é projetado para vencer duelos contra tanques e outras unidades pesadas. Sua barreira é ativada automaticamente para absorver rajadas de dano.",
+      "abilities": {
+        "barrier": {
+          "name": "Barreira",
+          "description": "Ativa automaticamente um escudo que absorve até 100 de dano quando o Imortal sofre um ataque."
+        }
+      },
+      "tacticalRole": "Robô demolidor de blindados. A barreira de energia absorve disparos de grande impacto.",
+      "strengths": [
+        "Dano bônus massivo contra blindados",
+        "Escudo de Barreira absorve 100 de dano automático",
+        "Lutador de frente incrivelmente parrudo"
+      ],
+      "weaknesses": [
+        "Intervalo de disparos lerdo",
+        "Incapaz de atingir alvos aéreos"
+      ],
+      "goodAgainst": [
+        "Baratas",
+        "Stalkers",
+        "Marauders",
+        "Tanques de Cerco"
+      ],
+      "vulnerableAgainst": [
+        "Zerglings",
+        "Infanterias massivas",
+        "Mutalistas"
+      ],
+      "usageTip": "Direcione os Imortais contra blindados. Recolha-os com o Prisma quando os escudos caírem.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "colossus": {
+      "name": "Colosso",
+      "shortDescription": "Caminhante robótico massivo com lanças térmicas para varrer exércitos de infantaria.",
+      "longDescription": "O Colosso (Colossus) se ergue sobre o campo de batalha, permitindo-lhe subir penhascos. Seus lasers varrem o solo, eliminando rapidamente grupos de unidades leves.",
+      "abilities": {
+        "cliff-walk": {
+          "name": "Subir Encostas",
+          "description": "Permite ao enorme Colosso subir e descender encostas livremente."
+        }
+      },
+      "tacticalRole": "Gigante caminhante. Dispara varreduras lineares que incineram infantarias leves.",
+      "strengths": [
+        "Alcance tremendo (9 com a melhoria)",
+        "Passa sobre penhascos e colinas livremente",
+        "Erradica instantaneamente infantaria leve inimiga"
+      ],
+      "weaknesses": [
+        "Vulnerável a ataques terrestres e antiaéreos devido à altura",
+        "Alto custo e frágil sob foco direto de disparos"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Hydraliscas",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptores",
+        "Abdução de Víboras",
+        "Marauders"
+      ],
+      "usageTip": "Pesquise a Lança Térmica Estendida logo. Mantenha os Colossos protegidos atrás das forças de chão.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "disruptor": {
+      "name": "Purificador",
+      "shortDescription": "Unidade robótica que lança bolas de energia de purificação altamente instáveis.",
+      "longDescription": "O Disruptor lança uma Purification Nova que, após um breve atraso, explode causando danos devastadores. Uma única nova bem colocada pode varrer um exército inteiro.",
+      "abilities": {
+        "purification-nova": {
+          "name": "Nova de Purificação",
+          "description": "Lança uma bola de energia controlável que explode após alguns segundos, causando dano massivo em área."
+        }
+      },
+      "tacticalRole": "Arma de impacto tático. Dispara esferas de energia purificadora que evaporam agrupamentos terrestres.",
+      "strengths": [
+        "Nova Purificadora liquida instantaneamente grupos inteiros no chão",
+        "Força dispersão rápida e reações velozes",
+        "Zoneamento terrestre excelente"
+      ],
+      "weaknesses": [
+        "A esfera deve ser controlada ativamente",
+        "Indefeso durante a longa recarga (21s) da habilidade"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Baratas",
+        "Stalkers",
+        "Hydraliscas"
+      ],
+      "vulnerableAgainst": [
+        "Forças espalhadas",
+        "Forças aéreas",
+        "Víboras"
+      ],
+      "usageTip": "Dispare as Novas em gargalos ou rampas, deixando o oponente sem caminhos de fuga e forçando baixas.",
+      "gamePhase": [
+        "Média",
+        "Tardia"
+      ]
+    },
+    "phoenix": {
+      "name": "Fênix",
+      "shortDescription": "Caça aéreo ágil capaz de atirar enquanto se move.",
+      "longDescription": "A Fênix (Phoenix) é a unidade de superioridade aérea protoss. Seu Feixe Gravitacional pode erguer unidades terrestres, deixando-as indefesas e fora de combate.",
+      "abilities": {
+        "graviton-beam": {
+          "name": "Feixe Gravitacional",
+          "description": "Ergue uma unidade terrestre inimiga no ar, impedindo-a de atacar ou se mover."
+        }
+      },
+      "tacticalRole": "Interceptador aéreo de alta velocidade. Ataca em movimento e ergue o solo com Raio de Gravidade.",
+      "strengths": [
+        "Dispara de forma contínua enquanto voa em deslocamento",
+        "Rayo de Gravidade suspende alvos terrestres cruciais",
+        "Manobrabilidade e velocidade extremas"
+      ],
+      "weaknesses": [
+        "Dano fraco contra blindados",
+        "Não consegue alvejar o chão sem gastar energia para erguê-los"
+      ],
+      "goodAgainst": [
+        "Mutalistas",
+        "Banshees",
+        "Operários",
+        "Víboras"
+      ],
+      "vulnerableAgainst": [
+        "Corruptores",
+        "Raios do Vazio",
+        "Thors"
+      ],
+      "usageTip": "Combata Mutalistas com os Fênix. Nas batalhas no chão, erga tanques de cerco para desativar os tiros deles.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "void-ray": {
+      "name": "Raio do Vazio",
+      "shortDescription": "Nave de ataque com um feixe de energia que se torna mais destrutivo contra alvos blindados.",
+      "longDescription": "O Rayo do Vazio (Void Ray) pode focar seu feixe para derreter estruturas e naves capitais em segundos por meio de seu Alinhamento Prismático.",
+      "abilities": {
+        "prismatic-alignment": {
+          "name": "Alinhamento Prismático",
+          "description": "Aumenta temporariamente o dano contra unidades blindadas, mas reduz a velocidade de movimento."
+        }
+      },
+      "tacticalRole": "Nave de ataque pesado. Concentra seu feixe prismático para derreter frotas blindadas.",
+      "strengths": [
+        "Alineamento Prismático derrete blindados a velocidades insanas",
+        "Quantidade de vida e escudos excelente",
+        "Elemento defensivo muito sólido"
+      ],
+      "weaknesses": [
+        "Velocidade reduzida quando fora do alinhamento",
+        "Vulnerável a enxames massivos de alvos baratos e rápidos"
+      ],
+      "goodAgainst": [
+        "Corruptores",
+        "Tempestades",
+        "Baratas",
+        "Marauders"
+      ],
+      "vulnerableAgainst": [
+        "Marines",
+        "Hydraliscas",
+        "Víboras"
+      ],
+      "usageTip": "Ative o Alinhamento Prismático quando confrontar alvos blindados pesados para derreter a vida deles.",
+      "gamePhase": [
+        "Inicial",
+        "Média",
+        "Tardia"
+      ]
+    },
+    "oracle": {
+      "name": "Oráculo",
+      "shortDescription": "Nave de apoio versátil para reconhecimento e ataques cirúrgicos.",
+      "longDescription": "O Oráculo (Oracle) é uma unidade de utilidade inestimável. Pode revelar unidades invisíveis, colocar armadilhas de estase ou usar seu feixe pulsar para aniquilar trabalhadores.",
+      "abilities": {
+        "revelation": {
+          "name": "Revelação",
+          "description": "Revela a posição e a visão das unidades inimigas em uma área por um longo período."
+        },
+        "stasis-ward": {
+          "name": "Armadilha de Estase",
+          "description": "Coloca uma armadilha invisível que prende as unidades inimigas em estase temporariamente."
+        },
+        "pulsar-beam": {
+          "name": "Feixe Pulsar",
+          "description": "Ativa um ataque de feixe de alta potência que consome energia por segundo."
+        }
+      },
+      "tacticalRole": "Nave de assédio e suporte de utilidade. Revela invisíveis e ativa o Feixe Pulsar.",
+      "strengths": [
+        "Feixe Pulsar aniquila trabalhadores em segundos",
+        "Revelação concede visão de alvos invisíveis e névoa",
+        "Barreira de Éxtase congela inimigos temporariamente"
+      ],
+      "weaknesses": [
+        "Frágil e totalmente refém de sua energia",
+        "Sem qualquer valor em confrontos diretos"
+      ],
+      "goodAgainst": [
+        "Operários",
+        "Zerglings",
+        "Marines"
+      ],
+      "vulnerableAgainst": [
+        "Stalkers",
+        "Rainhas",
+        "Marines estimulados"
+      ],
+      "usageTip": "Instale Barreiras de Éxtase em rampas para conter pressões. Mantenha a Revelação ativa para monitorar o mapa.",
+      "gamePhase": [
+        "Inicial",
+        "Média"
+      ]
+    },
+    "tempest": {
+      "name": "Tempestade",
+      "shortDescription": "Nave capital com o maior alcance de ataque dos protoss.",
+      "longDescription": "A Tempestade (Tempest) foi projetada para cercar posições inimigas a uma distância segura. É especialmente eficaz contra outras naves massivas.",
+      "tacticalRole": "Atirador aéreo de longa distância. Despara projéteis de alto impacto de alcances extremos.",
+      "strengths": [
+        "Alcance colossal de disparos (14 contra solo, 10 contra ar)",
+        "Excelente caçadora de naves capital inimigas",
+        "Destrói canhões e defesas estáticas inimigas com total segurança"
+      ],
+      "weaknesses": [
+        "Velocidade de disparo extremamente lenta",
+        "Ineficaz contra hordas leves em massa"
+      ],
+      "goodAgainst": [
+        "Libertadores",
+        "Tanques de Cerco",
+        "Señores de la Prole",
+        "Carriers"
+      ],
+      "vulnerableAgainst": [
+        "Corruptores",
+        "Vikings",
+        "Raios do Vazio"
+      ],
+      "usageTip": "Use as Tempestades para remover de longe as defesas ou asédios estáticos terrestres como Tanques ou Libertadores.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "carrier": {
+      "name": "Porta-naves",
+      "shortDescription": "Base aérea massiva que lança enxames de interceptores.",
+      "longDescription": "O Porta-naves (Carrier) é o orgulho da frota protoss. Não ataca diretamente, mas lança interceptores robóticos que sobrecarregam o inimigo.",
+      "abilities": {
+        "build-interceptor": {
+          "name": "Construir Interceptor",
+          "description": "Constrói automaticamente interceptores para substituir os perdidos em combate."
+        }
+      },
+      "tacticalRole": "Nave capital Protoss suprema. Libera enxames de Interceptores que sobrecarregam as defesas.",
+      "strengths": [
+        "Os Interceptores saturam as miras inimigas e blindam a nave",
+        "Escudos e vida colossais",
+        "Presença ofensiva inigualável no fim de jogo"
+      ],
+      "weaknesses": [
+        "Altíssimo custo e longo tempo de transposição",
+        "Vulnerável se todos os seus Interceptores forem liquidados"
+      ],
+      "goodAgainst": [
+        "Hydraliscas",
+        "Tanques de Cerco",
+        "Thors no solo",
+        "Ultralistas"
+      ],
+      "vulnerableAgainst": [
+        "Corruptores",
+        "Tempestades",
+        "Vikings",
+        "Thors (Alto Impacto)"
+      ],
+      "usageTip": "Mantenha os Carriers agrupados para maximizar a nuvem de interceptores, sobrecarregando a mira antiaérea inimiga.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    },
+    "mothership": {
+      "name": "Nave-mãe",
+      "shortDescription": "A capitânia definitiva, capaz de distorcer o tempo e o espaço.",
+      "longDescription": "Apenas uma Nave-mãe (Mothership) pode existir por vez. Sua mera presença oculta todo o exército aliado próximo e pode congelar o tempo em zonas críticas.",
+      "abilities": {
+        "cloak-field": {
+          "name": "Campo de Camuflagem",
+          "description": "Oculta automaticamente todas as unidades e estruturas aliadas próximas."
+        },
+        "time-warp": {
+          "name": "Distorção Temporal",
+          "description": "Cria uma bolha temporal que reduz drasticamente o movimento e o ataque das unidades inimigas."
+        },
+        "strategic-recall": {
+          "name": "Recordação Estratégica",
+          "description": "Teletransporta a Nave-mãe e todas as unidades aliadas próximas para um Nexus alvo."
+        }
+      },
+      "tacticalRole": "Nave capitâniaProtoss única. Concede invisibilidade, distorce o tempo e evacua forças.",
+      "strengths": [
+        "Camuflagem invisível permanente para todas as tropas próximas",
+        "Distorção Temporal retarda movimento e velocidade de alvos",
+        "Retorno Estratégico teletransporta o exército de volta a um Nexo"
+      ],
+      "weaknesses": [
+        "Limite rígido de apenas uma Nave Mãe por jogador",
+        "Alvo prioritário número 1 de disparos aéreos"
+      ],
+      "goodAgainst": [
+        "Hordas de solo",
+        "Zonas de asedio"
+      ],
+      "vulnerableAgainst": [
+        "Tempestades",
+        "Abdução de Víboras",
+        "Vikings"
+      ],
+      "usageTip": "Posicione a Nave Mãe diretamente acima do exército. Desparilhe a Distorção Temporal e prepare o Retorno se as coisas derem errado.",
+      "gamePhase": [
+        "Tardia"
+      ]
+    }
+  }
+}

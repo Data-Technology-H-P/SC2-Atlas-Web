@@ -1,0 +1,2426 @@
+{
+  "ui": {
+    "tacticalOverview": "Tactical Overview",
+    "productionIntelligence": "Production Intelligence",
+    "facility": "Facility",
+    "techRequirements": "Tech Requirements",
+    "tacticalAbilities": "Tactical Abilities",
+    "upgrades": "Combat Upgrades",
+    "visualRecon": "Visual Recon",
+    "statusActive": "Status: Active",
+    "interactive3dPreview": "Interactive 3D Preview",
+    "backToRoster": "BACK TO {race} ROSTER",
+    "dataNotFound": "DATA NOT FOUND",
+    "returnToCommandCenter": "RETURN TO COMMAND CENTER",
+    "searchUnits": "Search units...",
+    "allRaces": "All races",
+    "filterByRole": "Filter by role",
+    "fanProject": "Fan Project",
+    "sortBy": "Sort by",
+    "name": "Name",
+    "minerals": "Minerals",
+    "gas": "Gas",
+    "buildTime": "Build Time",
+    "race": "Race",
+    "tacticalUnits": "TACTICAL UNITS",
+    "unitsCount": "{count} UNITS",
+    "noUnitsFound": "No units found matching your criteria.",
+    "none": "None",
+    "strengths": "Strengths",
+    "weaknesses": "Weaknesses",
+    "goodAgainst": "Good Against",
+    "vulnerableAgainst": "Vulnerable Against",
+    "usageTip": "Usage Tip",
+    "gamePhase": "Game Phase",
+    "disable3D": "Disable 3D Models",
+    "disable3DDesc": "Save data on mobile/tablet networks by loading 2D images instead of 3D holographic models.",
+    "early": "Early",
+    "mid": "Mid",
+    "late": "Late",
+    "close": "Close",
+    "noUnitsFoundSearch": "No units found for this search.",
+    "filterAll": "All",
+    "filterWorker": "Worker",
+    "filterBasic": "Basic",
+    "filterMelee": "Melee",
+    "filterRanged": "Ranged",
+    "filterAir": "Air",
+    "filterSiege": "Siege",
+    "filterSupport": "Support",
+    "filterCaster": "Caster",
+    "filterCapital": "Capital",
+    "filterDetector": "Detector",
+    "filterTransport": "Transport",
+    "filterHarassment": "Harassment",
+    "filterSpellcaster": "Spellcaster"
+  },
+  "tech": {
+    "Gateway": "Gateway",
+    "Warp Gate": "Warp Gate",
+    "Gateway / Warp Gate": "Gateway / Warp Gate",
+    "Barracks": "Barracks",
+    "Command Center": "Command Center",
+    "Cybernetics Core": "Cybernetics Core",
+    "Factory": "Factory",
+    "Starport": "Starport",
+    "Nexus": "Nexus",
+    "Hatchery": "Hatchery",
+    "Lair": "Lair",
+    "Hive": "Hive",
+    "Hatchery / Lair / Hive": "Hatchery / Lair / Hive",
+    "Larva": "Larva",
+    "Overlord": "Overlord",
+    "Zergling": "Zergling",
+    "Roach": "Roach",
+    "Hydralisk": "Hydralisk",
+    "Corruptor": "Corruptor",
+    "Templar Fusion": "Templar Fusion",
+    "Robotics Facility": "Robotics Facility",
+    "Stargate": "Stargate",
+    "Dark Shrine": "Dark Shrine",
+    "Twilight Council": "Twilight Council",
+    "Templar Archives": "Templar Archives",
+    "Fleet Beacon": "Fleet Beacon",
+    "Fusion Core": "Fusion Core",
+    "Ghost Academy": "Ghost Academy",
+    "Spawning Pool": "Spawning Pool",
+    "Roach Warren": "Roach Warren",
+    "Hydralisk Den": "Hydralisk Den",
+    "Lurker Den": "Lurker Den",
+    "Infestation Pit": "Infestation Pit",
+    "Spire": "Spire",
+    "Greater Spire": "Greater Spire",
+    "Great Spire": "Greater Spire",
+    "Ultralisk Cavern": "Ultralisk Cavern",
+    "Armory": "Armory",
+    "Engineering Bay": "Engineering Bay",
+    "Tech Lab": "Tech Lab",
+    "Baneling Nest": "Baneling Nest",
+    "Robotics Bay": "Robotics Bay"
+  },
+  "stats": {
+    "vitalSystems": "Vital Systems",
+    "hullIntegrity": "Hull Integrity (Life)",
+    "plasmaShields": "Plasma Shields",
+    "energyReserves": "Energy Reserves",
+    "baseArmor": "Base Armor",
+    "attributes": "Attributes",
+    "combatSpecs": "Combat Specs",
+    "damageOutput": "Damage Output",
+    "attackRange": "Attack Range",
+    "movementSpeed": "Movement Speed",
+    "sensorSight": "Sensor Sight",
+    "minerals": "Minerals",
+    "vespeneGas": "Vespene Gas",
+    "supply": "Supply",
+    "buildTime": "Build Time"
+  },
+  "races": {
+    "terran": "Terran",
+    "terranDesc": "The masters of tactical adaptation. Their stimpack-fueled infantry and mobile mechanical divisions dominate industrial and defensive warfare, backed by structures capable of lifting off and relocating.",
+    "zerg": "Zerg",
+    "zergDesc": "The biological vortex of the Swarm. They spread across organic creep and adapt through larvae and instant mutations, overwhelming the enemy with rapid swarms and bio-synthetic monstrosities.",
+    "protoss": "Protoss",
+    "protossDesc": "The pinnacle of ancient psionic technology. Their elite warriors harness rechargeable plasma shields and dimensional warp gates, summoning devastating power from the Nexus with pinpoint precision.",
+    "protossIntro": "Protoss units rely on shields, precision, mobility and high-tech power spikes. Their army rewards positioning, timing and efficient spell usage.",
+    "terranIntro": "Terran units combine mobility, range and tactical flexibility. Their army thrives on positioning, production cycles and multi-pronged pressure.",
+    "zergIntro": "Zerg units are built around speed, adaptation and overwhelming numbers. Their strength comes from map control, larvae cycles and fast tech transitions."
+  },
+  "landing": {
+    "heroTitle": "EXPLORE THE <br></br> <blue>TACTICAL FRONTIER</blue>",
+    "heroSubtitle": "The most advanced interactive atlas for StarCraft II units. High-fidelity data, tactical insights, and immersive 3D visualization.",
+    "heroExplanation": "Select a race, explore its tactical units, compare costs and understand each unit's battlefield role.",
+    "selectRace": "Select Your Race",
+    "commandCenter": "Command Center",
+    "commandCenterSubtitle": "Choose your faction to access its tactical unit database.",
+    "tacticalEntry": "Tactical Entry",
+    "precisionData": "Precision Data",
+    "precisionDataDesc": "Access exact damage, armor, and cost stats for every unit, updated for the current StarCraft II competitive meta.",
+    "tacticalAbilities": "Tactical Abilities",
+    "tacticalAbilitiesDesc": "Discover the hidden potential of every ability. From Stalker Blink to Raven's Matrix, master every micro-maneuver.",
+    "advancedView": "Advanced View",
+    "advancedViewDesc": "Explore 3D models and technical diagrams designed for analysts and competitive players seeking the ultimate edge."
+  },
+  "footer": {
+    "tagline": "A premium tactical exploration tool for StarCraft II units.",
+    "madeBy": "Made with ❤️ by <datatech>DataTech H&P</datatech>. All rights reserved.",
+    "legalNotice": "SC2 Atlas is a fan-made project and is not affiliated with or endorsed by Blizzard Entertainment. StarCraft II and related assets are trademarks or registered trademarks of Blizzard Entertainment.",
+    "copyright": "© {year} SC2 Atlas. Unofficial fan project."
+  },
+  "units": {
+    "stalker": {
+      "name": "Stalker",
+      "shortDescription": "Mobile combat unit with ranged attack and high repositioning capability.",
+      "longDescription": "The Stalker is a mechanical combat unit for the protoss, inspired by the ancient Dragoons but piloted by the psionic essence of the Dark Templar. Its Blink ability makes it one of the most versatile units in the game.",
+      "tacticalRole": "Flexible ranged unit used for map control, pressure and anti-air support.",
+      "strengths": [
+        "High mobility with Blink",
+        "Useful against air and ground targets",
+        "Strong for poking and repositioning"
+      ],
+      "weaknesses": [
+        "Lower raw DPS compared to some dedicated damage units",
+        "Can be punished if Blink is unavailable",
+        "Requires good positioning"
+      ],
+      "goodAgainst": [
+        "Light air units",
+        "Exposed ranged units",
+        "Harassment targets"
+      ],
+      "vulnerableAgainst": [
+        "Mass bio with upgrades",
+        "Surrounds",
+        "High burst damage"
+      ],
+      "usageTip": "Use Stalkers to poke, reposition and punish exposed units. Avoid taking direct fights without Blink or support.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ],
+      "upgrades": {
+        "blink": {
+          "name": "Blink",
+          "description": "Instantly teleports the Stalker to a nearby location after researching the upgrade at the Cybernetics Core."
+        }
+      }
+    },
+    "marine": {
+      "name": "Marine",
+      "shortDescription": "Versatile light infantry unit, the backbone of any Terran army.",
+      "longDescription": "The Marine is the basic Terran infantry unit. Equipped with powered armor and C-14 Gauss rifles, they are capable of engaging both ground and air targets, especially with Medivac support.",
+      "tacticalRole": "High DPS core infantry unit that scales extremely well with upgrades and support.",
+      "strengths": [
+        "Excellent damage-to-cost ratio",
+        "Fast attack speed, especially with Stimpack",
+        "Versatile; hits both ground and air targets"
+      ],
+      "weaknesses": [
+        "Very fragile, highly vulnerable to splash damage",
+        "Requires active micro-management and Medivac support",
+        "Relies heavily on Combat Shields and Stimpack upgrades"
+      ],
+      "goodAgainst": [
+        "Mutalisks",
+        "Immortals",
+        "Void Rays"
+      ],
+      "vulnerableAgainst": [
+        "Banelings",
+        "Colossi",
+        "Siege Tanks"
+      ],
+      "usageTip": "Always research Stimpack and Combat Shields early. Keep Marines paired with Medivacs and split them to minimize splash damage.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ],
+      "upgrades": {
+        "combat-shield": {
+          "name": "Combat Shield",
+          "description": "Permanently increases the Marine's maximum health by +10. Research in Barracks TechLab"
+        },
+        "stimpack": {
+          "name": "Stimpack",
+          "description": "Temporarily increases attack and movement speed in exchange for a small amount of health. Research in Barracks TechLab"
+        }
+      }
+    },
+    "scv": {
+      "name": "SCV",
+      "shortDescription": "Basic Terran construction and resource gathering unit.",
+      "longDescription": "The Space Construction Vehicle (SCV) is the essential workhorse for the Terran. In addition to gathering resources, it can repair mechanical units and structures in the field.",
+      "abilities": {
+        "repair": {
+          "name": "Repair",
+          "description": "Repairs friendly mechanical units and structures for a small resource cost."
+        }
+      },
+      "tacticalRole": "Essential worker unit that gathers resources and repairs mechanical units and structures.",
+      "strengths": [
+        "Can repair mechanical units for free (costs minerals in practice)",
+        "Available from the start with zero tech requirement",
+        "Can bunker rush or proxy build to disrupt opponents early"
+      ],
+      "weaknesses": [
+        "Extremely fragile and has no real combat ability",
+        "Consumed when building structures",
+        "Vulnerable if caught outside the base"
+      ],
+      "goodAgainst": [
+        "Early Drones",
+        "Early Probes"
+      ],
+      "vulnerableAgainst": [
+        "Any military unit",
+        "Early rushes"
+      ],
+      "usageTip": "Protect your SCVs at all costs. Use them to repair siege tanks in the field and bunkers during defensive stands.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ]
+    },
+    "marauder": {
+      "name": "Marauder",
+      "shortDescription": "Heavy infantry armed with grenade launchers, ideal against armored units.",
+      "longDescription": "The Marauder is a robust infantry unit capable of withstanding significant punishment. Its Punisher grenades slow down enemy units, making it the perfect companion for the Marine.",
+      "upgrades": {
+        "concussive-shells": {
+          "name": "Concussive Shells",
+          "description": "Slows down the movement of impacted enemy units."
+        }
+      },
+      "abilities": {
+        "stimpack": {
+          "name": "Stimpack",
+          "description": "Temporarily increases attack and movement speed in exchange for a small amount of health."
+        }
+      },
+      "tacticalRole": "Heavy armored infantry that slows targets and deals bonus damage to armored units.",
+      "strengths": [
+        "Concussive Shells slows all non-massive units on hit",
+        "High health pool, far tankier than Marines",
+        "Pairs extremely well with Marines in bio compositions"
+      ],
+      "weaknesses": [
+        "Cannot attack air units",
+        "Slow without Stimpack",
+        "Weak against Banelings and splash AoE"
+      ],
+      "goodAgainst": [
+        "Roaches",
+        "Stalkers",
+        "Immortals"
+      ],
+      "vulnerableAgainst": [
+        "Banelings",
+        "Colossi",
+        "Siege Tanks"
+      ],
+      "usageTip": "Use Marauders as the frontline shield for Marines. Stim them in engagements and pull back damaged ones with Medivac support.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "reaper": {
+      "name": "Reaper",
+      "shortDescription": "Fast scout unit capable of jumping over cliffs.",
+      "longDescription": "The Reaper excels at early harassment and scouting. Equipped with jetpacks, it can enter and exit enemy bases quickly.",
+      "abilities": {
+        "kd8-charge": {
+          "name": "KD8 Charge",
+          "description": "Throws an explosive charge that deals damage and knocks back enemy units."
+        },
+        "jet-pack": {
+          "name": "Jetpack Thrusters",
+          "description": "Passive thrusters allow the Reaper to scale up and down cliffs freely."
+        },
+        "comback-drgs": {
+          "name": "Combat Drugs",
+          "description": "Passive drug nanobots regenerate Reaper's health rapidly when out of combat for 5 seconds."
+        }
+      },
+      "tacticalRole": "Fast harassment and scouting unit that excels at early map control and cliff traversal.",
+      "strengths": [
+        "Can jump cliffs and escape most early threats",
+        "Excellent for scouting opponent's base in the first few minutes",
+        "KD8 Charges create space and deal solid early damage"
+      ],
+      "weaknesses": [
+        "Falls off significantly in mid and late game",
+        "Low health; dies quickly to sustained fire",
+        "Requires constant micro-management to be effective"
+      ],
+      "goodAgainst": [
+        "Workers (Drones, Probes, SCVs)",
+        "Zerglings",
+        "Early Queens"
+      ],
+      "vulnerableAgainst": [
+        "Marines",
+        "Stalkers",
+        "Roaches"
+      ],
+      "usageTip": "Open with a Reaper to scout and deal early damage. Retreat over cliffs when threatened, and keep them alive to continue scouting mid-game.",
+      "gamePhase": [
+        "Early"
+      ]
+    },
+    "ghost": {
+      "name": "Ghost",
+      "shortDescription": "Elite infantry with stealth capabilities and tactical nuclear strikes.",
+      "longDescription": "The Ghost is the ultimate tactical unit for the Terran. Capable of becoming invisible and launching tactical nuclear missiles, it can devastate entire armies if undetected.",
+      "abilities": {
+        "steady-targeting": {
+          "name": "Steady Targeting",
+          "description": "Deals massive damage to a biological unit after a brief channeling period."
+        },
+        "emp-round": {
+          "name": "EMP Round",
+          "description": "Drains energy and shields in an area of effect."
+        }
+      },
+      "upgrades": {
+        "nuclear-sil": {
+          "name": "Tactical Nuke Silo",
+          "description": "Allows the Ghost Academy to arm tactical nuclear missiles which the Ghost can call down."
+        },
+        "cloak": {
+          "name": "Personal Cloaking",
+          "description": "Allows the Ghost to research personal cloaking at the Ghost Academy to become invisible in exchange for continuous energy drain."
+        }
+      },
+      "tacticalRole": "Elite stealth unit that neutralizes enemy spellcasters, spells, and shields with EMP and Snipe.",
+      "strengths": [
+        "EMP drains Protoss shields and energy in a large radius",
+        "Cloak allows repositioning without taking fire",
+        "Tactical Nuke forces opponent movement and denies areas"
+      ],
+      "weaknesses": [
+        "Expensive and requires significant tech investment",
+        "EMP requires good aim under pressure",
+        "Needs constant energy management"
+      ],
+      "goodAgainst": [
+        "High Templars",
+        "Infestors",
+        "Protoss Armies (EMP)",
+        "Ravagers"
+      ],
+      "vulnerableAgainst": [
+        "Detectors",
+        "Mass anti-air",
+        "Lings in melee range"
+      ],
+      "usageTip": "Pre-position Ghosts and use EMP on the Protoss army before engaging. Against Zerg, use Snipe on Infestors before they can cast.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "hellion": {
+      "name": "Hellion",
+      "shortDescription": "Fast vehicle with a long-range flamethrower ideal against light infantry.",
+      "longDescription": "The Hellion is the fastest crowd-control unit for the Terran. Its flame attack pierces multiple enemies in a straight line.",
+      "abilities": {
+        "transform-hellbat": {
+          "name": "Transform to Hellbat",
+          "description": "Transforms the vehicle into a heavy short-range infantry unit."
+        }
+      },
+      "upgrades": {
+        "infernal-preigniter": {
+          "name": "Infernal Pre-igniter",
+          "description": "Significantly increases the flamethrower's damage against light units."
+        },
+        "smart-servos": {
+          "name": "Smart Servos",
+          "description": "Significantly speeds up the transformation process between Hellion and Hellbat forms."
+        }
+      },
+      "tacticalRole": "Fast vehicle with a linear flamethrower, devastating against workers and light ground units.",
+      "strengths": [
+        "Fastest non-flying Terran unit",
+        "Flame attack hits multiple units in a line",
+        "Extremely effective against light biological units and workers"
+      ],
+      "weaknesses": [
+        "Almost useless against armored units",
+        "Fragile — dies quickly to focused fire",
+        "Cannot attack air targets"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Banelings",
+        "Workers",
+        "Hydralisks"
+      ],
+      "vulnerableAgainst": [
+        "Roaches",
+        "Marauders",
+        "Stalkers"
+      ],
+      "usageTip": "Use Hellions to raid enemy worker lines or patrol the map for stray units. Transform to Hellbats when the opponent clusters armor.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "hellbat": {
+      "name": "Hellbat",
+      "shortDescription": "Heavy infantry version of the Hellion, more resistant with a conical attack.",
+      "longDescription": "The Hellbat combines flamethrower fire power with the resistance of a front-line unit. It is excellent for protecting fragile units.",
+      "upgrades": {
+        "infernal-preigniter": {
+          "name": "Infernal Pre-igniter",
+          "description": "Modifies the flamethrower payload to deal significantly increased damage against light units."
+        },
+        "smart-servos": {
+          "name": "Smart Servos",
+          "description": "Significantly speeds up the transformation process between Hellion and Hellbat forms."
+        }
+      },
+      "tacticalRole": "Beefy frontline brawler with a cone flamethrower, effective in tight bio-mech compositions.",
+      "strengths": [
+        "More durable than Hellion form",
+        "AoE cone attack hits multiple clustered units",
+        "Healed by Medivacs — synergizes with bio-mech drops"
+      ],
+      "weaknesses": [
+        "Very slow movement speed",
+        "Weak against armored units and air",
+        "Needs to be transformed from Hellion, limiting early flexibility"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Marines (in bio)",
+        "Light clustered units"
+      ],
+      "vulnerableAgainst": [
+        "Stalkers",
+        "Roaches",
+        "Ravagers"
+      ],
+      "usageTip": "Drop Hellbats into enemy worker lines with Medivacs for an efficient trade. In bio-mech, position them at the front to absorb fire.",
+      "gamePhase": [
+        "Mid"
+      ]
+    },
+    "siege-tank": {
+      "name": "Siege Tank",
+      "shortDescription": "The pillar of Terran defense, capable of deploying for long-range attacks.",
+      "longDescription": "The Siege Tank can operate in two modes: Tank Mode for mobility and Siege Mode for devastating long-range area damage.",
+      "abilities": {
+        "siege-mode": {
+          "name": "Siege Mode",
+          "description": "Anchors the tank to drastically increase its range and damage, but loses the ability to move."
+        }
+      },
+      "tacticalRole": "Long-range siege weapon that anchors Terran defensive lines and obliterates ground armies at a distance.",
+      "strengths": [
+        "Devastating area damage in Siege Mode with immense range",
+        "Shreds armored units and structures efficiently",
+        "Forces opponent to engage from disadvantageous angles"
+      ],
+      "weaknesses": [
+        "Cannot move or attack nearby units in Siege Mode",
+        "Vulnerable to air units in all modes",
+        "Slow to set up and reposition"
+      ],
+      "goodAgainst": [
+        "Roaches",
+        "Zealots",
+        "Stalkers",
+        "Zerglings"
+      ],
+      "vulnerableAgainst": [
+        "Medivac drops behind tank lines",
+        "Liberators",
+        "Brood Lords"
+      ],
+      "usageTip": "Always siege Tanks behind marine walls or bunkers. Never leave them exposed. Viking support counters enemy air harassment.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "cyclone": {
+      "name": "Cyclone",
+      "shortDescription": "Fast attack vehicle capable of firing while moving.",
+      "longDescription": "The Cyclone uses a lock-on system that allows it to fire missiles at an enemy unit while maintaining distance.",
+      "abilities": {
+        "lock-on": {
+          "name": "Lock-On",
+          "description": "Locks onto an enemy target to fire automatically while moving within range."
+        }
+      },
+      "upgrades": {
+        "magfield-accelerator": {
+          "name": "Magfield Accelerator",
+          "description": "Increases Lock-On damage output against armored units."
+        }
+      },
+      "tacticalRole": "Mobile anti-air and anti-ground skirmisher with a Lock-On ability that fires while kiting.",
+      "strengths": [
+        "Can fire while moving after locking on",
+        "Strong anti-air for early game protection",
+        "Very mobile — difficult to catch or pin down"
+      ],
+      "weaknesses": [
+        "Mediocre DPS without upgrades and micromanagement",
+        "Lock-On can be broken by moving target out of range",
+        "High gas cost limits early production"
+      ],
+      "goodAgainst": [
+        "Mutalisks",
+        "Phoenixes",
+        "Oracles",
+        "Banshees"
+      ],
+      "vulnerableAgainst": [
+        "Blink Stalkers",
+        "Immortals",
+        "Ravagers"
+      ],
+      "usageTip": "Use Cyclones as mobile anti-air in the early game and as fast kiting units. Lock onto high-priority air targets immediately.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "widow-mine": {
+      "name": "Widow Mine",
+      "shortDescription": "Mechanical ambush unit that fires missiles from a burrowed position.",
+      "longDescription": "The Widow Mine burrows into the ground and fires a Sentinel missile when an enemy unit approaches, dealing massive area damage.",
+      "abilities": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Burrows the mine so it can charge its missiles and attack."
+        },
+        "sentinel-missiles": {
+          "name": "Sentinel Missiles",
+          "description": "Passive homing missile attack that fires when burrowed, dealing massive single-target and splash damage."
+        }
+      },
+      "upgrades": {
+        "drilling-claws": {
+          "name": "Drilling Claws",
+          "description": "Drastically reduces the time required to burrow and unburrow."
+        },
+        "concealment": {
+          "name": "Concealment",
+          "description": "Ensures the Widow Mine remains completely invisible even after firing its Sentinel Missile."
+        }
+      },
+      "tacticalRole": "Stealthy ambush mine that punishes enemy movement with devastating splash damage.",
+      "strengths": [
+        "Invisible when burrowed and between attacks",
+        "Sentinel Missile deals enormous splash that one-shots groups",
+        "Deters enemy from advancing without detection"
+      ],
+      "weaknesses": [
+        "Very predictable placement over time",
+        "Has a reload cooldown between shots",
+        "Countered by detectors and slow advance"
+      ],
+      "goodAgainst": [
+        "Clustered Marines",
+        "Zerglings",
+        "Phoenixes",
+        "Overlords"
+      ],
+      "vulnerableAgainst": [
+        "Observers",
+        "Overseers",
+        "Ravagers (with detection)"
+      ],
+      "usageTip": "Place Widow Mines at watch points and ramps. Always pair with Vikings or Turrets for mutual anti-air protection of the mines themselves.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "thor": {
+      "name": "Thor",
+      "shortDescription": "Massive combat robot with overwhelming fire power on both ground and air.",
+      "longDescription": "The Thor is the largest ground mechanical unit for the Terran. Its Thor's Hammers crush ground units, while its missile launchers clear the skies.",
+      "abilities": {
+        "high-impact-payload": {
+          "name": "High Impact Payload",
+          "description": "Switches anti-air weaponry for long-range cannons effective against massive units."
+        }
+      },
+      "upgrades": {
+        "smart-servos": {
+          "name": "Smart Servos",
+          "description": "Significantly speeds up the transformation process between high-impact and explosive payloads."
+        }
+      },
+      "tacticalRole": "Massive heavy mech with overwhelming firepower against both ground armies and capital ships.",
+      "strengths": [
+        "Enormous health pool and high base armor",
+        "High-impact payload slaughters massive air units",
+        "Strong area suppression against clustered ground units"
+      ],
+      "weaknesses": [
+        "Very slow movement speed",
+        "Expensive to produce and maintain",
+        "Vulnerable to EMP, Abduct, and kiting"
+      ],
+      "goodAgainst": [
+        "Mutalisks",
+        "Brood Lords",
+        "Carriers",
+        "Ultralisks"
+      ],
+      "vulnerableAgainst": [
+        "Blink Stalkers",
+        "Infestors (Neural Parasite)",
+        "Vipers"
+      ],
+      "usageTip": "Deploy Thors as stationary centerpieces of a ground army. Use High-Impact Payload to hard-counter incoming Brood Lords or Carriers.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "viking": {
+      "name": "Viking",
+      "shortDescription": "Transformable fighter capable of dominating airspace or landing for ground support.",
+      "longDescription": "The Viking is the versatile solution for air control. It can transform between Assault Mode (ground) and Fighter Mode (air) as tactical needs dictate.",
+      "abilities": {
+        "assault-mode": {
+          "name": "Assault Mode",
+          "description": "Lands the Viking to attack ground targets."
+        },
+        "fighter-mode": {
+          "name": "Fighter Mode",
+          "description": "Takes off to attack air targets with long-range missiles."
+        }
+      },
+      "upgrades": {
+        "smart-servos": {
+          "name": "Smart Servos",
+          "description": "Significantly speeds up the transformation process between Assault and Fighter modes."
+        }
+      },
+      "tacticalRole": "Transformable fighter that rules the skies and can land to support ground forces at key moments.",
+      "strengths": [
+        "Top-tier anti-air vs massive units (Brood Lords, Carriers)",
+        "Can land to push towers or defend drops",
+        "Cost-efficient answer to Protoss air superiority"
+      ],
+      "weaknesses": [
+        "Mediocre DPS in ground mode",
+        "Squishy for its cost against massed air",
+        "Can be caught transitioning between modes"
+      ],
+      "goodAgainst": [
+        "Brood Lords",
+        "Carriers",
+        "Tempests",
+        "Corruptors"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Void Rays",
+        "Massed Corruptors"
+      ],
+      "usageTip": "Always have a Viking force to counter enemy capital ships. Land Vikings to snipe isolated Siege Tanks or Lurkers.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "medivac": {
+      "name": "Medivac",
+      "shortDescription": "Air transport capable of healing biological units and providing mobility.",
+      "longDescription": "The Medivac is crucial for the survival of Terran infantry. It heals nearby soldiers and can transport troops for lightning strikes.",
+      "abilities": {
+        "heal": {
+          "name": "Heal",
+          "description": "Automatically heals nearby biological units in exchange for energy."
+        },
+        "ignite-afterburners": {
+          "name": "Ignite Afterburners",
+          "description": "Temporarily increases the Medivac's movement speed."
+        },
+        "load": {
+          "name": "Load",
+          "description": "Loads friendly units into the cargo hold."
+        },
+        "unload-all": {
+          "name": "Unload All",
+          "description": "Drops all loaded units onto the target ground location."
+        }
+      },
+      "upgrades": {
+        "caduceus-reactor": {
+          "name": "Caduceus Reactor",
+          "description": "Increases the starting energy of Medivacs by 25."
+        },
+        "infernal-preigniter": {
+          "name": "Infernal Pre-igniter",
+          "description": "Equips Medivacs with specialized thermal engines (Legacy tech)."
+        }
+      },
+      "tacticalRole": "Critical support dropship that keeps bio armies alive with healing and repositions them via drops.",
+      "strengths": [
+        "Automatically heals all nearby biological units",
+        "Afterburners enable rapid retreat or aggressive drops",
+        "Doubles as both healer and transport in one unit"
+      ],
+      "weaknesses": [
+        "No offensive capability whatsoever",
+        "Extremely fragile — dies quickly to focused anti-air",
+        "Requires constant protection to be effective"
+      ],
+      "goodAgainst": [
+        "Supports bio vs. any enemy composition"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Hydralisks",
+        "Queens",
+        "Missile Turrets"
+      ],
+      "usageTip": "Keep Medivacs stacked behind your marines. Never let them lead an attack. Drop bio armies into mineral lines when the opponent engages elsewhere.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "liberator": {
+      "name": "Liberator",
+      "shortDescription": "Support ship with powerful anti-air area attack and a ground siege mode.",
+      "longDescription": "The Liberator is excellent for zone control. In Defender Mode, it creates a zone on the ground where it deals massive damage to any enemy that enters.",
+      "abilities": {
+        "defender-mode": {
+          "name": "Defender Mode",
+          "description": "Anchors the ship over a circular zone to attack ground units with high power."
+        },
+        "fighter-mode": {
+          "name": "Fighter Mode",
+          "description": "Returns the Liberator to its mobile aerial configuration, armed with anti-air splash missiles."
+        }
+      },
+      "upgrades": {
+        "advanced-ballistics": {
+          "name": "Advanced Ballistics",
+          "description": "Significantly increases the targeting range of Defender Mode."
+        }
+      },
+      "tacticalRole": "Zone-denial support flyer with a powerful ground siege mode and anti-air capabilities.",
+      "strengths": [
+        "Creates a lethal zone on the ground that melts units entering it",
+        "Strong anti-air splash in Fighter Mode",
+        "Forces opponent to divert resources to handle it"
+      ],
+      "weaknesses": [
+        "Stationary and unable to reposition quickly in Defender Mode",
+        "Targeted zone is predictable",
+        "Expensive gas sink compared to alternatives"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Workers in mineral lines",
+        "Mutalisks"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors",
+        "Hydralisks",
+        "Stalkers"
+      ],
+      "usageTip": "Use Liberators to zone enemy expansion mineral lines. Position them over ramps in Defender Mode to deny ground army movement.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "raven": {
+      "name": "Raven",
+      "shortDescription": "Robotic support ship equipped with advanced sensors and combat drones.",
+      "longDescription": "The Raven is the primary detector for the Terran and a force multiplier. Its support abilities can disable enemies or provide temporary defense.",
+      "abilities": {
+        "interference-matrix": {
+          "name": "Interference Matrix",
+          "description": "Temporarily disables attack and abilities for a mechanical or psionic unit."
+        },
+        "anti-armor-missile": {
+          "name": "Anti-Armor Missile",
+          "description": "Launches a missile that reduces armor for all impacted units."
+        },
+        "auto-turret": {
+          "name": "Auto-Turret",
+          "description": "Deploys a temporary automatic turret on the battlefield."
+        }
+      },
+      "tacticalRole": "Primary Terran detector and spellcaster, enabling powerful battlefield disruption.",
+      "strengths": [
+        "Interference Matrix disables mechanical units for a long duration",
+        "Anti-Armor Missile reduces armor of all hit units simultaneously",
+        "Provides crucial detection of cloaked and burrowed units"
+      ],
+      "weaknesses": [
+        "Very high gas cost limits production",
+        "No direct damage without abilities",
+        "Fragile against concentrated anti-air fire"
+      ],
+      "goodAgainst": [
+        "Lurkers",
+        "Dark Templars",
+        "Banshees",
+        "Disruptors"
+      ],
+      "vulnerableAgainst": [
+        "Phoenix",
+        "Vikings",
+        "Corruptors"
+      ],
+      "usageTip": "Use Interference Matrix on the most dangerous enemy mechanical unit before an engagement. Anti-Armor Missile works best against stacked armies.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "banshee": {
+      "name": "Banshee",
+      "shortDescription": "Ground attack aircraft with cloaking capability.",
+      "longDescription": "The Banshee is the ultimate air harasser. Its ability to become invisible allows it to destroy enemy supply lines without being detected.",
+      "upgrades": {
+        "cloak": {
+          "name": "Cloak",
+          "description": "Makes the Banshee invisible to enemies without detectors."
+        }
+      },
+      "tacticalRole": "Ground attack aircraft that specializes in cloaked harassment of workers and undefended units.",
+      "strengths": [
+        "Cloaking makes it nearly invisible without detection",
+        "Extremely effective against undefended expansions",
+        "High DPS against ground targets for an air unit"
+      ],
+      "weaknesses": [
+        "Cannot attack air units at all",
+        "Slow movement makes it vulnerable if caught",
+        "Countered hard by any detection unit"
+      ],
+      "goodAgainst": [
+        "Workers",
+        "Lurkers (burrowed)",
+        "Siege Tanks",
+        "Queens"
+      ],
+      "vulnerableAgainst": [
+        "Overseers",
+        "Observers",
+        "Vikings (when detected)",
+        "Turrets"
+      ],
+      "usageTip": "Send cloaked Banshees to enemy expansions while they are distracted. Cloak them before entry and retreat before detection arrives.",
+      "gamePhase": [
+        "Mid"
+      ]
+    },
+    "battlecruiser": {
+      "name": "Battlecruiser",
+      "shortDescription": "The most imposing capital ship in the Terran arsenal.",
+      "longDescription": "The Battlecruiser is capable of engaging multiple targets simultaneously and can jump to any part of the map instantly.",
+      "abilities": {
+        "tactical-jump": {
+          "name": "Tactical Jump",
+          "description": "Teleports the ship to any map location after a brief delay."
+        }
+      },
+      "upgrades": {
+        "yamato-cannon": {
+          "name": "Yamato Cannon",
+          "description": "Charges and fires a concentrated energy blast that deals 240 damage to a single target."
+        }
+      },
+      "tacticalRole": "Unstoppable capital ship with incredible durability and Tactical Jump for instant repositioning.",
+      "strengths": [
+        "Massive health pool and armor — takes extremely long to kill",
+        "Yamato Cannon one-shots most units and structures",
+        "Tactical Jump allows instant retreat or surprise attacks"
+      ],
+      "weaknesses": [
+        "Extremely expensive and slow to build",
+        "Countered efficiently by Corruptors with upgrades",
+        "Not viable until very late game"
+      ],
+      "goodAgainst": [
+        "Thors (through attrition)",
+        "Roaches",
+        "Stalkers",
+        "Structures"
+      ],
+      "vulnerableAgainst": [
+        "Corruptors",
+        "Void Rays (prismatic)",
+        "Vikings (massed)"
+      ],
+      "usageTip": "Tactical Jump to a vulnerable part of the opponent's base when their army is occupied. Yamato key defensive structures.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "zergling": {
+      "name": "Zergling",
+      "shortDescription": "Fast and numerous biological combat unit, ideal for surrounding and overwhelming the enemy.",
+      "longDescription": "The Zergling is the smallest but most numerous unit of the Swarm. Its speed and ability to mutate wings make them masters of harassment and flanking.",
+      "tacticalRole": "Fast melee unit used for scouting, surrounds, countering ranged units, and harassment.",
+      "strengths": [
+        "Unmatched speed on creep, especially with Metabolic Boost",
+        "Extremely cheap and cost-effective in mass numbers",
+        "Excellent for map control and counter-attacks"
+      ],
+      "weaknesses": [
+        "Very low individual health and armor",
+        "Highly vulnerable to area-of-effect (splash) damage",
+        "Struggles against chokepoints and defensive structures"
+      ],
+      "goodAgainst": [
+        "Marauders",
+        "Stalkers",
+        "Siege Tanks (unsieged)"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Banelings",
+        "Zealots"
+      ],
+      "usageTip": "Use Zerglings to scout the map, surround enemy forces, and run into their bases when their army is out of position.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ],
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows the unit to burrow to hide from the enemy and regenerate health."
+        },
+        "morph-baneling": {
+          "name": "Morph Baneling",
+          "description": "Morphs a Zergling into an explosive Baneling for a small resource cost."
+        }
+      }
+    },
+    "drone": {
+      "name": "Drone",
+      "shortDescription": "Basic Swarm gathering unit that can mutate into structures.",
+      "longDescription": "The Drone is the basis of Zerg economy. Unlike other races, the Drone is consumed to become the biological structures of the Swarm.",
+      "abilities": {
+        "basic-mutation": {
+          "name": "Basic Mutation",
+          "description": "Morphs the Drone into basic Zerg structures (Hatchery, Spawning Pool, Extractor, etc.)."
+        },
+        "advanced-mutation": {
+          "name": "Advanced Mutation",
+          "description": "Morphs the Drone into advanced Zerg structures (Spire, Hydralisk Den, Infestation Pit, etc.)."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Drones to burrow underground for safety."
+        }
+      },
+      "tacticalRole": "Zerg worker that sacrifices itself to build structures — the backbone of the Swarm economy.",
+      "strengths": [
+        "Unique mechanic: consumed to build structures instantly",
+        "Can be mass-produced from multiple Hatcheries simultaneously",
+        "Excellent early mineral saturation speed"
+      ],
+      "weaknesses": [
+        "Consumed permanently when morphing into structures",
+        "Extremely fragile in combat",
+        "Requires constant production discipline to keep balanced"
+      ],
+      "goodAgainst": [
+        "Early Rushes (with enough Spine Crawlers)"
+      ],
+      "vulnerableAgainst": [
+        "Any harassment unit",
+        "Reapers",
+        "Hellions"
+      ],
+      "usageTip": "Always keep drone count at maximum while your larva and minerals allow. Never lose drones to avoidable harassment.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ]
+    },
+    "overlord": {
+      "name": "Overlord",
+      "shortDescription": "Flying supply unit that provides control over the Swarm.",
+      "longDescription": "Overlords provide the psionic control needed to maintain a large army. They can evolve to transport units or generate creep.",
+      "abilities": {
+        "morph-overseer": {
+          "name": "Morph to Overseer",
+          "description": "Morphs the Overlord into the vigilant Overseer detector unit."
+        },
+        "morph-ventral-sacs": {
+          "name": "Morph Ventral Sacs",
+          "description": "Equips the Overlord with ventral sacs, allowing it to transport friendly ground units."
+        },
+        "generate-creep": {
+          "name": "Generate Creep",
+          "description": "Spews creep onto the ground below, allowing Zerg structures to be built and granting speed bonuses."
+        }
+      },
+      "tacticalRole": "Flying supply provider and essential backbone for scouting and Zerg army logistics.",
+      "strengths": [
+        "Provides supply without building structures",
+        "Doubles as a scouting unit in early game",
+        "Can upgrade into an Overseer for detection"
+      ],
+      "weaknesses": [
+        "Very slow without Pneumatized Carapace",
+        "No attack or defense whatsoever",
+        "Easy target for enemy anti-air units"
+      ],
+      "goodAgainst": [
+        "N/A — supports your army"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Vikings",
+        "Marines"
+      ],
+      "usageTip": "Spread Overlords around the map early for vision. Keep them in safe spots later. Morph one to Overseer when detection is needed.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ]
+    },
+    "overseer": {
+      "name": "Overseer",
+      "shortDescription": "Advanced evolution of the Overlord with detection and sabotage capabilities.",
+      "longDescription": "The Overseer is the primary detector for the Zerg. It can spawn Changelings for espionage and contaminate enemy structures to halt production.",
+      "abilities": {
+        "spawn-changeling": {
+          "name": "Spawn Changeling",
+          "description": "Creates an espionage unit that mimics the appearance of the first enemy unit it sees."
+        },
+        "contaminate": {
+          "name": "Contaminate",
+          "description": "Disables an enemy structure, halting its production or research temporarily."
+        },
+        "oversight": {
+          "name": "Oversight",
+          "description": "Roots the Overseer in place to increase its vision and detection range by 25%."
+        }
+      },
+      "tacticalRole": "Detection unit and Changeling espionage tool — essential for countering cloaked strategies.",
+      "strengths": [
+        "Provides detection vs. cloaked and burrowed units",
+        "Changeling can scout enemy base indefinitely if undetected",
+        "Contaminate halts enemy production during critical timings"
+      ],
+      "weaknesses": [
+        "Costs larva and resources that could go to army",
+        "Fragile — easily killed by anti-air",
+        "Limited combat utility beyond detection"
+      ],
+      "goodAgainst": [
+        "Dark Templar",
+        "Ghosts (cloaked)",
+        "Banshees"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Vikings",
+        "Missile Turrets"
+      ],
+      "usageTip": "Keep one Overseer with your main army and position a second near key expansions. Use Contaminate on enemy Templar Archives or Tech Labs.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "queen": {
+      "name": "Queen",
+      "shortDescription": "Defense and base management unit crucial for Swarm growth.",
+      "longDescription": "The Queen is vital for any Zerg hive. It injects larvae to speed up production and spreads Creep to give mobility to the army.",
+      "abilities": {
+        "spawn-larvae": {
+          "name": "Spawn Larvae",
+          "description": "Injects larvae into a central structure to increase unit production."
+        },
+        "transfuse": {
+          "name": "Transfuse",
+          "description": "Instantly heals a friendly biological unit or structure."
+        },
+        "spawn-creep-tumor": {
+          "name": "Spawn Creep Tumor",
+          "description": "Creates a tumor that spreads biomatter (creep) across the terrain."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows the Queen to burrow underground."
+        }
+      },
+      "tacticalRole": "Macro powerhouse that injects larvae for production and spreads creep for map control.",
+      "strengths": [
+        "Spawn Larvae multiplies unit production exponentially",
+        "Extremely tanky for its cost with high health and shields",
+        "Can defend against early air harassment and Oracle openings"
+      ],
+      "weaknesses": [
+        "Slow without creep — cannot keep up with mobile armies",
+        "Relies on macro play; low combat contribution in direct fights",
+        "Prioritizing Queens over units slows early army build"
+      ],
+      "goodAgainst": [
+        "Reapers",
+        "Phoenixes",
+        "Early aggression"
+      ],
+      "vulnerableAgainst": [
+        "Marine + Medivac drops",
+        "Mass air armies"
+      ],
+      "usageTip": "Inject every Hatchery each cycle. Spread creep with creep tumors and position Queens near the edge of creep for map control.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ]
+    },
+    "baneling": {
+      "name": "Baneling",
+      "shortDescription": "Suicidal unit that explodes on contact, devastating against light infantry.",
+      "longDescription": "The Baneling is a Zergling mutation loaded with volatile acid. Its explosion deals immense area damage, especially to structures and light units.",
+      "abilities": {
+        "explode": {
+          "name": "Explode",
+          "description": "Triggers immediate self-destruction to deal massive splash damage to surrounding enemy units."
+        },
+        "enabled-structure-attack": {
+          "name": "Structure Attack",
+          "description": "Toggles whether the Baneling will target and explode against structures."
+        }
+      },
+      "upgrades": {
+        "centrifugal-hooks": {
+          "name": "Centrifugal Hooks",
+          "description": "Increases Baneling movement speed and maximum health."
+        },
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Banelings to burrow underground for stealth landmines."
+        }
+      },
+      "tacticalRole": "Suicidal explosive unit that single-handedly demolishes grouped biological infantry.",
+      "strengths": [
+        "Incredible AoE damage that obliterates bio clumps",
+        "Centrifugal Hooks upgrade enables burrowed Baneling mines",
+        "Forces opponent to split units or face total annihilation"
+      ],
+      "weaknesses": [
+        "Dies instantly upon exploding",
+        "Requires proper micro to connect with enemy groups",
+        "Useless against armored units (does minimal damage)"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings (in ZvZ)",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Siege Tanks",
+        "Force Fields (that separate them)"
+      ],
+      "usageTip": "Burrow Banelings in choke points and wait for clustered Marines to walk over them. Combine with Zerglings to force splits.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "roach": {
+      "name": "Roach",
+      "shortDescription": "Resistant combat unit with high life regeneration.",
+      "longDescription": "The Roach is the basic tank for the Swarm. Its ability to regenerate health quickly and move underground makes it very hard to eliminate.",
+      "abilities": {
+        "morph-ravager": {
+          "name": "Morph to Ravager",
+          "description": "Morphs the Roach into the acid-artillery Ravager."
+        },
+        "rapid-regeneration": {
+          "name": "Rapid Regeneration",
+          "description": "Passive trait that grants extremely high health regeneration while burrowed."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Roaches to burrow underground, and move while burrowed after upgrade research."
+        }
+      },
+      "tacticalRole": "Durable armored ground unit with high health regeneration, ideal for tanking and zone control.",
+      "strengths": [
+        "Very high health and armor for its cost",
+        "Rapid burrowed regeneration lets it recover quickly",
+        "Can move while burrowed with Tunneling Claws upgrade"
+      ],
+      "weaknesses": [
+        "Slow movement speed without upgrades",
+        "Susceptible to Immortal barrier and armored-bonus damage",
+        "Falls off in usefulness against splash and high-range units"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Marines",
+        "Stalkers",
+        "Hydralisks"
+      ],
+      "vulnerableAgainst": [
+        "Immortals",
+        "Marauders",
+        "Siege Tanks"
+      ],
+      "usageTip": "Lead with Roaches to absorb damage in engagements. Burrow damaged Roaches behind the battle line to regenerate and return to fight.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "ravager": {
+      "name": "Ravager",
+      "shortDescription": "Roach mutation capable of launching corrosive bile from a long distance.",
+      "longDescription": "The Ravager adds artillery to the Zerg arsenal. Its Corrosive Bile can destroy protoss Force Fields and damage units in elevated positions.",
+      "abilities": {
+        "corrosive-bile": {
+          "name": "Corrosive Bile",
+          "description": "Launches a projectile that deals damage in an area after a brief delay, destroying structures and force fields."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Ravagers to burrow underground."
+        }
+      },
+      "tacticalRole": "Roach evolution with Corrosive Bile artillery that demolishes force fields and structures.",
+      "strengths": [
+        "Corrosive Bile can break Protoss Force Fields before they matter",
+        "Excellent against structures and defensive positions",
+        "Good range for a relatively cheap unit"
+      ],
+      "weaknesses": [
+        "Corrosive Bile requires precise aim under pressure",
+        "Fragile compared to Roaches with similar cost",
+        "Consumed larva and gas reduces Hydralisk/Mutalisk numbers"
+      ],
+      "goodAgainst": [
+        "Force Fields",
+        "Stalkers",
+        "Siege Tanks (in sieged mode)",
+        "Planetary Fortresses"
+      ],
+      "vulnerableAgainst": [
+        "Marines",
+        "Stalkers (blink)",
+        "Immortals"
+      ],
+      "usageTip": "Use Ravagers to pre-emptively break Force Fields the moment Sentries cast them, allowing your Zerglings to flood through.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "hydralisk": {
+      "name": "Hydralisk",
+      "shortDescription": "Versatile ranged attack unit, effective against air and ground.",
+      "longDescription": "The Hydralisk is the core DPS (damage per second) unit of the Zerg army. Its spines can pierce the toughest armors from afar.",
+      "abilities": {
+        "morph-lurker": {
+          "name": "Morph to Lurker",
+          "description": "Morphs the Hydralisk into the underground-siege Lurker."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Hydralisks to burrow underground."
+        },
+        "lunge": {
+          "name": "Muscular Augments / Grooved Spines",
+          "description": "Combines upgrades to increase Hydralisk movement speed and attack range."
+        }
+      },
+      "tacticalRole": "Versatile high-DPS attacker effective against both air and ground targets.",
+      "strengths": [
+        "Excellent DPS output for its cost",
+        "Attacks both air and ground units simultaneously",
+        "Lunge upgrade provides massive bonus speed on creep"
+      ],
+      "weaknesses": [
+        "Fragile — low health pool relative to damage",
+        "Very slow off creep without upgrades",
+        "Susceptible to splash damage and AoE"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Stalkers",
+        "Colossi",
+        "Oracles"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Banelings",
+        "Siege Tanks",
+        "Colossi (with upgrades)"
+      ],
+      "usageTip": "Keep Hydralisks on creep whenever possible. Pair them with Roaches to protect against melee flanks and with Vipers vs. Protoss.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "lurker": {
+      "name": "Lurker",
+      "shortDescription": "Burrowed ambush unit that launches spines in a straight line.",
+      "longDescription": "The Lurker attacks from the safety of the underground. Its spines pierce multiple enemies, making it devastating in narrow zones.",
+      "abilities": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows the Lurker to burrow underground, which is required in order to fire its spikes."
+        }
+      },
+      "tacticalRole": "Subterranean area siege unit. Shreds incoming ground waves with spikes fired while burrowed.",
+      "strengths": [
+        "Devastating linear area-of-effect splash damage",
+        "Fires from absolute safety while burrowed",
+        "Outranges standard base defenses with upgrades"
+      ],
+      "weaknesses": [
+        "Cannot attack while unburrowed or moving",
+        "Vulnerable to air units and high-range sieges"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Hydralisks",
+        "Stalkers",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Tempests",
+        "Liberators",
+        "Brood Lords",
+        "Vipers"
+      ],
+      "usageTip": "Burrow Lurkers at critical choke points or ramp entrances to deny enemy ground armies any access to your bases.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ],
+      "upgrades": {
+        "adaptive-talons": {
+          "name": "Adaptive Talons",
+          "description": "Decreases the time required for Lurkers to burrow or unburrow, enabling rapid repositioning."
+        },
+        "seismic-spines": {
+          "name": "Seismic Spines",
+          "description": "Increases the attack range of the Lurker while burrowed from 8 to 10."
+        }
+      }
+    },
+    "infestor": {
+      "name": "Infestor",
+      "shortDescription": "Master of mental and biological control, capable of incapacitating armies.",
+      "longDescription": "The Infestor has no direct attack, but its parasites can trap units (Fungal Growth) or even take control of enemy units.",
+      "abilities": {
+        "fungal-growth": {
+          "name": "Fungal Growth",
+          "description": "Immobilizes and damages enemy units in an area."
+        },
+        "neural-parasite": {
+          "name": "Neural Parasite",
+          "description": "Takes temporary control of an enemy unit."
+        },
+        "microbial-shroud": {
+          "name": "Microbial Shroud",
+          "description": "Creates a cloud that protects friendly ground units from air damage."
+        }
+      },
+      "tacticalRole": "Biological control caster — roots, disables, and takes over enemy units with devastating spells.",
+      "strengths": [
+        "Fungal Growth roots and deals damage in an area",
+        "Neural Parasite temporarily steals any enemy unit",
+        "Microbial Shroud protects ground units from air fire"
+      ],
+      "weaknesses": [
+        "Cannot attack directly without casting spells",
+        "Very slow and fragile without protection",
+        "Expensive energy management and micro required"
+      ],
+      "goodAgainst": [
+        "Colossi",
+        "Siege Tanks",
+        "Thors",
+        "Immortals"
+      ],
+      "vulnerableAgainst": [
+        "Ghosts (Snipe/EMP)",
+        "Phoenixes",
+        "Vikings"
+      ],
+      "usageTip": "Move Infestors with your burrowed Zerg army. Fungal Growth key groups before engagement, then Neural Parasite the most dangerous enemy unit.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "swarm-host": {
+      "name": "Swarm Host",
+      "shortDescription": "Siege unit that generates endless waves of locusts.",
+      "longDescription": "The Swarm Host launches temporary units called Locusts to attack the enemy from a safe distance.",
+      "abilities": {
+        "spawn-locusts": {
+          "name": "Spawn Locusts",
+          "description": "Generates two temporary flying units that attack ground targets."
+        },
+        "flying-locusts": {
+          "name": "Flying Locusts",
+          "description": "Allows spawned Locusts to fly, enabling them to bypass terrain and scale walls."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Swarm Hosts to burrow underground."
+        }
+      },
+      "tacticalRole": "Siege unit that generates endless free flying Locusts to pressure enemies and deny areas.",
+      "strengths": [
+        "Constantly generates free units passively — no additional cost",
+        "Forces opponent to react and waste resources",
+        "Flying Locusts upgrade bypasses terrain and cliff defenses"
+      ],
+      "weaknesses": [
+        "Requires heavy protection; no direct attacks",
+        "Locusts are individually very weak",
+        "Extremely slow to reposition when under threat"
+      ],
+      "goodAgainst": [
+        "Structures",
+        "Defensively-positioned armies",
+        "Siege Tanks"
+      ],
+      "vulnerableAgainst": [
+        "Viking",
+        "Liberators",
+        "Colossus"
+      ],
+      "usageTip": "Burrow Swarm Hosts behind ridges or at max range. Keep Zerglings nearby to protect them from units trying to snipe your Swarm Hosts.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "mutalisk": {
+      "name": "Mutalisk",
+      "shortDescription": "Fast air unit with a bounce attack ideal for harassment.",
+      "longDescription": "The Mutalisk is the terror of supply lines. Its Glaive Wurm attack bounces between multiple targets, maximizing chaos in compact groups.",
+      "abilities": {
+        "tissue-regeneration": {
+          "name": "Tissue Regeneration",
+          "description": "Passive high regeneration trait that restores 2 health per second when out of combat."
+        }
+      },
+      "tacticalRole": "Rapid air harasser with a multi-bounce attack, terrorizing expansions and isolated units.",
+      "strengths": [
+        "Extreme speed makes them very hard to catch",
+        "Glaive Wurm bounces to nearby units for extra efficiency",
+        "Rapid health regeneration out of combat"
+      ],
+      "weaknesses": [
+        "Individual DPS is low",
+        "Extremely vulnerable to high-burst or splash anti-air",
+        "Heavy micro required to keep them alive"
+      ],
+      "goodAgainst": [
+        "Workers",
+        "Overlords",
+        "Siege Tanks (unsieged)",
+        "Isolated units"
+      ],
+      "vulnerableAgainst": [
+        "Marines (with Medivac)",
+        "Thors",
+        "Phoenixes",
+        "Widow Mines"
+      ],
+      "usageTip": "Harass multiple enemy expansions simultaneously with Mutalisks. Keep them moving to avoid Marine stim surges and Widow Mine volleys.",
+      "gamePhase": [
+        "Mid"
+      ]
+    },
+    "corruptor": {
+      "name": "Corruptor",
+      "shortDescription": "Heavy air fighter specialized in taking down capital ships.",
+      "longDescription": "The Corruptor is the Zerg response to large enemy ships. It can use its Caustic Spray to corrode structures from the air.",
+      "abilities": {
+        "caustic-spray": {
+          "name": "Caustic Spray",
+          "description": "Channels a corrosive attack against an enemy structure that increases damage over time."
+        },
+        "morph-broodlord": {
+          "name": "Morph to Brood Lord",
+          "description": "Morphs the Corruptor into the massive aerial siege Brood Lord."
+        }
+      },
+      "tacticalRole": "Specialist air-to-air fighter optimized for destroying massive capital ships.",
+      "strengths": [
+        "Bonus damage vs. massive units makes it the primary capital ship counter",
+        "Can morph into the devastating Brood Lord",
+        "Cost-efficient against slow, massive air targets"
+      ],
+      "weaknesses": [
+        "Poor DPS against non-massive targets",
+        "Fragile when caught against mass non-massive fighters",
+        "Slow movement limits response time"
+      ],
+      "goodAgainst": [
+        "Battlecruisers",
+        "Brood Lords",
+        "Carriers",
+        "Colossus"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Marines (massed)",
+        "Hydralisks"
+      ],
+      "usageTip": "Use Corruptors to deny enemy air-superiority compositions. Always transition them to Brood Lords once you have 6+ Corruptors.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "viper": {
+      "name": "Viper",
+      "shortDescription": "Tactical air support unit for manipulating the battlefield.",
+      "longDescription": "The Viper can pull enemy units toward the Swarm or blind enemy armies with a dense cloud.",
+      "abilities": {
+        "abduct": {
+          "name": "Abduct",
+          "description": "Pulls an enemy unit toward the Viper's position."
+        },
+        "blinding-cloud": {
+          "name": "Blinding Cloud",
+          "description": "Creates a cloud that reduces the attack range of enemy ground units to 1."
+        },
+        "parasitic-bomb": {
+          "name": "Parasitic Bomb",
+          "description": "Launches a parasite at an enemy air unit that deals constant damage to it and nearby ships."
+        },
+        "consume": {
+          "name": "Consume",
+          "description": "Siphons 200 health points from a friendly Zerg structure to rapidly restore 50 energy."
+        }
+      },
+      "tacticalRole": "Battlefield manipulator that dismantles enemy armies with Abduct, Blinding Cloud, and Parasitic Bomb.",
+      "strengths": [
+        "Abduct pulls siege units out of position instantly",
+        "Blinding Cloud makes ground armies useless in a zone",
+        "Parasitic Bomb chains anti-air damage to fleets"
+      ],
+      "weaknesses": [
+        "No combat attack of its own",
+        "Fragile — must stay out of direct combat",
+        "Consume harms friendly Zerg structures"
+      ],
+      "goodAgainst": [
+        "Siege Tanks",
+        "Battlecruisers",
+        "Carriers",
+        "Vikings"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Infested Terrans",
+        "Focused fire without support"
+      ],
+      "usageTip": "Abduct the lead Siege Tank or Thor before engagement. Drop Blinding Cloud on the bio or mech army and follow up with Ultralisks.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "ultralisk": {
+      "name": "Ultralisk",
+      "shortDescription": "The most imposing ground beast of the Swarm.",
+      "longDescription": "The Ultralisk is a mountain of muscle and bone capable of piercing any defensive line with its Kaiser blades that deal area damage.",
+      "abilities": {
+        "frenzied": {
+          "name": "Frenzied",
+          "description": "Passive immunity to stuns, slows, mind control, and movement-restricting status effects."
+        }
+      },
+      "upgrades": {
+        "burrow": {
+          "name": "Burrow",
+          "description": "Allows Ultralisks to burrow underground."
+        },
+        "anabolic-synthesis": {
+          "name": "Anabolic Synthesis",
+          "description": "Increases the movement speed of the Ultralisk."
+        },
+        "chitinous-plating": {
+          "name": "Chitinous Plating",
+          "description": "Provides +2 armor points to the Ultralisk."
+        }
+      },
+      "tacticalRole": "Unstoppable melee juggernaut with AoE Kaiser Blades and immunity to crowd control effects.",
+      "strengths": [
+        "Enormous AoE melee attack shreds clustered armies",
+        "Immune to stuns, slow, and mind control (Frenzied)",
+        "Burrow allows repositioning and regeneration"
+      ],
+      "weaknesses": [
+        "Cannot attack air units at all",
+        "Expensive to mass produce",
+        "Kited effectively by high-range or mobile units"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zealots",
+        "Stalkers",
+        "Marauders"
+      ],
+      "vulnerableAgainst": [
+        "Immortals",
+        "Siege Tanks",
+        "Mass Blink Stalkers"
+      ],
+      "usageTip": "Pair Ultralisks with Vipers. Blinding Cloud disables kiting, and the Ultralisks plow through blinded armies freely.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "brood-lord": {
+      "name": "Brood Lord",
+      "shortDescription": "Heavy siege ship that bombards with parasitic creatures.",
+      "longDescription": "The Brood Lord launches Broodlings against the enemy, creating constant chaos and blocking ground movement while attacking from the air.",
+      "abilities": {
+        "swarm-seed": {
+          "name": "Swarm Seed",
+          "description": "Launches Broodlings continuously with each attack, spawning active ground melee units upon impact."
+        }
+      },
+      "tacticalRole": "Aerial siege titan that bombards ground armies with relentless Broodlings from unmatched range.",
+      "strengths": [
+        "Longest attack range of any Zerg unit",
+        "Broodlings block paths and tie up enemy units while the Brood Lord fires",
+        "Untouchable by ground armies — must be addressed with air"
+      ],
+      "weaknesses": [
+        "Extremely slow movement speed",
+        "Corruptors required to protect them from enemy flyers",
+        "Expensive larva, mineral, and gas investment"
+      ],
+      "goodAgainst": [
+        "Ground armies",
+        "Siege Tanks (sieged)",
+        "Structures"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Void Rays",
+        "Phoenixes",
+        "Tempests"
+      ],
+      "usageTip": "Siege Brood Lords at maximum range and move them forward as the Broodlings and your ground army clear the space. Always protect with Corruptors.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "probe": {
+      "name": "Probe",
+      "shortDescription": "Robotic construction unit that summons structures via micro-vortices.",
+      "longDescription": "The Probe is the protoss workhorse. Its advanced technology allows it to initiate structure summoning and withdraw immediately to continue working.",
+      "tacticalRole": "Protoss worker that gathers resources and warps in structures via dimensional pylon networks.",
+      "strengths": [
+        "Can warp structures anywhere with pylon power",
+        "Teleports away after starting a warp-in unlike SCV",
+        "Can proxy buildings far from base for surprise rushes"
+      ],
+      "weaknesses": [
+        "Extremely fragile in combat",
+        "Slower production than SCV due to single unit from Nexus",
+        "Economy devastated if Probes die early"
+      ],
+      "goodAgainst": [
+        "Early pressure with proxy gates"
+      ],
+      "vulnerableAgainst": [
+        "Reapers",
+        "Hellions",
+        "Zerglings"
+      ],
+      "usageTip": "Always keep your Probe count growing through the first 5 minutes. Warp in structures quickly to maintain tech advantage.",
+      "gamePhase": [
+        "Early",
+        "Mid",
+        "Late"
+      ]
+    },
+    "zealot": {
+      "name": "Zealot",
+      "shortDescription": "Formidable Templar warrior armed with psionic blades.",
+      "longDescription": "The Zealot is the heart of the protoss infantry. After researching Charge, they can close distance with the enemy in a heartbeat.",
+      "upgrades": {
+        "charge": {
+          "name": "Charge",
+          "description": "Passively increases movement speed and allows charging at nearby enemies."
+        }
+      },
+      "tacticalRole": "High-damage melee warrior that excels at surrounding and destroying armies with Charge.",
+      "strengths": [
+        "Charge upgrade provides immense closing speed",
+        "High damage per swing vs. biological units",
+        "Cheap and fast to produce in numbers"
+      ],
+      "weaknesses": [
+        "Melee range only — cannot attack air",
+        "Slow without Charge; easily kited",
+        "Easily countered by AoE or splash damage"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Hydralisks",
+        "Roaches"
+      ],
+      "vulnerableAgainst": [
+        "Hellions",
+        "Banelings",
+        "Siege Tanks"
+      ],
+      "usageTip": "Warp Zealots in continuously and use Charge to surround enemy bio balls. Lead Zealots around the edges to flank while Colossi deal AoE.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "sentry": {
+      "name": "Sentry",
+      "shortDescription": "Robotic support unit capable of manipulating terrain with force fields.",
+      "longDescription": "The Sentry is fundamental for map control. It can block paths with force fields and protect the army with guardian shields.",
+      "abilities": {
+        "force-field": {
+          "name": "Force Field",
+          "description": "Creates a temporary barrier that blocks ground movement."
+        },
+        "guardian-shield": {
+          "name": "Guardian Shield",
+          "description": "Creates an aura that reduces incoming ranged damage for nearby friendly units."
+        },
+        "hallucination": {
+          "name": "Hallucination",
+          "description": "Creates a fake copy of a protoss unit to deceive the enemy."
+        }
+      },
+      "tacticalRole": "Defensive support caster whose Force Fields control terrain and protect armies from superior numbers.",
+      "strengths": [
+        "Force Field blocks ground movement, splitting armies",
+        "Guardian Shield reduces all ranged damage to nearby units",
+        "Hallucination can scout or waste enemy detection"
+      ],
+      "weaknesses": [
+        "Energy-dependent — useless with no energy",
+        "Force Fields can be destroyed by Ravagers",
+        "Weak combat statistics on its own"
+      ],
+      "goodAgainst": [
+        "Zerglings rushing choke points",
+        "Massed bio compositions"
+      ],
+      "vulnerableAgainst": [
+        "Ravagers",
+        "Banelings",
+        "EMP Rounds (Ghost)"
+      ],
+      "usageTip": "Place Force Fields at ramp bases to block Zerg run-bys. Use Guardian Shield before engaging bio-mech armies to reduce incoming DPS.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "adept": {
+      "name": "Adept",
+      "shortDescription": "Tactical harassment unit capable of projecting a shadow of itself.",
+      "longDescription": "The Adept excels in early combat. Its Psionic Transfer ability allows it to project a shadow and teleport to its location, ideal for flanking.",
+      "abilities": {
+        "psionic-transfer": {
+          "name": "Psionic Transfer",
+          "description": "Projects a shadow that moves independently; the Adept teleports to the shadow's position after a few seconds."
+        }
+      },
+      "upgrades": {
+        "resonating-glaives": {
+          "name": "Resonating Glaives",
+          "description": "Permanently increases the Adept's attack speed by 45%."
+        }
+      },
+      "tacticalRole": "Highly mobile early harasser that can project a phantom and teleport to flank or escape.",
+      "strengths": [
+        "Psionic Transfer creates opportunities for flanks and fakes",
+        "Resonating Glaives makes it a strong early unit",
+        "Shaded bonus vs. light is excellent against early bio"
+      ],
+      "weaknesses": [
+        "Falls off in large-scale engagements later",
+        "Fragile — dies fast if caught in bad position",
+        "Shade takes 3 seconds before teleport completes"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Workers"
+      ],
+      "vulnerableAgainst": [
+        "Marauders",
+        "Roaches",
+        "Stalkers"
+      ],
+      "usageTip": "Send Adept shades into the opponent's base to scout and damage workers. Cancel the shade if the shade is intercepted.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "high-templar": {
+      "name": "High Templar",
+      "shortDescription": "Powerful psionic master capable of unleashing energy storms.",
+      "longDescription": "The High Templar is one of the most feared units. Its Psionic Storm can decimate entire armies in seconds.",
+      "upgrades": {},
+      "abilities": {
+        "feedback": {
+          "name": "Feedback",
+          "description": "Drains all energy from an enemy unit and deals damage equal to the energy drained."
+        },
+        "archon-warp": {
+          "name": "Archon Warp",
+          "description": "Two Templars merge to become a powerful Archon."
+        },
+        "psi-storm": {
+          "name": "Psionic Storm",
+          "description": "Calls down a storm of psionic energy that deals 80 damage over 2.85 seconds in an area of effect."
+        }
+      },
+      "tacticalRole": "Premier psionic spellcaster. Wreaks havoc with Psi Storms and disables spellcasters with Feedback.",
+      "strengths": [
+        "Psi Storm deals massive damage over time in a wide area",
+        "Feedback drains enemy energy and inflicts equivalent damage",
+        "Morphs into an Archon when energy is depleted"
+      ],
+      "weaknesses": [
+        "No standard auto-attacks",
+        "Very slow and fragile"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Hydralisks",
+        "Vipers",
+        "Infestors",
+        "Mutalisks"
+      ],
+      "vulnerableAgainst": [
+        "Ghosts (EMP/Snipe)",
+        "Sniper units",
+        "Phoenixes"
+      ],
+      "usageTip": "Pre-storm incoming bio before engagement. Use Feedback on enemy Ghosts before they EMP, and on Vipers to drain their Consume energy.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "dark-templar": {
+      "name": "Dark Templar",
+      "shortDescription": "Invisible assassin armed with a powerful warp scythe.",
+      "longDescription": "The Dark Templar is permanently invisible. A single Dark Templar in a mineral line without detection can end the game.",
+      "upgrades": {
+        "shadow-stride": {
+          "name": "Shadow Stride",
+          "description": "Instantly teleports the Dark Templar a short distance."
+        }
+      },
+      "abilities": {
+        "archon-warp": {
+          "name": "Archon Warp",
+          "description": "Two Templars merge to become a powerful Archon."
+        }
+      },
+      "tacticalRole": "Permanently cloaked assassin that can end games if the opponent lacks detection.",
+      "strengths": [
+        "Always invisible — devastating without detection",
+        "High single-target damage per hit",
+        "Shadow Stride allows instant dashes for micro-intensive plays"
+      ],
+      "weaknesses": [
+        "Countered entirely by detection",
+        "Low health for the investment cost",
+        "Poor in large-scale frontal fights"
+      ],
+      "goodAgainst": [
+        "Workers (undetected)",
+        "Ghosts",
+        "Infestors",
+        "Ravens"
+      ],
+      "vulnerableAgainst": [
+        "Observers",
+        "Overseers",
+        "Ravens",
+        "Missile Turrets"
+      ],
+      "usageTip": "Drop Dark Templars in enemy worker lines when they're already engaged on another front. Cancel the timing if a detector is present.",
+      "gamePhase": [
+        "Mid"
+      ]
+    },
+    "archon": {
+      "name": "Archon",
+      "shortDescription": "Pure energy entity with almost impenetrable shields and area attack.",
+      "longDescription": "The Archon is born from the union of two templars. Its psionic power is so immense that it disintegrates nearby enemy units with each attack.",
+      "tacticalRole": "Massive energy entity with powerful shields and AoE attacks — deadly vs. biological units.",
+      "strengths": [
+        "Massive health + shield pool makes it extremely durable",
+        "AoE attack deals bonus damage to biological units",
+        "Immune to neural parasite and mind control"
+      ],
+      "weaknesses": [
+        "Requires two Templar to create — sacrifices powerful spellcasters",
+        "Slow movement speed limits repositioning",
+        "No ranged attacks"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Marines",
+        "Hydralisks",
+        "Mutalisks"
+      ],
+      "vulnerableAgainst": [
+        "Immortals",
+        "Siege Tanks",
+        "Disruptors"
+      ],
+      "usageTip": "Merge spent High Templars into Archons rather than letting them die with no energy. Pair Archons with Zealots for a fearsome ground ball.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "observer": {
+      "name": "Observer",
+      "shortDescription": "Robotic scout unit invisible and permanent detector.",
+      "longDescription": "The Observer is the ultimate spy unit. It floats invisibly over the battlefield, revealing enemy hidden units.",
+      "abilities": {
+        "surveillance-mode": {
+          "name": "Surveillance Mode",
+          "description": "The Observer stops but increases its vision range by 25%."
+        }
+      },
+      "tacticalRole": "Invisible permanent detector that provides crucial vision and detection across the battlefield.",
+      "strengths": [
+        "Permanently cloaked — very hard to kill without detection",
+        "Provides sight of burrowed and cloaked units",
+        "Surveillance Mode doubles vision range"
+      ],
+      "weaknesses": [
+        "Fragile and slow without a speed upgrade",
+        "One Observer is often not enough vs. multi-prong threats",
+        "Revealed by enemy detectors and anti-cloak abilities"
+      ],
+      "goodAgainst": [
+        "Lurkers",
+        "Dark Templars",
+        "Banshees",
+        "Widow Mines"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Vikings",
+        "Hydralisks"
+      ],
+      "usageTip": "Always move an Observer with your main army and position others near enemy expansions. Scout for Widow Mines and Lurkers before advancing.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "warp-prism": {
+      "name": "Warp Prism",
+      "shortDescription": "Air transport capable of projecting an energy field for summons.",
+      "longDescription": "The Warp Prism allows protoss to deploy armies anywhere on the map by becoming a mobile energy source.",
+      "abilities": {
+        "phasing-mode": {
+          "name": "Phasing Mode",
+          "description": "Deploys to project an energy field that allows summoning Warp Gate units around it."
+        }
+      },
+      "tacticalRole": "Mobile pylon and transport that enables surprise attacks anywhere on the map.",
+      "strengths": [
+        "Creates a warp-in zone anywhere on the map",
+        "Extremely fast in Phase Mode with speed upgrade",
+        "Can drop entire armies behind enemy lines"
+      ],
+      "weaknesses": [
+        "Fragile — dies quickly to focused fire",
+        "Expensive and high-priority target",
+        "Requires protection and constant micro"
+      ],
+      "goodAgainst": [
+        "Undefended expansions",
+        "Workers via warp-in drops"
+      ],
+      "vulnerableAgainst": [
+        "Phoenixes",
+        "Stalkers (Blink to air)",
+        "Hydralisks"
+      ],
+      "usageTip": "Harass enemy mineral lines with Adepts or Immortals warped in near the Warp Prism. Always retreat the Prism before it dies.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "immortal": {
+      "name": "Immortal",
+      "shortDescription": "Heavy robotic unit with a barrier shield specialized against armored targets.",
+      "longDescription": "The Immortal is designed to win duels against tanks and other heavy units. Its barrier automatically activates to absorb bursts of damage.",
+      "abilities": {
+        "barrier": {
+          "name": "Barrier",
+          "description": "Automatically activates a shield that absorbs up to 100 damage when the Immortal takes an attack."
+        }
+      },
+      "tacticalRole": "Heavy robotic frontliner with a barrier shield that hard-counters single-target burst damage.",
+      "strengths": [
+        "Barrier absorbs up to 100 damage per activation — counters Marauders",
+        "Exceptional DPS against armored units",
+        "High base armor makes it extremely durable under fire"
+      ],
+      "weaknesses": [
+        "Slow and cannot retreat quickly",
+        "Barrier does not help vs. AoE splash",
+        "Weak against biological units (no bonus damage)"
+      ],
+      "goodAgainst": [
+        "Marauders",
+        "Siege Tanks",
+        "Roaches",
+        "Ravagers"
+      ],
+      "vulnerableAgainst": [
+        "Banelings",
+        "Infestors (Neural Parasite)",
+        "Mass Zerglings"
+      ],
+      "usageTip": "Use Immortals as the frontline against heavy armored armies. Pair with Sentries to block path with Force Fields and protect from flanks.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "colossus": {
+      "name": "Colossus",
+      "shortDescription": "Massive robotic walker with thermal lances to sweep infantry armies.",
+      "longDescription": "The Colossus towers over the battlefield, allowing it to climb cliffs. Its lasers sweep the ground, quickly eliminating groups of light units.",
+      "abilities": {
+        "cliff-walk": {
+          "name": "Cliff Walk",
+          "description": "Allows the tall Colossus structure to walk up and down cliffs freely."
+        }
+      },
+      "tacticalRole": "Massive walker that sweeps through light bio armies with thermal lances, striding over cliffs.",
+      "strengths": [
+        "Enormous AoE that tears through clustered light infantry",
+        "Can walk up and down cliffs freely",
+        "Effectively forces opponent to split or die to lasers"
+      ],
+      "weaknesses": [
+        "Massive tag — vulnerable to anti-air (Vikings, Corruptors)",
+        "Slow repositioning makes it a priority target",
+        "Expensive — hard to replace if lost"
+      ],
+      "goodAgainst": [
+        "Marines",
+        "Zerglings",
+        "Hydralisks",
+        "Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors",
+        "Stalkers (with Blink)"
+      ],
+      "usageTip": "Always send Vikings or use Stalkers to protect Colossi from anti-massive air attacks. Position them behind your ground army and let them sweep freely.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "disruptor": {
+      "name": "Disruptor",
+      "shortDescription": "Robotic unit that launches highly unstable purification energy balls.",
+      "longDescription": "The Disruptor launches a Purification Nova that, after a brief delay, explodes dealing devastating damage. A single well-placed nova can wipe out an entire army.",
+      "abilities": {
+        "purification-nova": {
+          "name": "Purification Nova",
+          "description": "Launches a controllable energy ball that explodes after a few seconds, dealing massive area damage."
+        }
+      },
+      "tacticalRole": "Volatile AoE devastator that deletes entire army compositions with well-aimed Purification Novas.",
+      "strengths": [
+        "Single Nova can wipe out an entire bio ball",
+        "Forces opponent to immediately scatter and micro constantly",
+        "Low resource cost for the devastation potential"
+      ],
+      "weaknesses": [
+        "Long cooldown between shots",
+        "Nova is telegraphed — experienced players will dodge it",
+        "Very fragile if caught without army protection"
+      ],
+      "goodAgainst": [
+        "Bio balls",
+        "Clustered Zerg",
+        "Massed Zealots"
+      ],
+      "vulnerableAgainst": [
+        "Spread armies",
+        "Ravagers",
+        "EMP rounds"
+      ],
+      "usageTip": "Fire Novas at the edge of bio clumps (not the center) where players are slow to micro. Always keep the Disruptor behind your army.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "phoenix": {
+      "name": "Phoenix",
+      "shortDescription": "Agile air fighter capable of firing while moving.",
+      "longDescription": "The Phoenix is the protoss air superiority unit. Its Graviton Beam can lift ground units, leaving them defenseless and out of combat.",
+      "abilities": {
+        "graviton-beam": {
+          "name": "Graviton Beam",
+          "description": "Lifts an enemy ground unit into the air, preventing it from attacking or moving."
+        }
+      },
+      "tacticalRole": "Lightning-fast fighter that harasses and lifts critical units with Graviton Beam.",
+      "strengths": [
+        "Graviton Beam lifts high-value ground units out of combat",
+        "Fastest air unit in the game — extremely agile",
+        "Excellent at sniping Overlords to deny Zerg supply"
+      ],
+      "weaknesses": [
+        "Cannot attack ground units directly",
+        "Fragile against massed anti-air units",
+        "Graviton Beam requires manual targeting and casting"
+      ],
+      "goodAgainst": [
+        "Overlords",
+        "Queens",
+        "Mutalisks",
+        "Infestors"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors",
+        "Hydralisks"
+      ],
+      "usageTip": "Open Phoenix to kill Overlords, deny Zerg supply, and lift Queens. Transition to adding Carriers or Void Rays after securing air control.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "void-ray": {
+      "name": "Void Ray",
+      "shortDescription": "Attack ship with an energy beam that becomes more destructive against armored targets.",
+      "longDescription": "The Void Ray can focus its beam to melt structures and capital ships in seconds via its Prismatic Alignment.",
+      "abilities": {
+        "prismatic-alignment": {
+          "name": "Prismatic Alignment",
+          "description": "Temporarily increases damage against armored units, but reduces movement speed."
+        }
+      },
+      "tacticalRole": "Slow but powerful beam ship that melts armored units and structures with Prismatic Alignment.",
+      "strengths": [
+        "Prismatic Alignment dramatically boosts damage vs. armored targets",
+        "Attacks both ground and air units",
+        "Durable for an air unit"
+      ],
+      "weaknesses": [
+        "Slow movement — easily kited by fast units",
+        "Prismatic Alignment reduces speed during activation",
+        "Countered hard by Vikings and Corruptors"
+      ],
+      "goodAgainst": [
+        "Structures",
+        "Battlecruisers",
+        "Thors",
+        "Immortals"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors",
+        "Marines (massed)"
+      ],
+      "usageTip": "Use Void Rays to overwhelm enemy structures during Prismatic Alignment. Activate it just before engaging to maximize burst output.",
+      "gamePhase": [
+        "Mid",
+        "Late"
+      ]
+    },
+    "oracle": {
+      "name": "Oracle",
+      "shortDescription": "Versatile support ship for scouting and surgical attacks.",
+      "longDescription": "The Oracle is an invaluable utility unit. It can reveal invisible units, place stasis traps, or use its pulsar beam to annihilate workers.",
+      "abilities": {
+        "revelation": {
+          "name": "Revelation",
+          "description": "Reveals position and vision of enemy units in an area for an extended time."
+        },
+        "stasis-ward": {
+          "name": "Stasis Ward",
+          "description": "Places an invisible trap that traps enemy units in stasis temporarily."
+        },
+        "pulsar-beam": {
+          "name": "Pulsar Beam",
+          "description": "Activates a high-power beam attack that consumes energy per second."
+        }
+      },
+      "tacticalRole": "Versatile support flyer that scouts, disables workers, traps units, and reveals the map.",
+      "strengths": [
+        "Pulsar Beam destroys undefended workers in seconds",
+        "Revelation reveals all cloaked/burrowed units in a large area",
+        "Stasis Ward traps units for free in pre-placed ambushes"
+      ],
+      "weaknesses": [
+        "Fragile — easy to kill with basic anti-air",
+        "Pulsar Beam consumes energy rapidly",
+        "Requires constant micro to be efficient"
+      ],
+      "goodAgainst": [
+        "Workers (undefended)",
+        "Lurkers (Revelation)",
+        "Banshees"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Hydralisks",
+        "Queens"
+      ],
+      "usageTip": "Open Oracle to scout the map and harass the opponent's economy. Pre-place Stasis Wards on ramps or expansion paths.",
+      "gamePhase": [
+        "Early",
+        "Mid"
+      ]
+    },
+    "tempest": {
+      "name": "Tempest",
+      "shortDescription": "Capital ship with the longest attack range of the protoss.",
+      "longDescription": "The Tempest is designed to siege enemy positions from a safe distance. It is especially effective against other massive ships.",
+      "tacticalRole": "Ultra-long-range capital ship designed to siege ground positions and demolish massive units.",
+      "strengths": [
+        "Longest attack range of any Protoss unit",
+        "Bonus damage vs. massive units (Brood Lords, Ultralisks)",
+        "Forces opponent to reposition or lose units at max range"
+      ],
+      "weaknesses": [
+        "Very slow movement — hard to reposition quickly",
+        "Extremely expensive to mass",
+        "Cannot engage non-massive air units effectively"
+      ],
+      "goodAgainst": [
+        "Brood Lords",
+        "Ultralisks",
+        "Lurkers (sieged)",
+        "Battlecruisers"
+      ],
+      "vulnerableAgainst": [
+        "Corruptors",
+        "Vipers (Abduct)",
+        "Vikings"
+      ],
+      "usageTip": "Position Tempests just out of enemy range and fire from behind a Stalker/Zealot wall. Always protect from Vipers who can Abduct them.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "carrier": {
+      "name": "Carrier",
+      "shortDescription": "Massive air base that launches swarms of interceptors.",
+      "longDescription": "The Carrier is the pride of the protoss fleet. It does not attack directly, but deploys robotic interceptors that overwhelm the enemy.",
+      "abilities": {
+        "build-interceptor": {
+          "name": "Build Interceptor",
+          "description": "Automatically builds interceptors to replace those lost in combat."
+        }
+      },
+      "tacticalRole": "Protoss capital ship that overwhelms the battlefield with swarms of semi-autonomous Interceptors.",
+      "strengths": [
+        "Builds free Interceptors that replace themselves during combat",
+        "High durability — shield + hull pool is massive",
+        "Deals significant sustained DPS vs. ground and air"
+      ],
+      "weaknesses": [
+        "Very slow and expensive to mass",
+        "Interceptors can be individually killed reducing DPS",
+        "Useless if caught by fast air units before Interceptors launch"
+      ],
+      "goodAgainst": [
+        "Zerglings",
+        "Hydralisks",
+        "Roaches",
+        "Marines"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors",
+        "Void Rays"
+      ],
+      "usageTip": "Group Carriers together for maximum Interceptor saturation. Always pair with Stalkers or Void Rays to ward off Viking and Corruptor threats.",
+      "gamePhase": [
+        "Late"
+      ]
+    },
+    "mothership": {
+      "name": "Mothership",
+      "shortDescription": "The ultimate flagship, capable of warping time and space.",
+      "longDescription": "Only one Mothership can exist at a time. Its mere presence cloaks all nearby friendly army and can freeze time in critical zones.",
+      "abilities": {
+        "cloak-field": {
+          "name": "Cloaking Field",
+          "description": "Automatically cloaks all nearby friendly units and structures."
+        },
+        "time-warp": {
+          "name": "Time Warp",
+          "description": "Creates a time bubble that drastically slows enemy unit movement and attack."
+        },
+        "strategic-recall": {
+          "name": "Strategic Recall",
+          "description": "Teleports the Mothership and all nearby friendly units to a target Nexus."
+        }
+      },
+      "tacticalRole": "Unique flagship that cloaks all friendly units, warps armies with Recall, and freezes time.",
+      "strengths": [
+        "Cloaking Field makes your entire army invisible",
+        "Strategic Recall can save your army from certain death",
+        "Time Warp stops enemy armies at critical chokepoints"
+      ],
+      "weaknesses": [
+        "Only one can exist at a time — losing it is catastrophic",
+        "Extremely expensive and slow to build",
+        "Priority target — opponent always focuses it first"
+      ],
+      "goodAgainst": [
+        "Massed armies (via Time Warp)",
+        "Any army (via Cloaking Field)"
+      ],
+      "vulnerableAgainst": [
+        "Vikings",
+        "Corruptors (if uncloaked)",
+        "Feedback (High Templar)"
+      ],
+      "usageTip": "Use Recall to save a dying army or to drop troops at a new location. Use Time Warp at ramps to stall pushes while your forces regroup.",
+      "gamePhase": [
+        "Late"
+      ]
+    }
+  }
+}
