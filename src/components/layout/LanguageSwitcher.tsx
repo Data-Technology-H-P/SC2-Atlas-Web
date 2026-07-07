@@ -13,8 +13,7 @@ export const LanguageSwitcher = () => {
 
   const handleLocaleChange = (newLocale: string) => {
     trackEvent('change_language', 'preferences', newLocale);
-    // @ts-ignore
-    router.replace({pathname, params}, {locale: newLocale});
+    router.replace(pathname, {locale: newLocale});
   };
 
   return (

@@ -17,9 +17,10 @@ interface UnitCardImageProps {
   imageSrc?: string;
   unitName: string;
   roles: string[];
+  onRoleClick?: (role: string) => void;
 }
 
-function UnitCardImage({ imageSrc, unitName, roles }: UnitCardImageProps) {
+function UnitCardImage({ imageSrc, unitName, roles, onRoleClick }: UnitCardImageProps) {
   const [hasError, setHasError] = useState(false);
   const tUi = useTranslations('ui');
 
@@ -47,14 +48,24 @@ function UnitCardImage({ imageSrc, unitName, roles }: UnitCardImageProps) {
       
       {/* Roles Badges */}
       <div className="absolute bottom-4 left-4 z-30">
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {roles.map(role => {
             const filterKey = `filter${role.charAt(0).toUpperCase() + role.slice(1)}`;
             const localizedRole = tUi.has(filterKey) ? tUi(filterKey) : role;
             return (
-              <Badge key={role} variant="outline" className="bg-black/50 backdrop-blur-sm uppercase text-[9px] tracking-wider font-extrabold">
+              <button
+                key={role}
+                onClick={(e) => {
+                  if (onRoleClick) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onRoleClick(role);
+                  }
+                }}
+                className="bg-black/50 hover:bg-blue-600/70 hover:text-white backdrop-blur-sm uppercase text-[9px] tracking-wider font-extrabold px-2 py-0.5 rounded border border-white/20 text-gray-300 transition-colors cursor-pointer select-none"
+              >
                 {localizedRole}
-              </Badge>
+              </button>
             );
           })}
         </div>
@@ -158,7 +169,16 @@ export default function RaceUnitGridPage() {
   if (!race) return <div className="p-20 text-white">{t('ui.dataNotFound')}</div>;
 
   return (
-    <div className="min-h-screen bg-slate-950 py-20 bg-grid-white">
+    <div 
+      className="min-h-screen bg-slate-950 py-20"
+      style={{
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.40), rgba(2, 6, 23, 0.75)), url('/assets/races/${raceId}_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
       <div className="container mx-auto px-4">
         {/* Return Button */}
         <Link
@@ -325,6 +345,13 @@ export default function RaceUnitGridPage() {
                         imageSrc={unit.assets.imageSrc} 
                         unitName={unitName} 
                         roles={unit.role} 
+                        onRoleClick={(role) => {
+                          setSelectedRole(role);
+                          trackEvent('role_filter_used', 'filter', role, undefined, {
+                            race: raceId,
+                            role: role,
+                          });
+                        }}
                       />
 
                       <div className="p-6 flex flex-col flex-grow relative">

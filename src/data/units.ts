@@ -10,7 +10,7 @@ export const units: Unit[] = [
       minerals: 125,
       gas: 50,
       supply: 2,
-      buildTime: 30
+      buildTime: 16
     },
     combat: {
       life: 80,
@@ -276,16 +276,16 @@ export const units: Unit[] = [
     cost: {
       minerals: 150,
       gas: 125,
-      supply: 2,
+      supply: 3,
       buildTime: 29
     },
     combat: {
       life: 100,
       energy: 200,
       armor: 0,
-      damage: '10 (+10 vs ligero)',
-      range: 6,
-      speed: 3.94,
+      damage: '15',
+      range: 7,
+      speed: 3.85,
       sight: 11
     },
     attributes: ['biological', 'psionic'],
@@ -1136,7 +1136,7 @@ export const units: Unit[] = [
       armor: 0,
       damage: 'N/A',
       range: 0,
-      speed: 0.82,
+      speed: 0.85,
       sight: 9
     },
     attributes: ['armored', 'biological'],
@@ -1613,8 +1613,8 @@ export const units: Unit[] = [
       life: 90,
       energy: 200,
       armor: 0,
-      damage: 'N/A',
-      range: 0,
+      damage: '4',
+      range: 6,
       speed: 3.39,
       sight: 10
     },
@@ -2047,7 +2047,7 @@ export const units: Unit[] = [
       minerals: 100,
       gas: 0,
       supply: 2,
-      buildTime: 27
+      buildTime: 16
     },
     combat: {
       life: 100,
@@ -2098,7 +2098,7 @@ export const units: Unit[] = [
       minerals: 50,
       gas: 100,
       supply: 2,
-      buildTime: 26
+      buildTime: 14
     },
     combat: {
       life: 40,
@@ -2156,7 +2156,7 @@ export const units: Unit[] = [
       minerals: 100,
       gas: 25,
       supply: 2,
-      buildTime: 27
+      buildTime: 18
     },
     combat: {
       life: 70,
@@ -2212,7 +2212,7 @@ export const units: Unit[] = [
       minerals: 50,
       gas: 150,
       supply: 2,
-      buildTime: 39
+      buildTime: 26
     },
     combat: {
       life: 40,
@@ -2270,7 +2270,7 @@ export const units: Unit[] = [
       minerals: 125,
       gas: 125,
       supply: 2,
-      buildTime: 39
+      buildTime: 26
     },
     combat: {
       life: 40,

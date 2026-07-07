@@ -21,7 +21,7 @@ export const SiteFooter = () => {
                     href="https://datatechhp.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackEvent('external_link_clicked', 'engagement', 'DataTech H&P', undefined, { label: 'DataTech H&P', location: 'footer' })}
+                    onClick={() => trackEvent('external_link_clicked', 'engagement', 'Data Technology H&P', undefined, { label: 'Data Technology H&P', location: 'footer' })}
                     className="text-blue-500 hover:text-blue-400 hover:underline transition-colors font-semibold"
                   >
                     {chunks}
@@ -38,11 +38,21 @@ export const SiteFooter = () => {
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-white/5 flex flex-col sm:flex-row justify-center items-center gap-2 text-xs text-gray-400">
-          <Link href={`/${locale}/privacy`} onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'privacy', undefined, { link: 'privacy', language: locale })}>{t('privacy')}</Link>
+          <Link href="/privacy" onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'privacy', undefined, { link: 'privacy', language: locale })} className="hover:text-white transition-colors">{t('privacy')}</Link>
           <span>·</span>
-          <Link href={`/${locale}/terms`} onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'terms', undefined, { link: 'terms', language: locale })}>{t('terms')}</Link>
+          <Link href="/terms" onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'terms', undefined, { link: 'terms', language: locale })} className="hover:text-white transition-colors">{t('terms')}</Link>
           <span>·</span>
-          <Link href={`/${locale}/disclaimer`} onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'disclaimer', undefined, { link: 'disclaimer', language: locale })}>{t('disclaimer')}</Link>
+          <Link href="/disclaimer" onClick={() => trackEvent('footer_legal_link_clicked', 'engagement', 'disclaimer', undefined, { link: 'disclaimer', language: locale })} className="hover:text-white transition-colors">{t('disclaimer')}</Link>
+          <span>·</span>
+          <a
+            href="https://github.com/Data-Technology-H-P/SC2-Atlas-Web"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackEvent('github_link_clicked', 'engagement', 'GitHub Repository')}
+            className="hover:text-white transition-colors"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </footer>

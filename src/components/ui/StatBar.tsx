@@ -1,4 +1,3 @@
-import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface StatBarProps {
@@ -10,13 +9,13 @@ interface StatBarProps {
   showValues?: boolean;
 }
 
-export const StatBar = ({ 
-  label, 
-  value, 
-  max, 
-  color = 'bg-blue-500', 
+export const StatBar = ({
+  label,
+  value,
+  max,
+  color = 'bg-blue-500',
   className,
-  showValues = true 
+  showValues = true
 }: StatBarProps) => {
   const percentage = Math.min(100, (value / max) * 100);
 
@@ -31,7 +30,7 @@ export const StatBar = ({
         )}
       </div>
       <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden border border-white/5">
-        <div 
+        <div
           className={cn('h-full transition-all duration-1000 ease-out relative', color)}
           style={{ width: `${percentage}%` }}
         >

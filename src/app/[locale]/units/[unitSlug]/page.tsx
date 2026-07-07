@@ -81,7 +81,16 @@ export default function UnitDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 py-12 bg-grid-white">
+    <div 
+      className="min-h-screen bg-slate-950 py-12"
+      style={{
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.40), rgba(2, 6, 23, 0.75)), url('/assets/races/${unit.race}_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
       <div className="container mx-auto px-4">
         {/* Navigation */}
         <div className="mb-12">
@@ -116,9 +125,13 @@ export default function UnitDetailPage() {
               <div className="space-y-2">
                 <div className="flex flex-wrap items-center gap-3">
                   <Badge variant="race" raceId={unit.race as any}>{t(`races.${unit.race}`)}</Badge>
-                  {unit.tags?.map(tag => (
-                    <Badge key={tag} variant="outline">{tag}</Badge>
-                  ))}
+                  {unit.tags?.map(tag => {
+                    const tagKey = `tags.${tag}`;
+                    const localizedTag = t.has(tagKey) ? t(tagKey) : tag;
+                    return (
+                      <Badge key={tag} variant="outline">{localizedTag}</Badge>
+                    );
+                  })}
                   {gamePhase.map(phase => {
                     const phaseLower = phase.toLowerCase();
                     const phaseTranslation = tUi.has(phaseLower) ? tUi(phaseLower) : phase;
@@ -324,9 +337,13 @@ export default function UnitDetailPage() {
               <div className="space-y-2">
                 <div className="flex flex-wrap items-center gap-3">
                   <Badge variant="race" raceId={unit.race as any}>{t(`races.${unit.race}`)}</Badge>
-                  {unit.tags?.map(tag => (
-                    <Badge key={tag} variant="outline">{tag}</Badge>
-                  ))}
+                  {unit.tags?.map(tag => {
+                    const tagKey = `tags.${tag}`;
+                    const localizedTag = t.has(tagKey) ? t(tagKey) : tag;
+                    return (
+                      <Badge key={tag} variant="outline">{localizedTag}</Badge>
+                    );
+                  })}
                   {gamePhase.map(phase => {
                     const phaseLower = phase.toLowerCase();
                     const phaseTranslation = tUi.has(phaseLower) ? tUi(phaseLower) : phase;

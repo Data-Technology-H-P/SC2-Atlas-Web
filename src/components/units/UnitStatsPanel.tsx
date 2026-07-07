@@ -1,4 +1,3 @@
-import React from 'react';
 import { Unit } from '@/types/unit';
 import { useTranslations } from 'next-intl';
 import { GlassPanel } from '@/components/ui/GlassPanel';
@@ -11,7 +10,7 @@ interface UnitStatsPanelProps {
 
 export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
   const t = useTranslations('stats');
-  
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Vital Stats */}
@@ -19,30 +18,30 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
         <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest flex items-center gap-2">
           <Shield className="w-4 h-4" /> {t('vitalSystems')}
         </h3>
-        
+
         <div className="space-y-4">
-          <StatBar 
-            label={t('hullIntegrity')} 
-            value={unit.combat.life || 0} 
-            max={200} 
-            color="bg-green-500" 
+          <StatBar
+            label={t('hullIntegrity')}
+            value={unit.combat.life || 0}
+            max={200}
+            color="bg-green-500"
           />
-          
+
           {unit.combat.shields !== undefined && (
-            <StatBar 
-              label={t('plasmaShields')} 
-              value={unit.combat.shields} 
-              max={200} 
-              color="bg-blue-400" 
+            <StatBar
+              label={t('plasmaShields')}
+              value={unit.combat.shields}
+              max={200}
+              color="bg-blue-400"
             />
           )}
 
           {unit.combat.energy !== undefined && (
-            <StatBar 
-              label={t('energyReserves')} 
-              value={unit.combat.energy} 
-              max={200} 
-              color="bg-purple-500" 
+            <StatBar
+              label={t('energyReserves')}
+              value={unit.combat.energy}
+              max={200}
+              color="bg-purple-500"
             />
           )}
         </div>

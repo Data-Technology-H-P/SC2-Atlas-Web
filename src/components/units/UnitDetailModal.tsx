@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { X, Shield, Swords, Zap, Clock, Box, AlertTriangle, CheckCircle, Lightbulb, Compass } from 'lucide-react';
@@ -8,7 +8,6 @@ import { Unit } from '@/types/unit';
 import { races } from '@/data/races';
 import { UnitModelViewer } from './UnitModelViewer';
 import { Badge } from '@/components/ui/Badge';
-import { GlassPanel } from '@/components/ui/GlassPanel';
 import { trackEvent } from '@/lib/gtag';
 
 interface UnitDetailModalProps {
@@ -137,11 +136,15 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                   <Badge variant="race" raceId={unit.race as any}>
                     {t(`races.${unit.race}`)}
                   </Badge>
-                  {unit.tags?.map(tag => (
-                    <Badge key={tag} variant="outline">
-                      {tag}
-                    </Badge>
-                  ))}
+                  {unit.tags?.map(tag => {
+                    const tagKey = `tags.${tag}`;
+                    const localizedTag = t.has(tagKey) ? t(tagKey) : tag;
+                    return (
+                      <Badge key={tag} variant="outline">
+                        {localizedTag}
+                      </Badge>
+                    );
+                  })}
                   {gamePhase.map(phase => {
                     const phaseLower = phase.toLowerCase();
                     const phaseTranslation = tUi.has(phaseLower) ? tUi(phaseLower) : phase;

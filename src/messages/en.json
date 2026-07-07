@@ -1,5 +1,6 @@
 {
   "ui": {
+    "gameVersion": "Patch 5.0.16",
     "tacticalOverview": "Tactical Overview",
     "productionIntelligence": "Production Intelligence",
     "facility": "Facility",
@@ -52,7 +53,93 @@
     "filterDetector": "Detector",
     "filterTransport": "Transport",
     "filterHarassment": "Harassment",
-    "filterSpellcaster": "Spellcaster"
+    "filterSpellcaster": "Spellcaster",
+    "toggle3d": "Enable 3D",
+    "toggle2d": "Enable 2D",
+    "status2dFallback": "Status: 2D Fallback",
+    "holographicReconView": "Holographic Recon View",
+    "noReconImage": "No Recon Image"
+  },
+  "metadata": {
+    "title": "SC2 Interactive Unit Atlas | Fan Project",
+    "description": "A premium tactical exploration tool for StarCraft II units. Built for fans, by fans."
+  },
+  "tags": {
+    "mobile": "Mobile",
+    "gateway": "Gateway",
+    "anti-armored": "Anti-Armored",
+    "anti-armor": "Anti-Armored",
+    "infantry": "Infantry",
+    "core-unit": "Core Unit",
+    "versatile": "Versatile",
+    "worker": "Worker",
+    "utility": "Utility",
+    "essential": "Essential",
+    "tough": "Tough",
+    "frontline": "Frontline",
+    "harass": "Harass",
+    "scout": "Scout",
+    "stealth": "Stealth",
+    "sniper": "Sniper",
+    "caster": "Caster",
+    "spellcaster": "Spellcaster",
+    "fast": "Fast",
+    "splash": "Splash",
+    "aoe": "AoE",
+    "tank": "Tank",
+    "siege": "Siege",
+    "area-damage": "Area Damage",
+    "defensive": "Defensive",
+    "kiting": "Kiting",
+    "skirmisher": "Skirmisher",
+    "ambush": "Ambush",
+    "massive": "Massive",
+    "anti-air": "Anti-Air",
+    "powerhouse": "Powerhouse",
+    "transformable": "Transformable",
+    "transport": "Transport",
+    "healing": "Healing",
+    "zone-control": "Zone Control",
+    "detector": "Detector",
+    "support": "Support",
+    "air-to-ground": "Air-to-Ground",
+    "capital-ship": "Capital Ship",
+    "end-game": "End Game",
+    "swarming": "Swarming",
+    "expendable": "Expendable",
+    "flying": "Flying",
+    "supply": "Supply",
+    "explosive": "Explosive",
+    "anti-light": "Anti-Light",
+    "kamikaze": "Kamikaze",
+    "burrower": "Burrower",
+    "artillery": "Artillery",
+    "ability-heavy": "Ability Heavy",
+    "no-armor-tag": "No Armor Tag",
+    "backbone": "Backbone",
+    "high-dps": "High DPS",
+    "burrowed-attacker": "Burrowed Attacker",
+    "burrow-caster": "Burrow Caster",
+    "essential-support": "Essential Support",
+    "indirect-fire": "Indirect Fire",
+    "tanky-flyer": "Tanky Flyer",
+    "structures-melter": "Structures Melter",
+    "disrupter": "Disruptor",
+    "end-game-essential": "End Game Essential",
+    "massive-shield": "Massive Shield",
+    "frontline-dps": "Frontline DPS",
+    "stealth-recon": "Stealth Recon",
+    "mobile-warp": "Mobile Warp",
+    "micro-helper": "Micro Helper",
+    "cliff-walker": "Cliff Walker",
+    "massive-aoe": "Massive AoE",
+    "tactical": "Tactical",
+    "fast-flyer": "Fast Flyer",
+    "shoot-and-run": "Shoot and Run",
+    "anti-light-air": "Anti-Light Air",
+    "prism-beam": "Prism Beam",
+    "power-up": "Power Up",
+    "spellcaster-flyer": "Spellcaster Flyer"
   },
   "tech": {
     "Gateway": "Gateway",
@@ -143,9 +230,12 @@
   },
   "footer": {
     "tagline": "A premium tactical exploration tool for StarCraft II units.",
-    "madeBy": "Made with ❤️ by <datatech>DataTech H&P</datatech>. All rights reserved.",
+    "madeBy": "Made with ❤️ by <datatech>Data Technology H&P</datatech>. All rights reserved.",
     "legalNotice": "SC2 Atlas is a fan-made project and is not affiliated with or endorsed by Blizzard Entertainment. StarCraft II and related assets are trademarks or registered trademarks of Blizzard Entertainment.",
-    "copyright": "© {year} SC2 Atlas. Unofficial fan project."
+    "copyright": "© {year} SC2 Atlas. Unofficial fan project. Updated to patch v5.0.16.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "disclaimer": "Disclaimer"
   },
   "units": {
     "stalker": {
@@ -1896,7 +1986,7 @@
         },
         "psi-storm": {
           "name": "Psionic Storm",
-          "description": "Calls down a storm of psionic energy that deals 80 damage over 2.85 seconds in an area of effect."
+          "description": "Calls down a storm of psionic energy that deals 100 damage over 2.85 seconds in an area of effect."
         }
       },
       "tacticalRole": "Premier psionic spellcaster. Wreaks havoc with Psi Storms and disables spellcasters with Feedback.",
@@ -2421,6 +2511,52 @@
       "gamePhase": [
         "Late"
       ]
+    }
+  },
+  "legal": {
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last updated: July 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "SC2 Atlas is a non-commercial fan project. Your privacy is important to us. This policy describes how we handle information when you use our site.",
+      "section1Title": "Information We Collect",
+      "section1Content": "SC2 Atlas does not collect personally identifiable information. We do not request names, emails, or contact details. We use Google Analytics to collect anonymous usage data such as pages visited, time spent, and device type.",
+      "section2Title": "Use of Cookies",
+      "section2Content": "Google Analytics may use cookies to distinguish unique users. These cookies do not contain personal information and are used solely for aggregate statistical purposes.",
+      "section3Title": "Third-Party Services",
+      "section3Content": "We use third-party services such as Google Analytics, Vercel Analytics, and Vercel Speed Insights to improve user experience. These services have their own privacy policies.",
+      "section4Title": "Third-Party Content",
+      "section4Content": "All visual content and game data from StarCraft II belong to Blizzard Entertainment. SC2 Atlas uses them under fair use principles for educational and fan purposes.",
+      "section5Title": "Changes to This Policy",
+      "section5Content": "We may update this policy periodically. Changes will be reflected on this page with the last updated date."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "By accessing and using SC2 Atlas, you agree to the following terms and conditions. Please read them carefully.",
+      "section1Title": "Nature of the Project",
+      "section1Content": "SC2 Atlas is an unofficial, educational, non-profit fan project. It is not affiliated with, sponsored by, or endorsed by Blizzard Entertainment.",
+      "section2Title": "Intellectual Property",
+      "section2Content": "StarCraft II, all images, unit names, game data, and related assets are the property of Blizzard Entertainment, Inc. and are protected by copyright and trademarks. SC2 Atlas claims no ownership over these materials.",
+      "section3Title": "Permitted Use",
+      "section3Content": "This site is intended solely for educational, informational, and entertainment purposes. You may not use the content of this site for commercial purposes without prior authorization.",
+      "section4Title": "Accuracy of Information",
+      "section4Content": "We strive to keep information up to date according to the latest StarCraft II patch, but we do not guarantee the absolute accuracy of all data. Game values may change with future updates.",
+      "section5Title": "Limitation of Liability",
+      "section5Content": "SC2 Atlas is provided \"as is\" without warranties of any kind. We are not responsible for decisions made based on the information provided on this site."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "intro": "This disclaimer applies to all content and services provided by SC2 Atlas.",
+      "section1Title": "Unofficial Project",
+      "section1Content": "SC2 Atlas is a fan-created project and is NOT affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with Blizzard Entertainment, Inc., or any of its subsidiaries or affiliates.",
+      "section2Title": "Blizzard Entertainment Rights",
+      "section2Content": "StarCraft®, StarCraft® II, and Blizzard Entertainment® are registered trademarks or trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries. All images, game data, unit names, and visual content related to StarCraft II are the exclusive property of Blizzard Entertainment.",
+      "section3Title": "Educational Purpose",
+      "section3Content": "This project was created for purely educational purposes, as a learning tool for modern web development (Next.js, React, TypeScript, Tailwind CSS) and as a tactical reference resource for StarCraft II players.",
+      "section4Title": "Non-Profit",
+      "section4Content": "SC2 Atlas does not generate revenue or economic benefit. It is an open-source project maintained by the fan community.",
+      "section5Title": "Third-Party Content",
+      "section5Content": "Any 3D models, images, or data used on this site are employed under fair use principles. If you are a rights holder and believe any content infringes your rights, please contact us for immediate removal."
     }
   }
 }

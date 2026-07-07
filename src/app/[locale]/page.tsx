@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { Link } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
@@ -32,7 +31,16 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="relative min-h-screen bg-grid-white">
+    <div 
+      className="relative min-h-screen bg-slate-950"
+      style={{
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.95)), url('/assets/backgrounds/global_hex_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
       {/* Hero Section */}
       <section className="relative pt-20 pb-20 overflow-hidden">
         {/* Background Glow */}
@@ -70,7 +78,7 @@ export default function LandingPage() {
 
             <motion.p
               variants={itemVariants}
-              className="text-sm md:text-base text-blue-400/80 mb-10 max-w-lg mx-auto font-medium tracking-wide border border-blue-500/20 bg-blue-950/20 px-6 py-3 rounded-full backdrop-blur-sm"
+              className="text-sm md:text-base text-blue-400/80 mb-4 max-w-lg mx-auto font-medium tracking-wide border border-blue-500/20 bg-blue-950/20 px-6 py-3 rounded-full backdrop-blur-sm"
             >
               {t('landing.heroExplanation')}
             </motion.p>
@@ -81,13 +89,9 @@ export default function LandingPage() {
       {/* Race Selector Section (Integrated) */}
       <section className="pb-32 relative z-10">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center mb-16 text-center">
-            <Badge variant="outline" className="mb-4">{t('landing.selectRace')}</Badge>
-            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">{t('landing.commandCenter')}</h2>
-            <p className="text-sm text-gray-400 mt-2 max-w-md mb-6">{t('landing.commandCenterSubtitle')}</p>
-            
+          <div className="flex flex-col items-center mb-4">
             {/* 3D Mobile Toggle Switch */}
-            <div className="block lg:hidden w-full max-w-sm mt-2">
+            <div className="block lg:hidden w-full max-w-sm">
               <div className="p-4 rounded-xl border border-white/5 bg-slate-900/40 backdrop-blur-md shadow-2xl flex items-center justify-between gap-4 text-left">
                 <div className="flex-1 pr-2">
                   <span className="text-xs font-bold text-white block uppercase tracking-wider mb-0.5">{t('ui.disable3D')}</span>
@@ -101,17 +105,15 @@ export default function LandingPage() {
                       mode: next ? '2d' : '3d',
                     });
                   }}
-                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                    disable3D ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]' : 'bg-slate-700'
-                  }`}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${disable3D ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]' : 'bg-slate-700'
+                    }`}
                   role="switch"
                   aria-checked={disable3D}
                   aria-label="Toggle 3D Models"
                 >
                   <span
-                    className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                      disable3D ? 'translate-x-5' : 'translate-x-0'
-                    }`}
+                    className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${disable3D ? 'translate-x-5' : 'translate-x-0'
+                      }`}
                   />
                 </button>
               </div>
