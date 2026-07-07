@@ -1,9 +1,19 @@
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+// Helper to verify if tracking is active (both by environment variable and user consent)
+const isTrackingAllowed = (): boolean => {
+  if (typeof window === 'undefined') return false;
+  
+  const envEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true';
+  const userConsent = localStorage.getItem('sc2-atlas-analytics-enabled') !== 'false';
+  
+  return envEnabled && !!GA_TRACKING_ID && userConsent;
+};
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: string) => {
-  if (typeof window !== 'undefined' && (window as any).gtag && GA_TRACKING_ID) {
-    (window as any).gtag('config', GA_TRACKING_ID, {
+  if (isTrackingAllowed() && (window as any).gtag) {
+    (window as any).gtag('config', GA_TRACKING_ID!, {
       page_path: url,
     });
   }
@@ -17,7 +27,7 @@ export const trackEvent = (
   value?: number,
   additionalParams?: Record<string, any>
 ) => {
-  if (typeof window !== 'undefined' && (window as any).gtag && GA_TRACKING_ID) {
+  if (isTrackingAllowed() && (window as any).gtag) {
     (window as any).gtag('event', action, {
       event_category: category,
       event_label: label,

@@ -74,14 +74,21 @@ SC2-Atlas-Web/
 
 ### Variables de Entorno
 
-El proyecto incluye soporte para **Google Analytics**. Para configurarlo localmente, crea un archivo `.env.local` en la raíz del proyecto y define el ID de medición:
+El proyecto incluye soporte para **Google Analytics** y **control de indexación**. Para configurarlo localmente, crea un archivo `.env.local` en la raíz del proyecto y define las siguientes variables:
 
 ```env
-NEXT_PUBLIC_GA_ID=G-ECNTCPNV48
+# Google Analytics 4
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-ECNTCPNV48
+NEXT_PUBLIC_ANALYTICS_ENABLED=true
+
+# Control de Indexación para Buscadores (robots.txt)
+NEXT_PUBLIC_INDEXING_ENABLED=true
 ```
 
 > [!NOTE]
-> Si no se configura la variable `NEXT_PUBLIC_GA_ID`, el rastreo de Google Analytics y la inyección de sus scripts asociados en el DOM se desactivarán automáticamente.
+> *   Si no se configura `NEXT_PUBLIC_GA_MEASUREMENT_ID` o `NEXT_PUBLIC_ANALYTICS_ENABLED` se establece en `false`, el rastreo de Google Analytics y la inyección de sus scripts asociados en el DOM se desactivarán por completo.
+> *   Los usuarios pueden habilitar/deshabilitar la analítica de forma interactiva desde el banner de consentimiento de cookies o directamente desde el interruptor en la **Política de Privacidad**.
+> *   `NEXT_PUBLIC_INDEXING_ENABLED` controla si los motores de búsqueda indexan el sitio web (`true` genera un robots.txt permitiendo indexación, `false` lo bloquea).
 
 ### Pasos para Empezar
 
@@ -206,3 +213,12 @@ Se dispara cuando un usuario alterna entre la vista 3D interactiva y el hologram
     *   `source`: Origen del cambio (ej. `model_viewer` o `home`).
     *   `unit`: Nombre de la unidad (cuando se cambia desde la ficha).
 
+#### 10. `cookie_consent_accepted`
+Se dispara cuando un usuario acepta explícitamente el uso de cookies analíticas desde el banner de consentimiento o la política de privacidad.
+*   **Categoría**: `privacy`
+*   **Etiqueta**: `all_cookies`
+
+#### 11. `cookie_consent_declined`
+Se dispara cuando un usuario rechaza el uso de cookies analíticas, optando únicamente por las cookies esenciales.
+*   **Categoría**: `privacy`
+*   **Etiqueta**: `essential_only`

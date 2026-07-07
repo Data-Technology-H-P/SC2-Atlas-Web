@@ -2513,6 +2513,13 @@
       ]
     }
   },
+  "cookieBanner": {
+    "title": "Telemetry Calibration",
+    "text": "We use anonymous telemetry cookies to monitor performance and evaluate database access metrics to improve our systems.",
+    "accept": "Calibrate All",
+    "decline": "Decline",
+    "learnMore": "Review Privacy Protocols."
+  },
   "legal": {
     "backToHome": "Back to Home",
     "lastUpdated": "Last updated: July 2026",
@@ -2528,7 +2535,11 @@
       "section4Title": "Third-Party Content",
       "section4Content": "All visual content and game data from StarCraft II belong to Blizzard Entertainment. SC2 Atlas uses them under fair use principles for educational and fan purposes.",
       "section5Title": "Changes to This Policy",
-      "section5Content": "We may update this policy periodically. Changes will be reflected on this page with the last updated date."
+      "section5Content": "We may update this policy periodically. Changes will be reflected on this page with the last updated date.",
+      "analyticsPreferenceTitle": "Telemetry & Analytics Preferences",
+      "analyticsPreferenceDesc": "You can choose to enable or disable Google Analytics tracking. Disabling it will prevent us from collecting anonymous statistics about your visit.",
+      "analyticsStatusEnabled": "Status: Active (Tracking allowed)",
+      "analyticsStatusDisabled": "Status: Inactive (Tracking disallowed)"
     },
     "terms": {
       "title": "Terms of Use",
