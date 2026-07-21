@@ -1,19 +1,18 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, X } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
-import { trackEvent, GA_TRACKING_ID } from '@/lib/gtag';
+import { Link } from '@/i18n/routing';
+import { GA_TRACKING_ID, trackEvent } from '@/lib/gtag';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ShieldCheck, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function CookieConsent() {
   const t = useTranslations('cookieBanner');
   const { analyticsEnabled, setAnalyticsEnabled } = useSettings();
 
-  const isAnalyticsConfigured = 
-    process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true' && 
-    !!GA_TRACKING_ID;
+  const isAnalyticsConfigured =
+    process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true' && !!GA_TRACKING_ID;
 
   // Only show the banner if analytics is configured and the user has not made a choice yet
   const showBanner = isAnalyticsConfigured && analyticsEnabled === null;

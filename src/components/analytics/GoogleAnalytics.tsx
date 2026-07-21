@@ -13,7 +13,9 @@ export default function GoogleAnalytics() {
     const envEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true';
 
     if (!envEnabled || !GA_TRACKING_ID) {
-      console.log('Google Analytics is disabled (NEXT_PUBLIC_ANALYTICS_ENABLED is not true or NEXT_PUBLIC_GA_MEASUREMENT_ID is missing).');
+      console.log(
+        'Google Analytics is disabled (NEXT_PUBLIC_ANALYTICS_ENABLED is not true or NEXT_PUBLIC_GA_MEASUREMENT_ID is missing).',
+      );
       return;
     }
 

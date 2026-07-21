@@ -15,14 +15,13 @@ export const LegalPageLayout = ({ pageKey }: LegalPageLayoutProps) => {
   const t = useTranslations('legal');
   const { analyticsEnabled, setAnalyticsEnabled } = useSettings();
 
-  const isAnalyticsConfigured = 
-    process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true' && 
-    !!GA_TRACKING_ID;
+  const isAnalyticsConfigured =
+    process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true' && !!GA_TRACKING_ID;
 
   const sections = [1, 2, 3, 4, 5];
 
   return (
-    <div 
+    <div
       className="min-h-screen py-12 px-4 bg-slate-950"
       style={{
         backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.95)), url('/assets/backgrounds/global_hex_bg.png')`,
@@ -41,7 +40,9 @@ export const LegalPageLayout = ({ pageKey }: LegalPageLayoutProps) => {
         >
           <Link
             href="/"
-            onClick={() => trackEvent('legal_back_home', 'navigation', 'home', undefined, { from: pageKey })}
+            onClick={() =>
+              trackEvent('legal_back_home', 'navigation', 'home', undefined, { from: pageKey })
+            }
             className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mb-8 group"
           >
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -84,12 +85,13 @@ export const LegalPageLayout = ({ pageKey }: LegalPageLayoutProps) => {
                   {t('privacy.analyticsPreferenceDesc')}
                 </p>
                 <div className="flex items-center gap-2">
-                  <span className={`inline-block w-2 h-2 rounded-full ${analyticsEnabled === true ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]' : 'bg-rose-500'}`} />
+                  <span
+                    className={`inline-block w-2 h-2 rounded-full ${analyticsEnabled === true ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]' : 'bg-rose-500'}`}
+                  />
                   <span className="text-[11px] font-bold font-mono uppercase tracking-wide text-gray-300">
-                    {analyticsEnabled === true 
-                      ? t('privacy.analyticsStatusEnabled') 
-                      : t('privacy.analyticsStatusDisabled')
-                    }
+                    {analyticsEnabled === true
+                      ? t('privacy.analyticsStatusEnabled')
+                      : t('privacy.analyticsStatusDisabled')}
                   </span>
                 </div>
               </div>
@@ -99,11 +101,15 @@ export const LegalPageLayout = ({ pageKey }: LegalPageLayoutProps) => {
               onClick={() => {
                 const next = analyticsEnabled !== true; // if null or false, set to true
                 setAnalyticsEnabled(next);
-                trackEvent('privacy_analytics_toggled', 'preferences', next ? 'enabled' : 'disabled');
+                trackEvent(
+                  'privacy_analytics_toggled',
+                  'preferences',
+                  next ? 'enabled' : 'disabled',
+                );
               }}
               className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                analyticsEnabled === true 
-                  ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]' 
+                analyticsEnabled === true
+                  ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]'
                   : 'bg-slate-700'
               }`}
               role="switch"
@@ -147,9 +153,7 @@ export const LegalPageLayout = ({ pageKey }: LegalPageLayoutProps) => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-12 pt-6 border-t border-white/5 text-center"
         >
-          <p className="text-xs text-gray-600">
-            SC2 Atlas &mdash; {t(`${pageKey}.title`)}
-          </p>
+          <p className="text-xs text-gray-600">SC2 Atlas &mdash; {t(`${pageKey}.title`)}</p>
         </motion.div>
       </div>
     </div>

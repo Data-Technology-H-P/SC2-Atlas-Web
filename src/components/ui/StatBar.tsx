@@ -15,7 +15,7 @@ export const StatBar = ({
   max,
   color = 'bg-blue-500',
   className,
-  showValues = true
+  showValues = true,
 }: StatBarProps) => {
   const percentage = Math.min(100, (value / max) * 100);
 

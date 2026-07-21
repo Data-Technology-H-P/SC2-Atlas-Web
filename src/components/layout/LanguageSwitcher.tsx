@@ -13,7 +13,7 @@ export const LanguageSwitcher = () => {
 
   const handleLocaleChange = (newLocale: string) => {
     trackEvent('change_language', 'preferences', newLocale);
-    router.replace(pathname, {locale: newLocale});
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (
@@ -23,9 +23,7 @@ export const LanguageSwitcher = () => {
           key={l}
           onClick={() => handleLocaleChange(l)}
           className={`px-2 py-1 rounded transition-colors uppercase ${
-            locale === l 
-              ? 'bg-blue-600 text-white' 
-              : 'text-gray-500 hover:text-white'
+            locale === l ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-white'
           }`}
         >
           {l}

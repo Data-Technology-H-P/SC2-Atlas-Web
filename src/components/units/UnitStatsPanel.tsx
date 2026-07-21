@@ -48,14 +48,21 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
 
         <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/5">
           <div className="flex flex-col">
-            <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest">{t('baseArmor')}</span>
+            <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest">
+              {t('baseArmor')}
+            </span>
             <span className="text-xl font-black text-white">{unit.combat.armor || 0}</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest">{t('attributes')}</span>
+            <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest">
+              {t('attributes')}
+            </span>
             <div className="flex flex-wrap gap-1 mt-1">
-              {unit.attributes.map(attr => (
-                <span key={attr} className="text-[9px] px-1.5 py-0.5 rounded bg-white/5 text-gray-400 border border-white/5 uppercase">
+              {unit.attributes.map((attr) => (
+                <span
+                  key={attr}
+                  className="text-[9px] px-1.5 py-0.5 rounded bg-white/5 text-gray-400 border border-white/5 uppercase"
+                >
                   {attr}
                 </span>
               ))}
@@ -76,7 +83,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Zap className="w-4 h-4 text-red-500" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">{t('damageOutput')}</span>
+              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">
+                {t('damageOutput')}
+              </span>
               <div className="flex flex-col">
                 {unit.combat.damage ? (
                   <>
@@ -101,7 +110,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Target className="w-4 h-4 text-yellow-500" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">{t('attackRange')}</span>
+              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">
+                {t('attackRange')}
+              </span>
               <span className="text-lg font-black text-white leading-none">
                 {unit.combat.range !== undefined ? unit.combat.range : '—'}
               </span>
@@ -113,7 +124,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Navigation className="w-4 h-4 text-blue-500" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">{t('movementSpeed')}</span>
+              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">
+                {t('movementSpeed')}
+              </span>
               <span className="text-lg font-black text-white leading-none">
                 {unit.combat.speed !== undefined ? unit.combat.speed : '—'}
               </span>
@@ -125,7 +138,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Eye className="w-4 h-4 text-purple-500" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">{t('sensorSight')}</span>
+              <span className="text-[10px] text-gray-500 uppercase font-extrabold tracking-wider block leading-none mb-1.5">
+                {t('sensorSight')}
+              </span>
               <span className="text-lg font-black text-white leading-none">
                 {unit.combat.sight !== undefined ? unit.combat.sight : '—'}
               </span>
@@ -142,7 +157,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Box className="w-5 h-5 text-gray-400" />
             </div>
             <div>
-              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">{t('minerals')}</span>
+              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">
+                {t('minerals')}
+              </span>
               <span className="text-xl font-black text-white">{unit.cost.minerals}</span>
             </div>
           </div>
@@ -151,7 +168,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Zap className="w-5 h-5 text-blue-400" />
             </div>
             <div>
-              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">{t('vespeneGas')}</span>
+              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">
+                {t('vespeneGas')}
+              </span>
               <span className="text-xl font-black text-white">{unit.cost.gas}</span>
             </div>
           </div>
@@ -160,7 +179,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Shield className="w-5 h-5 text-yellow-500" />
             </div>
             <div>
-              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">{t('supply')}</span>
+              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">
+                {t('supply')}
+              </span>
               <span className="text-xl font-black text-white">{unit.cost.supply}</span>
             </div>
           </div>
@@ -169,7 +190,9 @@ export const UnitStatsPanel = ({ unit }: UnitStatsPanelProps) => {
               <Clock className="w-5 h-5 text-red-400" />
             </div>
             <div>
-              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">{t('buildTime')}</span>
+              <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest block">
+                {t('buildTime')}
+              </span>
               <span className="text-xl font-black text-white">{unit.cost.buildTime}s</span>
             </div>
           </div>

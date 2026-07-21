@@ -3,7 +3,18 @@
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { X, Shield, Swords, Zap, Clock, Box, AlertTriangle, CheckCircle, Lightbulb, Compass } from 'lucide-react';
+import {
+  X,
+  Shield,
+  Swords,
+  Zap,
+  Clock,
+  Box,
+  AlertTriangle,
+  CheckCircle,
+  Lightbulb,
+  Compass,
+} from 'lucide-react';
 import { Unit } from '@/types/unit';
 import { races } from '@/data/races';
 import { UnitModelViewer } from './UnitModelViewer';
@@ -32,7 +43,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
 
   if (!unit) return null;
 
-  const race = races.find(r => r.id === unit.race);
+  const race = races.find((r) => r.id === unit.race);
   if (!race) return null;
 
   const unitName = t(`units.${unit.id}.name`);
@@ -136,7 +147,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                   <Badge variant="race" raceId={unit.race as any}>
                     {t(`races.${unit.race}`)}
                   </Badge>
-                  {unit.tags?.map(tag => {
+                  {unit.tags?.map((tag) => {
                     const tagKey = `tags.${tag}`;
                     const localizedTag = t.has(tagKey) ? t(tagKey) : tag;
                     return (
@@ -145,7 +156,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                       </Badge>
                     );
                   })}
-                  {gamePhase.map(phase => {
+                  {gamePhase.map((phase) => {
                     const phaseLower = phase.toLowerCase();
                     const phaseTranslation = tUi.has(phaseLower) ? tUi(phaseLower) : phase;
                     return (
@@ -175,9 +186,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                 <p className="text-gray-300 text-sm leading-relaxed font-semibold italic border-l-2 pl-3 py-1 border-white/10 bg-white/5 rounded-r">
                   {tacticalRole}
                 </p>
-                <p className="text-gray-400 text-xs leading-relaxed mt-2">
-                  {longDescription}
-                </p>
+                <p className="text-gray-400 text-xs leading-relaxed mt-2">{longDescription}</p>
               </div>
 
               {/* Technical Costs */}
@@ -185,29 +194,39 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                 <div className="flex items-center gap-3">
                   <Box className="w-5 h-5 text-gray-500 shrink-0" />
                   <div>
-                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">{tStats('minerals')}</span>
+                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">
+                      {tStats('minerals')}
+                    </span>
                     <span className="text-sm font-black text-white">{unit.cost.minerals}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-blue-400 shrink-0" />
                   <div>
-                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">{tStats('vespeneGas')}</span>
+                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">
+                      {tStats('vespeneGas')}
+                    </span>
                     <span className="text-sm font-black text-white">{unit.cost.gas}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Shield className="w-5 h-5 text-yellow-500 shrink-0" />
                   <div>
-                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">{tStats('supply')}</span>
+                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">
+                      {tStats('supply')}
+                    </span>
                     <span className="text-sm font-black text-white">{unit.cost.supply}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-red-400 shrink-0" />
                   <div>
-                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">{tStats('buildTime')}</span>
-                    <span className="text-sm font-black text-white">{unit.cost.buildTime || '—'}s</span>
+                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block leading-none mb-1">
+                      {tStats('buildTime')}
+                    </span>
+                    <span className="text-sm font-black text-white">
+                      {unit.cost.buildTime || '—'}s
+                    </span>
                   </div>
                 </div>
               </div>
@@ -222,7 +241,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                         {tUi('strengths')}
                       </h4>
                       <ul className="space-y-2">
-                        {strengths.map(s => (
+                        {strengths.map((s) => (
                           <li key={s} className="text-xs text-gray-400 flex items-start gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 shrink-0" />
                             <span>{s}</span>
@@ -239,7 +258,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                         {tUi('weaknesses')}
                       </h4>
                       <ul className="space-y-2">
-                        {weaknesses.map(w => (
+                        {weaknesses.map((w) => (
                           <li key={w} className="text-xs text-gray-400 flex items-start gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 shrink-0" />
                             <span>{w}</span>
@@ -261,8 +280,11 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                         {tUi('goodAgainst')}
                       </h4>
                       <div className="flex flex-wrap gap-1.5">
-                        {goodAgainst.map(item => (
-                          <span key={item} className="px-2 py-1 rounded bg-blue-500/5 border border-blue-500/20 text-gray-300 text-xs font-medium">
+                        {goodAgainst.map((item) => (
+                          <span
+                            key={item}
+                            className="px-2 py-1 rounded bg-blue-500/5 border border-blue-500/20 text-gray-300 text-xs font-medium"
+                          >
                             {item}
                           </span>
                         ))}
@@ -277,8 +299,11 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                         {tUi('vulnerableAgainst')}
                       </h4>
                       <div className="flex flex-wrap gap-1.5">
-                        {vulnerableAgainst.map(item => (
-                          <span key={item} className="px-2 py-1 rounded bg-amber-500/5 border border-amber-500/20 text-gray-300 text-xs font-medium">
+                        {vulnerableAgainst.map((item) => (
+                          <span
+                            key={item}
+                            className="px-2 py-1 rounded bg-amber-500/5 border border-amber-500/20 text-gray-300 text-xs font-medium"
+                          >
                             {item}
                           </span>
                         ))}
@@ -290,13 +315,11 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
 
               {/* Usage Tip */}
               {usageTip && (
-                <div
-                  className="p-5 rounded-xl border flex gap-4 bg-slate-900/20 border-white/5 relative overflow-hidden shrink-0 mt-auto"
-                >
+                <div className="p-5 rounded-xl border flex gap-4 bg-slate-900/20 border-white/5 relative overflow-hidden shrink-0 mt-auto">
                   <div
                     className="absolute inset-0 pointer-events-none opacity-5"
                     style={{
-                      background: `radial-gradient(circle at top left, ${primaryColor} 0%, transparent 70%)`
+                      background: `radial-gradient(circle at top left, ${primaryColor} 0%, transparent 70%)`,
                     }}
                   />
                   <div className="p-2.5 rounded-lg shrink-0 flex items-center justify-center bg-blue-500/10 border border-blue-500/20 max-h-11">
@@ -306,9 +329,7 @@ export const UnitDetailModal = ({ unit, isOpen, onClose }: UnitDetailModalProps)
                     <h4 className="text-[10px] font-extrabold text-blue-400 uppercase tracking-wider mb-1 leading-none">
                       {tUi('usageTip')}
                     </h4>
-                    <p className="text-xs text-gray-300 leading-relaxed font-medium">
-                      {usageTip}
-                    </p>
+                    <p className="text-xs text-gray-300 leading-relaxed font-medium">{usageTip}</p>
                   </div>
                 </div>
               )}

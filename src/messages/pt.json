@@ -232,7 +232,7 @@
     "tagline": "Uma ferramenta de exploração tática premium para unidades do StarCraft II.",
     "madeBy": "Feito com ❤️ por <datatech>Data Technology H&P</datatech>. Todos os direitos reservados.",
     "legalNotice": "StarCraft II e todos os ativos relacionados, marcas registradas e propriedade intelectual pertencem à Blizzard Entertainment. Este é um projeto informativo não oficial feito por fãs.",
-    "copyright": "© {year} SC2 Atlas. Projeto de fã não oficial. Actualizado para o patch v5.0.16.",
+    "copyright": "© {year} SC2 Atlas. Projeto de fã não oficial. Actualizado para o patch v5.0.16b.",
     "privacy": "Privacidade",
     "terms": "Termos de Uso",
     "disclaimer": "Isenção de Responsabilidade"
@@ -264,10 +264,7 @@
         "Alto dano de explosão"
       ],
       "usageTip": "Use os Stalkers para fustigar, reposicionar-se e punir unidades expostas. Evite combates diretos sem o Blink ou suporte.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ],
+      "gamePhase": ["Inicial", "Média"],
       "upgrades": {
         "blink": {
           "name": "Blink",
@@ -290,22 +287,10 @@
         "Exige microgerenciamento ativo e suporte constante de Medivacs",
         "Depende fortemente das melhorias de Escudo de Combate e Stimpack"
       ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Imortais",
-        "Raios do Vazio"
-      ],
-      "vulnerableAgainst": [
-        "Banelings",
-        "Colossos",
-        "Tanques de Cerco"
-      ],
+      "goodAgainst": ["Mutalistas", "Imortais", "Raios do Vazio"],
+      "vulnerableAgainst": ["Banelings", "Colossos", "Tanques de Cerco"],
       "usageTip": "Sempre pesquise Stimpack e Escudo de Combate cedo. Mantenha os Marines emparelhados com Medivacs e separe-os em combate para minimizar o dano de área.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ],
+      "gamePhase": ["Inicial", "Média", "Tardia"],
       "upgrades": {
         "combat-shield": {
           "name": "Escudo de Combate",
@@ -337,20 +322,10 @@
         "Extremamente fraco em combate direto",
         "Vulnerável a fustigamentos e assédios iniciais"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Ceifadores",
-        "Oráculos",
-        "Tatus-bomba"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Ceifadores", "Oráculos", "Tatus-bomba"],
       "usageTip": "Ative a auto-reparação para consertar rapidamente unidades mecânicas próximas. Puxe VCEs para reparações sob pressão.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "marauder": {
       "name": "Marmota",
@@ -378,22 +353,10 @@
         "Não pode atacar alvos aéreos",
         "Dano relativamente baixo contra infantaria leve"
       ],
-      "goodAgainst": [
-        "Stalkers",
-        "Baratas",
-        "Stalkers"
-      ],
-      "vulnerableAgainst": [
-        "Zerglings",
-        "Zealots",
-        "Mutalistas"
-      ],
+      "goodAgainst": ["Stalkers", "Baratas", "Stalkers"],
+      "vulnerableAgainst": ["Zerglings", "Zealots", "Mutalistas"],
       "usageTip": "Combine Marauders com Marines para absorver a linha de frente e desacelerar inimigos em fuga.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "reaper": {
       "name": "Ceifador",
@@ -419,24 +382,11 @@
         "Escala e desce penhascos livremente",
         "Regeneração rápida de vida fora de combate"
       ],
-      "weaknesses": [
-        "Muito frágil (60 HP)",
-        "Baixa utilidade no meio e fim de jogo"
-      ],
-      "goodAgainst": [
-        "Sondas",
-        "Zangões",
-        "VCEs"
-      ],
-      "vulnerableAgainst": [
-        "Stalkers",
-        "Baratas",
-        "Rainhas"
-      ],
+      "weaknesses": ["Muito frágil (60 HP)", "Baixa utilidade no meio e fim de jogo"],
+      "goodAgainst": ["Sondas", "Zangões", "VCEs"],
+      "vulnerableAgainst": ["Stalkers", "Baratas", "Rainhas"],
       "usageTip": "Use as Cargas KD8 para dispersar operários inimigos ou repelir unidades em perseguição.",
-      "gamePhase": [
-        "Inicial"
-      ]
+      "gamePhase": ["Inicial"]
     },
     "ghost": {
       "name": "Fantasma",
@@ -472,22 +422,10 @@
         "Custo de gás muito alto e longo tempo de treino",
         "Exige alto microgerenciamento e APM"
       ],
-      "goodAgainst": [
-        "Altos Templários",
-        "Infestadores",
-        "Víboras",
-        "Ultralistas"
-      ],
-      "vulnerableAgainst": [
-        "Observadores",
-        "Vigilantes",
-        "Mecânicos robustos"
-      ],
+      "goodAgainst": ["Altos Templários", "Infestadores", "Víboras", "Ultralistas"],
+      "vulnerableAgainst": ["Observadores", "Vigilantes", "Mecânicos robustos"],
       "usageTip": "Lance o PEM sobre exércitos Protoss para evaporar escudos, ou em Víboras e Infestadores para esgotar sua energia.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "hellion": {
       "name": "Exterminador",
@@ -519,22 +457,10 @@
         "Frágil se for pego em cercos ou sem espaço",
         "Dano muito baixo contra alvos individuais blindados"
       ],
-      "goodAgainst": [
-        "Zerglings",
-        "Zealots",
-        "Sondas",
-        "Zangões"
-      ],
-      "vulnerableAgainst": [
-        "Baratas",
-        "Marauders",
-        "Stalkers"
-      ],
+      "goodAgainst": ["Zerglings", "Zealots", "Sondas", "Zangões"],
+      "vulnerableAgainst": ["Baratas", "Marauders", "Stalkers"],
       "usageTip": "Patrulhe caminhos do mapa para conter o creep Zerg e interceptar investidas rápidas.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "hellbat": {
       "name": "Morcego Infernal",
@@ -556,25 +482,11 @@
         "Atributos biológico/mecânico duráveis",
         "Pode ser curado por Medivacs"
       ],
-      "weaknesses": [
-        "Velocidade de movimento lenta",
-        "Curto alcance de ataque"
-      ],
-      "goodAgainst": [
-        "Zerglings",
-        "Zealots",
-        "Banelings"
-      ],
-      "vulnerableAgainst": [
-        "Tanques de Cerco",
-        "Baratas",
-        "Libertadores"
-      ],
+      "weaknesses": ["Velocidade de movimento lenta", "Curto alcance de ataque"],
+      "goodAgainst": ["Zerglings", "Zealots", "Banelings"],
+      "vulnerableAgainst": ["Tanques de Cerco", "Baratas", "Libertadores"],
       "usageTip": "Transforme Hellions em Hellbats contra ondas de Zerglings/Banelings ou cargas de Zealots para erguer um escudo robusto.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "siege-tank": {
       "name": "Tanque de Cerco",
@@ -596,24 +508,10 @@
         "Fica imóvel no Modo Cerco",
         "Vulnerável a ataques aéreos ou investidas repentinas a curta distância"
       ],
-      "goodAgainst": [
-        "Baratas",
-        "Hydraliscas",
-        "Stalkers",
-        "Marines"
-      ],
-      "vulnerableAgainst": [
-        "Mutalistas",
-        "Quedas de Imortais",
-        "Tempestades",
-        "Víboras"
-      ],
+      "goodAgainst": ["Baratas", "Hydraliscas", "Stalkers", "Marines"],
+      "vulnerableAgainst": ["Mutalistas", "Quedas de Imortais", "Tempestades", "Víboras"],
       "usageTip": "Posicione os tanques em áreas elevadas ou atrás de Bunkers/Hellbats para bombardearem com segurança.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "cyclone": {
       "name": "Ciclone",
@@ -641,22 +539,10 @@
         "Relativamente frágil",
         "Baixa eficácia contra hordas massivas de alvos leves"
       ],
-      "goodAgainst": [
-        "Raios do Vazio",
-        "Baratas",
-        "Oráculos",
-        "Suseranos"
-      ],
-      "vulnerableAgainst": [
-        "Enxames de Zerglings",
-        "Marines em massa",
-        "Escudos de Imortais"
-      ],
+      "goodAgainst": ["Raios do Vazio", "Baratas", "Oráculos", "Suseranos"],
+      "vulnerableAgainst": ["Enxames de Zerglings", "Marines em massa", "Escudos de Imortais"],
       "usageTip": "Foque o alvo em unidades cruciais inimigas, depois afaste-se para fustigá-las em movimento constante.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "widow-mine": {
       "name": "Mina Viúva",
@@ -688,26 +574,11 @@
         "Fica completamente invisível ao se enterrar",
         "Dano explosivo em área altíssimo"
       ],
-      "weaknesses": [
-        "Pode causar fogo aliado",
-        "Longo intervalo (29s) de recarga dos mísseis"
-      ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Zerglings",
-        "Zealots",
-        "Sondas"
-      ],
-      "vulnerableAgainst": [
-        "Detecção",
-        "Unidades de longo alcance como Tempestades"
-      ],
+      "weaknesses": ["Pode causar fogo aliado", "Longo intervalo (29s) de recarga dos mísseis"],
+      "goodAgainst": ["Mutalistas", "Zerglings", "Zealots", "Sondas"],
+      "vulnerableAgainst": ["Detecção", "Unidades de longo alcance como Tempestades"],
       "usageTip": "Enterre Minas Viúvas nas linhas de recursos ou em gargalos de terreno para aniquilar investidas surpresa.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "thor": {
       "name": "Thor",
@@ -735,12 +606,7 @@
         "Lento, volumoso e de difícil locomoção",
         "Altamente suscetível a conjuradores e controle de grupo"
       ],
-      "goodAgainst": [
-        "Carriers",
-        "Señores de la Prole",
-        "Mutalistas",
-        "Ultralistas"
-      ],
+      "goodAgainst": ["Carriers", "Señores de la Prole", "Mutalistas", "Ultralistas"],
       "vulnerableAgainst": [
         "Enxames de Zerglings",
         "Imortais",
@@ -748,10 +614,7 @@
         "Parásito Neural"
       ],
       "usageTip": "Use a Carga de Alto Impacto contra naves massivas. Mude para a Carga Explosiva contra Mutalistas.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "viking": {
       "name": "Viking",
@@ -779,26 +642,11 @@
         "Dano bônus contra alvos voadores blindados",
         "Flexibilidade tática graças às transformações"
       ],
-      "weaknesses": [
-        "Blindagem frágil no ar",
-        "Dano terrestre ineficaz no Modo de Assalto"
-      ],
-      "goodAgainst": [
-        "Colossos",
-        "Libertadores",
-        "Señores de la Prole",
-        "Raios do Vazio"
-      ],
-      "vulnerableAgainst": [
-        "Fênix",
-        "Tempestades Psionicas",
-        "Corruptores"
-      ],
+      "weaknesses": ["Blindagem frágil no ar", "Dano terrestre ineficaz no Modo de Assalto"],
+      "goodAgainst": ["Colossos", "Libertadores", "Señores de la Prole", "Raios do Vazio"],
+      "vulnerableAgainst": ["Fênix", "Tempestades Psionicas", "Corruptores"],
       "usageTip": "Use Vikings para alvejar alvos aéreos massivos como Colossos de distâncias confortáveis.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "medivac": {
       "name": "Navio de Evacuação Médica",
@@ -842,21 +690,10 @@
         "Totalmente indefesa e desarmada",
         "Exige monitoramento e controle da energia"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Stalkers",
-        "Mutalistas",
-        "Hydraliscas",
-        "Vikings"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Stalkers", "Mutalistas", "Hydraliscas", "Vikings"],
       "usageTip": "Ative os Pós-combustores para escapar de situações críticas ou invadir áreas com operários.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "liberator": {
       "name": "Libertador",
@@ -888,23 +725,10 @@
         "Fica estática e vulnerável em Modo Defensor",
         "Fraca contra caças de longa distância"
       ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Hydraliscas",
-        "Stalkers",
-        "Baratas"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Corruptores",
-        "Tempestades",
-        "Stalkers com Blink"
-      ],
+      "goodAgainst": ["Mutalistas", "Hydraliscas", "Stalkers", "Baratas"],
+      "vulnerableAgainst": ["Vikings", "Corruptores", "Tempestades", "Stalkers com Blink"],
       "usageTip": "Posicione o asedio do Libertador sobre as expansões de minerais inimigas para estrangular a economia.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "raven": {
       "name": "Corvo",
@@ -934,23 +758,10 @@
         "Muito frágil e alvo principal de disparos inimigos",
         "Altos custos de energia"
       ],
-      "goodAgainst": [
-        "Tanques de Cerco",
-        "Colossos",
-        "Altos Templários",
-        "Banshees"
-      ],
-      "vulnerableAgainst": [
-        "Feedback",
-        "Vikings",
-        "Corruptores"
-      ],
+      "goodAgainst": ["Tanques de Cerco", "Colossos", "Altos Templários", "Banshees"],
+      "vulnerableAgainst": ["Feedback", "Vikings", "Corruptores"],
       "usageTip": "Inutilize alvos de alto custo como Colossos ou Tanques de Cerco com a Matriz antes do início do confronto.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "banshee": {
       "name": "Banshee",
@@ -972,24 +783,10 @@
         "Incapaz de atingir alvos aéreos",
         "Extremamente vulnerável se houver detecção por perto"
       ],
-      "goodAgainst": [
-        "Baratas",
-        "Imortais",
-        "VCEs",
-        "Zangões",
-        "Sondas"
-      ],
-      "vulnerableAgainst": [
-        "Detectores",
-        "Mutalistas",
-        "Fênix",
-        "Stalkers"
-      ],
+      "goodAgainst": ["Baratas", "Imortais", "VCEs", "Zangões", "Sondas"],
+      "vulnerableAgainst": ["Detectores", "Mutalistas", "Fênix", "Stalkers"],
       "usageTip": "Ataque as bases inimigas e recue se houver detectores. Mantenha as Banshees ativas para gastar recursos inimigos em detecção.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "battlecruiser": {
       "name": "Cruzador de Batalha",
@@ -1013,26 +810,11 @@
         "Canhão Yamato destrói alvos cruciais (240 de dano)",
         "Pode atirar continuamente enquanto voa"
       ],
-      "weaknesses": [
-        "Custo de recursos astronômico",
-        "Vulnerável a reduções de armadura massivas"
-      ],
-      "goodAgainst": [
-        "Carriers",
-        "Ultralistas",
-        "Mutalistas",
-        "Tanques de Cerco"
-      ],
-      "vulnerableAgainst": [
-        "Corruptores",
-        "Raios do Vazio",
-        "Tempestades",
-        "Thors"
-      ],
+      "weaknesses": ["Custo de recursos astronômico", "Vulnerável a reduções de armadura massivas"],
+      "goodAgainst": ["Carriers", "Ultralistas", "Mutalistas", "Tanques de Cerco"],
+      "vulnerableAgainst": ["Corruptores", "Raios do Vazio", "Tempestades", "Thors"],
       "usageTip": "Alveje alvos de alto custo com o Canhão Yamato, depois recue usando o Salto Tático para segurança.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "zergling": {
       "name": "Zergling",
@@ -1049,22 +831,10 @@
         "Altamente vulnerável a dano de área (respingo)",
         "Dificuldade em gargalos de terreno e contra estruturas defensivas"
       ],
-      "goodAgainst": [
-        "Marauders",
-        "Stalkers",
-        "Tanques de Cerco (sem cerco)"
-      ],
-      "vulnerableAgainst": [
-        "Hellions",
-        "Banelings",
-        "Zealots"
-      ],
+      "goodAgainst": ["Marauders", "Stalkers", "Tanques de Cerco (sem cerco)"],
+      "vulnerableAgainst": ["Hellions", "Banelings", "Zealots"],
       "usageTip": "Use os Zerglings para explorar o mapa, cercar forças inimigas e invadir bases quando o exército inimigo estiver fora de posição.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ],
+      "gamePhase": ["Inicial", "Média", "Tardia"],
       "upgrades": {
         "burrow": {
           "name": "Enterrar",
@@ -1106,20 +876,10 @@
         "Ataque direto mais fraco entre operários (5 de dano)",
         "Dependência extrema do suporte de exércitos ou defesas"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Ceifadores",
-        "Exterminadores",
-        "Oráculos"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Ceifadores", "Exterminadores", "Oráculos"],
       "usageTip": "Enterre os Zangões sob ataque inicial para ganhar tempo enquanto chegam as Rainhas ou Zerglings.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "overlord": {
       "name": "Suserano",
@@ -1149,20 +909,10 @@
         "Movimento muito lento nos estágios iniciais",
         "Fácil de ser abatido, provocando bloqueios de suprimento incômodos"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Fênix",
-        "Marines",
-        "Stalkers"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Fênix", "Marines", "Stalkers"],
       "usageTip": "Posicione os Suseranos iniciais em pilares elevados e seguros perto das saídas inimigas para rastrear movimentos.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "overseer": {
       "name": "Vigilante",
@@ -1188,27 +938,11 @@
         "Gera Cambiantes sem custo para exploração segura",
         "Contaminar congela a produção e pesquisas de um prédio"
       ],
-      "weaknesses": [
-        "Não possui nenhum ataque básico",
-        "Vulnerável a fogo antiaéreo concentrado"
-      ],
-      "goodAgainst": [
-        "Banshees",
-        "Fantasmas",
-        "Templários das Sombras",
-        "Mina Viúva"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Fênix",
-        "Stalkers"
-      ],
+      "weaknesses": ["Não possui nenhum ataque básico", "Vulnerável a fogo antiaéreo concentrado"],
+      "goodAgainst": ["Banshees", "Fantasmas", "Templários das Sombras", "Mina Viúva"],
+      "vulnerableAgainst": ["Vikings", "Fênix", "Stalkers"],
       "usageTip": "Desative prédios cruciais inimigos (como o Portal Estelar) com o Contaminar para atrasar naves caras.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "queen": {
       "name": "Rainha",
@@ -1244,23 +978,10 @@
         "Movimento extremamente arrastado fora do creep",
         "Garante a segurança mas não deve ser usada para ataques agressivos distantes"
       ],
-      "goodAgainst": [
-        "Hellions",
-        "Raios do Vazio",
-        "Mutalistas",
-        "Ceifadores"
-      ],
-      "vulnerableAgainst": [
-        "Tanques de Cerco",
-        "Marauders",
-        "Tatus-bomba"
-      ],
+      "goodAgainst": ["Hellions", "Raios do Vazio", "Mutalistas", "Ceifadores"],
+      "vulnerableAgainst": ["Tanques de Cerco", "Marauders", "Tatus-bomba"],
       "usageTip": "Nunca pare de injetar larvas. Espalhe os tumores de creep continuamente para acelerar suas tropas.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "baneling": {
       "name": "Tatu-bomba",
@@ -1296,23 +1017,10 @@
         "Auto-destrói-se para desferir o ataque",
         "Frágil e fácil de ser abatido à distância antes do impacto"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Zerglings",
-        "Zealots"
-      ],
-      "vulnerableAgainst": [
-        "Tanques de Cerco",
-        "Marauders",
-        "Arcontes",
-        "Baratas"
-      ],
+      "goodAgainst": ["Marines", "Zerglings", "Zealots"],
+      "vulnerableAgainst": ["Tanques de Cerco", "Marauders", "Arcontes", "Baratas"],
       "usageTip": "Guie seus Tatus-bomba para atingirem infantarias leves, evitando blindados que minimizam o prejuízo.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "roach": {
       "name": "Barata",
@@ -1344,22 +1052,10 @@
         "Alcance limitado de ataque (4)",
         "Eficiência moderada contra alvos robustos não-leves"
       ],
-      "goodAgainst": [
-        "Hellions",
-        "Zerglings",
-        "Marines"
-      ],
-      "vulnerableAgainst": [
-        "Imortais",
-        "Marauders",
-        "Tanques de Cerco",
-        "Espreitadores"
-      ],
+      "goodAgainst": ["Hellions", "Zerglings", "Marines"],
+      "vulnerableAgainst": ["Imortais", "Marauders", "Tanques de Cerco", "Espreitadores"],
       "usageTip": "Use as Baratas na frente. Enterre-as sob perigo para recuperar HP instantaneamente e volte ao combate.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "ravager": {
       "name": "Devastador",
@@ -1387,22 +1083,10 @@
         "A Bile Corrosiva exige boa leitura e antecipação",
         "Frágil se for pego com a bile em tempo de recarga"
       ],
-      "goodAgainst": [
-        "Libertadores",
-        "Tanques sieged",
-        "Campos de Força"
-      ],
-      "vulnerableAgainst": [
-        "Marauders",
-        "Imortais",
-        "Zealots"
-      ],
+      "goodAgainst": ["Libertadores", "Tanques sieged", "Campos de Força"],
+      "vulnerableAgainst": ["Marauders", "Imortais", "Zealots"],
       "usageTip": "Force o reposicionamento do rival disparando biles constantemente nas posições que eles querem defender.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "hydralisk": {
       "name": "Hidralisca",
@@ -1434,23 +1118,10 @@
         "Extremamente frágil (90 HP) pelo custo de gás",
         "Altamente dependente das melhorias de velocidade e alcance"
       ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Raios do Vazio",
-        "Imortais",
-        "Marauders"
-      ],
-      "vulnerableAgainst": [
-        "Colossos",
-        "Tanques de Cerco",
-        "Tatus-bomba",
-        "Tempestades Psionicas"
-      ],
+      "goodAgainst": ["Mutalistas", "Raios do Vazio", "Imortais", "Marauders"],
+      "vulnerableAgainst": ["Colossos", "Tanques de Cerco", "Tatus-bomba", "Tempestades Psionicas"],
       "usageTip": "Mantenha sempre as Hydraliscas atrás de um escudo robusto como Baratas ou Ultralistas para atirarem livres.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "lurker": {
       "name": "Espreitador",
@@ -1472,23 +1143,10 @@
         "Incapaz de atirar desenterrado ou em locomoção",
         "Vulnerável a naves de longo alcance e detectores"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Hydraliscas",
-        "Stalkers",
-        "Zealots"
-      ],
-      "vulnerableAgainst": [
-        "Tempestades",
-        "Libertadores",
-        "Señores de la Prole",
-        "Víboras"
-      ],
+      "goodAgainst": ["Marines", "Hydraliscas", "Stalkers", "Zealots"],
+      "vulnerableAgainst": ["Tempestades", "Libertadores", "Señores de la Prole", "Víboras"],
       "usageTip": "Enterre Espreitadores em entradas de rampas para impedir qualquer investida terrestre inimiga.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ],
+      "gamePhase": ["Média", "Tardia"],
       "upgrades": {
         "adaptive-talons": {
           "name": "Garras Adaptativas",
@@ -1524,26 +1182,11 @@
         "Parasita Neural assume controle de titãs adversários",
         "Consegue lançar magias totalmente enterrado"
       ],
-      "weaknesses": [
-        "Não tem ataque básico",
-        "Custo muito elevado em gás vespene e vida baixa"
-      ],
-      "goodAgainst": [
-        "Marines",
-        "Mutalistas",
-        "Thors",
-        "Colossos"
-      ],
-      "vulnerableAgainst": [
-        "Fantasmas (PEM)",
-        "Altos Templários (Feedback)",
-        "Detectores"
-      ],
+      "weaknesses": ["Não tem ataque básico", "Custo muito elevado em gás vespene e vida baixa"],
+      "goodAgainst": ["Marines", "Mutalistas", "Thors", "Colossos"],
+      "vulnerableAgainst": ["Fantasmas (PEM)", "Altos Templários (Feedback)", "Detectores"],
       "usageTip": "Prenda alvos rápidos com o Fúngico para facilitar o impacto de Tatus-bomba ou Biles Corrosivas.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "swarm-host": {
       "name": "Hospedeiro do Enxame",
@@ -1575,20 +1218,10 @@
         "Intervalo longo (43s) entre o disparo dos Gafanhotos",
         "Fica completamente indefeso enquanto espera recarga"
       ],
-      "goodAgainst": [
-        "Defesas estáticas",
-        "Tanques de Cerco",
-        "Defesas lerdas"
-      ],
-      "vulnerableAgainst": [
-        "Fênix",
-        "Exterminadores",
-        "Assédios velozes"
-      ],
+      "goodAgainst": ["Defesas estáticas", "Tanques de Cerco", "Defesas lerdas"],
+      "vulnerableAgainst": ["Fênix", "Exterminadores", "Assédios velozes"],
       "usageTip": "Lance os Gafanhotos à distância e corra imediatamente para se enterrar e esperar a recarga.",
-      "gamePhase": [
-        "Média"
-      ]
+      "gamePhase": ["Média"]
     },
     "mutalisk": {
       "name": "Mutalisca",
@@ -1610,22 +1243,10 @@
         "Muito frágil (120 HP) e cara em gás vespene",
         "Vulnerável a defesas e mísseis antiaéreos em área"
       ],
-      "goodAgainst": [
-        "Tanques (unsieged)",
-        "Operários",
-        "Alvos isolados"
-      ],
-      "vulnerableAgainst": [
-        "Thors",
-        "Fênix",
-        "Tempestades Psionicas",
-        "Libertadores"
-      ],
+      "goodAgainst": ["Tanques (unsieged)", "Operários", "Alvos isolados"],
+      "vulnerableAgainst": ["Thors", "Fênix", "Tempestades Psionicas", "Libertadores"],
       "usageTip": "Evite combate direto. Mantenha os Mutalistas circulando as pontas do mapa caçando operários.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "corruptor": {
       "name": "Corruptor",
@@ -1651,22 +1272,10 @@
         "Não pode atacar alvos terrestres sem a habilidade",
         "Manobrabilidade e velocidade moderadas"
       ],
-      "goodAgainst": [
-        "Carriers",
-        "Cruceros de Batalla",
-        "Tempestades",
-        "Colossos"
-      ],
-      "vulnerableAgainst": [
-        "Raios do Vazio",
-        "Thors",
-        "Tempestades Psionicas"
-      ],
+      "goodAgainst": ["Carriers", "Cruceros de Batalla", "Tempestades", "Colossos"],
+      "vulnerableAgainst": ["Raios do Vazio", "Thors", "Tempestades Psionicas"],
       "usageTip": "Ao limpar os céus, use o Spray Cáustico nos Nexos ou Centros de Mando inimigos para destruí-los.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "viper": {
       "name": "Víbora",
@@ -1696,25 +1305,11 @@
         "Nuvem Cegadora reduz o alcance de armas a distância para zero",
         "Bomba Parasitária pulveriza esquadrões de naves leves"
       ],
-      "weaknesses": [
-        "Sem armas básicas de ataque",
-        "Frágil e prioridade número 1 de abate"
-      ],
-      "goodAgainst": [
-        "Colossos",
-        "Tanques de Cerco",
-        "Tempestades",
-        "Carriers"
-      ],
-      "vulnerableAgainst": [
-        "Fantasmas (Snipe/PEM)",
-        "Altos Templários (Feedback)",
-        "Vikings"
-      ],
+      "weaknesses": ["Sem armas básicas de ataque", "Frágil e prioridade número 1 de abate"],
+      "goodAgainst": ["Colossos", "Tanques de Cerco", "Tempestades", "Carriers"],
+      "vulnerableAgainst": ["Fantasmas (Snipe/PEM)", "Altos Templários (Feedback)", "Vikings"],
       "usageTip": "Puxe unidades cruciais como Colossos de trás das defesas inimigas com o Abduzir para seu exército triturá-los.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "ultralisk": {
       "name": "Ultralisca",
@@ -1750,22 +1345,10 @@
         "Tamanho gigantesco, fácil de bloquear em rampas",
         "Vulnerável a defesas de alto dano focado anti-blindados"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Zerglings",
-        "Stalkers",
-        "Force Fields"
-      ],
-      "vulnerableAgainst": [
-        "Imortais",
-        "Marauders",
-        "Espreitadores",
-        "Libertadores"
-      ],
+      "goodAgainst": ["Marines", "Zerglings", "Stalkers", "Force Fields"],
+      "vulnerableAgainst": ["Imortais", "Marauders", "Espreitadores", "Libertadores"],
       "usageTip": "Dê suporte aos Ultralistas com Infestadores (Fúngico) para evitar que o inimigo consiga recuar e fustigá-los.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "brood-lord": {
       "name": "Lorde da Prole",
@@ -1787,22 +1370,10 @@
         "Velocidade de voo extremamente lenta",
         "Indefeso contra esquadrões de caças rápidos"
       ],
-      "goodAgainst": [
-        "Tanques de Cerco",
-        "Thors",
-        "Colossos",
-        "Líneas de Inmortales"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Corruptores",
-        "Raios do Vazio",
-        "Tempestades"
-      ],
+      "goodAgainst": ["Tanques de Cerco", "Thors", "Colossos", "Líneas de Inmortales"],
+      "vulnerableAgainst": ["Vikings", "Corruptores", "Raios do Vazio", "Tempestades"],
       "usageTip": "Proteja os Senhores da Prole com Corruptores ou Hydraliscas para evitar que naves de longo alcance os abatam.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "probe": {
       "name": "Sonda",
@@ -1818,20 +1389,10 @@
         "Ataque básico fraco (5 de dano)",
         "Frágil frente a invasões nas linhas de minerais"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Ceifadores",
-        "Exterminadores",
-        "Zerglings"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Ceifadores", "Exterminadores", "Zerglings"],
       "usageTip": "Posicione balizas de forma contínua para manter a Sonda trabalhando sempre sem interrupções.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "zealot": {
       "name": "Zelote",
@@ -1853,23 +1414,10 @@
         "Fácil de sofrer kiting antes da melhoria de Carga",
         "Não pode atacar alvos aéreos"
       ],
-      "goodAgainst": [
-        "Marauders",
-        "Zerglings",
-        "Immortais"
-      ],
-      "vulnerableAgainst": [
-        "Hellions",
-        "Banelings",
-        "Colossos",
-        "Baratas"
-      ],
+      "goodAgainst": ["Marauders", "Zerglings", "Immortais"],
+      "vulnerableAgainst": ["Hellions", "Banelings", "Colossos", "Baratas"],
       "usageTip": "Pesquise a Carga no Conselho do Crepúsculo rapidamente. Use-os para proteger conjuradores frágeis.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "sentry": {
       "name": "Sentinela",
@@ -1895,25 +1443,11 @@
         "Escudo Guardião reduz o dano à distância recebido por aliados",
         "Alucinação permite rastrear o mapa sem perigos"
       ],
-      "weaknesses": [
-        "Ataque básico fraco",
-        "Dependente de energia e gás vespene"
-      ],
-      "goodAgainst": [
-        "Zerglings",
-        "Marines",
-        "Zealots"
-      ],
-      "vulnerableAgainst": [
-        "Devastadores (Bile destrói barreiras)",
-        "Ultralistas",
-        "Massivos"
-      ],
+      "weaknesses": ["Ataque básico fraco", "Dependente de energia e gás vespene"],
+      "goodAgainst": ["Zerglings", "Marines", "Zealots"],
+      "vulnerableAgainst": ["Devastadores (Bile destrói barreiras)", "Ultralistas", "Massivos"],
       "usageTip": "Prenda metade do exército adversário com Campos de Força, tornando o confronto isolado e favorável.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "adept": {
       "name": "Adepta",
@@ -1941,21 +1475,10 @@
         "Baixa utilidade em lutas de larga escala tardias",
         "Incapaz de atingir alvos de ar"
       ],
-      "goodAgainst": [
-        "Zerglings",
-        "Marines",
-        "Zangões",
-        "VCEs"
-      ],
-      "vulnerableAgainst": [
-        "Baratas",
-        "Marauders",
-        "Stalkers"
-      ],
+      "goodAgainst": ["Zerglings", "Marines", "Zangões", "VCEs"],
+      "vulnerableAgainst": ["Baratas", "Marauders", "Stalkers"],
       "usageTip": "Envie sombras para dentro das expansões inimigas e transponha-se para limpar operários em massa.",
-      "gamePhase": [
-        "Inicial"
-      ]
+      "gamePhase": ["Inicial"]
     },
     "high-templar": {
       "name": "Alto Templário",
@@ -1986,23 +1509,10 @@
         "Sem armas automáticas padrão de ataque",
         "Velocidade de movimento lenta e vida baixíssima"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Hydraliscas",
-        "Víboras",
-        "Infestadores",
-        "Mutalistas"
-      ],
-      "vulnerableAgainst": [
-        "Fantasmas (PEM/Snipe)",
-        "Atiradores",
-        "Forças dispersas"
-      ],
+      "goodAgainst": ["Marines", "Hydraliscas", "Víboras", "Infestadores", "Mutalistas"],
+      "vulnerableAgainst": ["Fantasmas (PEM/Snipe)", "Atiradores", "Forças dispersas"],
       "usageTip": "Mantenha os Altos Templários atrás do exército. Lance Feedback instantaneamente em Víboras que avançarem.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "dark-templar": {
       "name": "Templário das Trevas",
@@ -2026,25 +1536,11 @@
         "Dano físico individual absurdo (45 por golpe)",
         "Pode se fundir para gerar um Arconte"
       ],
-      "weaknesses": [
-        "Inútil se houver detecção inimiga ativa",
-        "Custos altos em gás vespene"
-      ],
-      "goodAgainst": [
-        "Trabalhadores",
-        "Tropas isoladas",
-        "Estruturas desprotegidas"
-      ],
-      "vulnerableAgainst": [
-        "Detecção",
-        "Dano em área concentrado"
-      ],
+      "weaknesses": ["Inútil se houver detecção inimiga ativa", "Custos altos em gás vespene"],
+      "goodAgainst": ["Trabalhadores", "Tropas isoladas", "Estruturas desprotegidas"],
+      "vulnerableAgainst": ["Detecção", "Dano em área concentrado"],
       "usageTip": "Infiltre Templários das Sombras em várias bases de uma vez. Se o rival trouxer detecção, junte-os em Arcontes.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "archon": {
       "name": "Arconte",
@@ -2056,26 +1552,11 @@
         "Respingo contra biológicos",
         "Sem tags de biológico/mecânico, imune a bônus de dano focado"
       ],
-      "weaknesses": [
-        "Apenas 10 de vida física, muito vulnerável a PEM",
-        "Rango de alcance curto"
-      ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Zerglings",
-        "Banelings",
-        "Zealots"
-      ],
-      "vulnerableAgainst": [
-        "Fantasmas (PEM evapora escudos)",
-        "Espreitadores",
-        "Tanques de Cerco"
-      ],
+      "weaknesses": ["Apenas 10 de vida física, muito vulnerável a PEM", "Rango de alcance curto"],
+      "goodAgainst": ["Mutalistas", "Zerglings", "Banelings", "Zealots"],
+      "vulnerableAgainst": ["Fantasmas (PEM evapora escudos)", "Espreitadores", "Tanques de Cerco"],
       "usageTip": "Posicione os Arcontes junto à infantaria. O respingo deles liquidará Zerglings e impedirá cercos.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "observer": {
       "name": "Observador",
@@ -2093,27 +1574,11 @@
         "Rastreia invisíveis e enterrados em tempo real",
         "Modo Vigilância expande seu campo de visão em 25%"
       ],
-      "weaknesses": [
-        "Sem nenhuma capacidade de ataque",
-        "Frágil se for detectado pelo oponente"
-      ],
-      "goodAgainst": [
-        "Fantasmas",
-        "Mina Viúva",
-        "Banshees",
-        "Espreitadores"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Fênix",
-        "Corruptores"
-      ],
+      "weaknesses": ["Sem nenhuma capacidade de ataque", "Frágil se for detectado pelo oponente"],
+      "goodAgainst": ["Fantasmas", "Mina Viúva", "Banshees", "Espreitadores"],
+      "vulnerableAgainst": ["Vikings", "Fênix", "Corruptores"],
       "usageTip": "Use o Modo Vigilância sobre expansões e posições de asedio inimigas para monitorar as reações deles.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "warp-prism": {
       "name": "Prisma de Dobra",
@@ -2135,21 +1600,10 @@
         "Indefesa e desprovida de armamentos",
         "Alvo de alta prioridade para as forças de ar"
       ],
-      "goodAgainst": [
-        "Nenhum"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Fênix",
-        "Mutalistas",
-        "Stalkers"
-      ],
+      "goodAgainst": ["Nenhum"],
+      "vulnerableAgainst": ["Vikings", "Fênix", "Mutalistas", "Stalkers"],
       "usageTip": "Leve o Prisma para as costas da base do oponente, mude para Modo Fase e transponha Zealots na economia dele.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "immortal": {
       "name": "Imortal",
@@ -2167,26 +1621,11 @@
         "Escudo de Barreira absorve 100 de dano automático",
         "Lutador de frente incrivelmente parrudo"
       ],
-      "weaknesses": [
-        "Intervalo de disparos lerdo",
-        "Incapaz de atingir alvos aéreos"
-      ],
-      "goodAgainst": [
-        "Baratas",
-        "Stalkers",
-        "Marauders",
-        "Tanques de Cerco"
-      ],
-      "vulnerableAgainst": [
-        "Zerglings",
-        "Infanterias massivas",
-        "Mutalistas"
-      ],
+      "weaknesses": ["Intervalo de disparos lerdo", "Incapaz de atingir alvos aéreos"],
+      "goodAgainst": ["Baratas", "Stalkers", "Marauders", "Tanques de Cerco"],
+      "vulnerableAgainst": ["Zerglings", "Infanterias massivas", "Mutalistas"],
       "usageTip": "Direcione os Imortais contra blindados. Recolha-os com o Prisma quando os escudos caírem.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "colossus": {
       "name": "Colosso",
@@ -2208,23 +1647,10 @@
         "Vulnerável a ataques terrestres e antiaéreos devido à altura",
         "Alto custo e frágil sob foco direto de disparos"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Zerglings",
-        "Hydraliscas",
-        "Zealots"
-      ],
-      "vulnerableAgainst": [
-        "Vikings",
-        "Corruptores",
-        "Abdução de Víboras",
-        "Marauders"
-      ],
+      "goodAgainst": ["Marines", "Zerglings", "Hydraliscas", "Zealots"],
+      "vulnerableAgainst": ["Vikings", "Corruptores", "Abdução de Víboras", "Marauders"],
       "usageTip": "Pesquise a Lança Térmica Estendida logo. Mantenha os Colossos protegidos atrás das forças de chão.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "disruptor": {
       "name": "Purificador",
@@ -2246,22 +1672,10 @@
         "A esfera deve ser controlada ativamente",
         "Indefeso durante a longa recarga (21s) da habilidade"
       ],
-      "goodAgainst": [
-        "Marines",
-        "Baratas",
-        "Stalkers",
-        "Hydraliscas"
-      ],
-      "vulnerableAgainst": [
-        "Forças espalhadas",
-        "Forças aéreas",
-        "Víboras"
-      ],
+      "goodAgainst": ["Marines", "Baratas", "Stalkers", "Hydraliscas"],
+      "vulnerableAgainst": ["Forças espalhadas", "Forças aéreas", "Víboras"],
       "usageTip": "Dispare as Novas em gargalos ou rampas, deixando o oponente sem caminhos de fuga e forçando baixas.",
-      "gamePhase": [
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Média", "Tardia"]
     },
     "phoenix": {
       "name": "Fênix",
@@ -2283,22 +1697,10 @@
         "Dano fraco contra blindados",
         "Não consegue alvejar o chão sem gastar energia para erguê-los"
       ],
-      "goodAgainst": [
-        "Mutalistas",
-        "Banshees",
-        "Operários",
-        "Víboras"
-      ],
-      "vulnerableAgainst": [
-        "Corruptores",
-        "Raios do Vazio",
-        "Thors"
-      ],
+      "goodAgainst": ["Mutalistas", "Banshees", "Operários", "Víboras"],
+      "vulnerableAgainst": ["Corruptores", "Raios do Vazio", "Thors"],
       "usageTip": "Combata Mutalistas com os Fênix. Nas batalhas no chão, erga tanques de cerco para desativar os tiros deles.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "void-ray": {
       "name": "Raio do Vazio",
@@ -2320,23 +1722,10 @@
         "Velocidade reduzida quando fora do alinhamento",
         "Vulnerável a enxames massivos de alvos baratos e rápidos"
       ],
-      "goodAgainst": [
-        "Corruptores",
-        "Tempestades",
-        "Baratas",
-        "Marauders"
-      ],
-      "vulnerableAgainst": [
-        "Marines",
-        "Hydraliscas",
-        "Víboras"
-      ],
+      "goodAgainst": ["Corruptores", "Tempestades", "Baratas", "Marauders"],
+      "vulnerableAgainst": ["Marines", "Hydraliscas", "Víboras"],
       "usageTip": "Ative o Alinhamento Prismático quando confrontar alvos blindados pesados para derreter a vida deles.",
-      "gamePhase": [
-        "Inicial",
-        "Média",
-        "Tardia"
-      ]
+      "gamePhase": ["Inicial", "Média", "Tardia"]
     },
     "oracle": {
       "name": "Oráculo",
@@ -2366,21 +1755,10 @@
         "Frágil e totalmente refém de sua energia",
         "Sem qualquer valor em confrontos diretos"
       ],
-      "goodAgainst": [
-        "Operários",
-        "Zerglings",
-        "Marines"
-      ],
-      "vulnerableAgainst": [
-        "Stalkers",
-        "Rainhas",
-        "Marines estimulados"
-      ],
+      "goodAgainst": ["Operários", "Zerglings", "Marines"],
+      "vulnerableAgainst": ["Stalkers", "Rainhas", "Marines estimulados"],
       "usageTip": "Instale Barreiras de Éxtase em rampas para conter pressões. Mantenha a Revelação ativa para monitorar o mapa.",
-      "gamePhase": [
-        "Inicial",
-        "Média"
-      ]
+      "gamePhase": ["Inicial", "Média"]
     },
     "tempest": {
       "name": "Tempestade",
@@ -2396,21 +1774,10 @@
         "Velocidade de disparo extremamente lenta",
         "Ineficaz contra hordas leves em massa"
       ],
-      "goodAgainst": [
-        "Libertadores",
-        "Tanques de Cerco",
-        "Señores de la Prole",
-        "Carriers"
-      ],
-      "vulnerableAgainst": [
-        "Corruptores",
-        "Vikings",
-        "Raios do Vazio"
-      ],
+      "goodAgainst": ["Libertadores", "Tanques de Cerco", "Señores de la Prole", "Carriers"],
+      "vulnerableAgainst": ["Corruptores", "Vikings", "Raios do Vazio"],
       "usageTip": "Use as Tempestades para remover de longe as defesas ou asédios estáticos terrestres como Tanques ou Libertadores.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "carrier": {
       "name": "Porta-naves",
@@ -2432,22 +1799,10 @@
         "Altíssimo custo e longo tempo de transposição",
         "Vulnerável se todos os seus Interceptores forem liquidados"
       ],
-      "goodAgainst": [
-        "Hydraliscas",
-        "Tanques de Cerco",
-        "Thors no solo",
-        "Ultralistas"
-      ],
-      "vulnerableAgainst": [
-        "Corruptores",
-        "Tempestades",
-        "Vikings",
-        "Thors (Alto Impacto)"
-      ],
+      "goodAgainst": ["Hydraliscas", "Tanques de Cerco", "Thors no solo", "Ultralistas"],
+      "vulnerableAgainst": ["Corruptores", "Tempestades", "Vikings", "Thors (Alto Impacto)"],
       "usageTip": "Mantenha os Carriers agrupados para maximizar a nuvem de interceptores, sobrecarregando a mira antiaérea inimiga.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     },
     "mothership": {
       "name": "Nave-mãe",
@@ -2477,19 +1832,10 @@
         "Limite rígido de apenas uma Nave Mãe por jogador",
         "Alvo prioritário número 1 de disparos aéreos"
       ],
-      "goodAgainst": [
-        "Hordas de solo",
-        "Zonas de asedio"
-      ],
-      "vulnerableAgainst": [
-        "Tempestades",
-        "Abdução de Víboras",
-        "Vikings"
-      ],
+      "goodAgainst": ["Hordas de solo", "Zonas de asedio"],
+      "vulnerableAgainst": ["Tempestades", "Abdução de Víboras", "Vikings"],
       "usageTip": "Posicione a Nave Mãe diretamente acima do exército. Desparilhe a Distorção Temporal e prepare o Retorno se as coisas derem errado.",
-      "gamePhase": [
-        "Tardia"
-      ]
+      "gamePhase": ["Tardia"]
     }
   },
   "cookieBanner": {

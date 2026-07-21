@@ -1,15 +1,7 @@
 import { RaceId } from './race';
 
 export type UnitRole =
-  | 'worker'
-  | 'basic'
-  | 'ranged'
-  | 'melee'
-  | 'caster'
-  | 'air'
-  | 'siege'
-  | 'support'
-  | 'capital';
+  'worker' | 'basic' | 'ranged' | 'melee' | 'caster' | 'air' | 'siege' | 'support' | 'capital';
 
 export type UnitArmorType =
   | 'light'

@@ -11,6 +11,7 @@ import { GlassPanel } from '@/components/ui/GlassPanel';
 import { Badge } from '@/components/ui/Badge';
 import { ChevronLeft, Info, ChevronRight, Search, SortAsc, Clock, Box, Zap } from 'lucide-react';
 import { trackEvent } from '@/lib/gtag';
+import { useSettings } from '@/context/SettingsContext';
 import { Unit } from '@/types/unit';
 
 interface UnitCardImageProps {
@@ -35,9 +36,9 @@ function UnitCardImage({ imageSrc, unitName, roles, onRoleClick }: UnitCardImage
 
       {/* The image (rendered absolutely on top of the letters) */}
       {imageSrc && !hasError && (
-        <img 
-          src={imageSrc} 
-          alt={unitName} 
+        <img
+          src={imageSrc}
+          alt={unitName}
           className="absolute inset-0 w-full h-full object-contain p-2 z-10 transition-all duration-700 ease-out group-hover:scale-105 opacity-100"
           onError={() => setHasError(true)}
         />
@@ -45,11 +46,11 @@ function UnitCardImage({ imageSrc, unitName, roles, onRoleClick }: UnitCardImage
 
       {/* Premium gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent z-20 pointer-events-none" />
-      
+
       {/* Roles Badges */}
       <div className="absolute bottom-4 left-4 z-30">
         <div className="flex flex-wrap gap-2">
-          {roles.map(role => {
+          {roles.map((role) => {
             const filterKey = `filter${role.charAt(0).toUpperCase() + role.slice(1)}`;
             const localizedRole = tUi.has(filterKey) ? tUi(filterKey) : role;
             return (
@@ -77,8 +78,9 @@ function UnitCardImage({ imageSrc, unitName, roles, onRoleClick }: UnitCardImage
 export default function RaceUnitGridPage() {
   const params = useParams();
   const raceId = params.race as string;
-  const race = races.find(r => r.id === raceId);
-  const rawUnits = useMemo(() => getUnitsByRace(raceId), [raceId]);
+  const { patchVersion } = useSettings();
+  const race = races.find((r) => r.id === raceId);
+  const rawUnits = useMemo(() => getUnitsByRace(raceId, patchVersion), [raceId, patchVersion]);
   const t = useTranslations();
 
   const [search, setSearch] = useState('');
@@ -100,32 +102,38 @@ export default function RaceUnitGridPage() {
     'detector',
     'transport',
     'harassment',
-    'spellcaster'
+    'spellcaster',
   ];
 
   // Helper matching role/tag filters
   const matchesFilter = (unit: Unit, filter: string) => {
     if (filter === 'all') return true;
     const f = filter.toLowerCase();
-    
+
     // Standard role check
-    if (unit.role.some(r => {
-      const role = r.toLowerCase();
-      if (f === 'spellcaster' && role === 'caster') return true;
-      if (role === f) return true;
-      return false;
-    })) return true;
-    
+    if (
+      unit.role.some((r) => {
+        const role = r.toLowerCase();
+        if (f === 'spellcaster' && role === 'caster') return true;
+        if (role === f) return true;
+        return false;
+      })
+    )
+      return true;
+
     // Custom tag mapping check
-    if (unit.tags?.some(t => {
-      const tag = t.toLowerCase();
-      if (f === 'harassment' && tag === 'harass') return true;
-      if (f === 'spellcaster' && tag === 'caster') return true;
-      if (f === 'caster' && tag === 'caster') return true;
-      if (tag === f) return true;
-      return false;
-    })) return true;
-    
+    if (
+      unit.tags?.some((t) => {
+        const tag = t.toLowerCase();
+        if (f === 'harassment' && tag === 'harass') return true;
+        if (f === 'spellcaster' && tag === 'caster') return true;
+        if (f === 'caster' && tag === 'caster') return true;
+        if (tag === f) return true;
+        return false;
+      })
+    )
+      return true;
+
     return false;
   };
 
@@ -143,9 +151,11 @@ export default function RaceUnitGridPage() {
   }, [search, raceId]);
 
   const filteredUnits = useMemo(() => {
-    let result = rawUnits.filter(unit => {
+    let result = rawUnits.filter((unit) => {
       const nameMatch = t(`units.${unit.id}.name`).toLowerCase().includes(search.toLowerCase());
-      const descMatch = t(`units.${unit.id}.shortDescription`).toLowerCase().includes(search.toLowerCase());
+      const descMatch = t(`units.${unit.id}.shortDescription`)
+        .toLowerCase()
+        .includes(search.toLowerCase());
       const roleMatch = matchesFilter(unit, selectedRole);
       return (nameMatch || descMatch) && roleMatch;
     });
@@ -169,7 +179,7 @@ export default function RaceUnitGridPage() {
   if (!race) return <div className="p-20 text-white">{t('ui.dataNotFound')}</div>;
 
   return (
-    <div 
+    <div
       className="min-h-screen bg-slate-950 py-20"
       style={{
         backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.40), rgba(2, 6, 23, 0.75)), url('/assets/races/${raceId}_bg.png')`,
@@ -183,7 +193,12 @@ export default function RaceUnitGridPage() {
         {/* Return Button */}
         <Link
           href="/"
-          onClick={() => trackEvent('nav_back_clicked', 'navigation', 'command_center', undefined, { from: 'race_roster', race: raceId })}
+          onClick={() =>
+            trackEvent('nav_back_clicked', 'navigation', 'command_center', undefined, {
+              from: 'race_roster',
+              race: raceId,
+            })
+          }
           className="inline-flex items-center gap-2 text-gray-500 hover:text-white transition-colors mb-12 group"
         >
           <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -194,48 +209,52 @@ export default function RaceUnitGridPage() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
           <div>
             <div className="flex items-center gap-6 mb-4">
-              <div 
+              <div
                 className="w-12 h-12 rounded flex items-center justify-center border relative backdrop-blur-sm"
-                style={{ 
-                  borderColor: race.theme.primary, 
+                style={{
+                  borderColor: race.theme.primary,
                   backgroundColor: `${race.theme.primary}10`,
-                  boxShadow: `0 0 15px ${race.theme.glow}` 
+                  boxShadow: `0 0 15px ${race.theme.glow}`,
                 }}
               >
                 {race.iconSrc ? (
-                  <img 
-                    src={race.iconSrc} 
-                    alt={race.name} 
+                  <img
+                    src={race.iconSrc}
+                    alt={race.name}
                     className="w-16 h-16 object-contain absolute -top-2 -left-2 max-w-none transition-transform duration-300 hover:scale-110"
                     style={{ filter: `drop-shadow(0 0 8px ${race.theme.glow})` }}
                   />
                 ) : (
-                  <span className="text-xl font-bold" style={{ color: race.theme.primary }}>{race.name[0]}</span>
+                  <span className="text-xl font-bold" style={{ color: race.theme.primary }}>
+                    {race.name[0]}
+                  </span>
                 )}
               </div>
-              <Badge variant="race" raceId={race.id as any}>{t(`races.${race.id}`)}</Badge>
+              <Badge variant="race" raceId={race.id as any}>
+                {t(`races.${race.id}`)}
+              </Badge>
             </div>
             <h1 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter">
               {t('ui.tacticalUnits')}
             </h1>
-            
+
             {/* Tactical Intro Card */}
             <div className="mt-6 max-w-2xl">
-              <GlassPanel 
-                className="p-4 border-l-4 bg-slate-950/20 text-gray-300 text-sm leading-relaxed" 
+              <GlassPanel
+                className="p-4 border-l-4 bg-slate-950/20 text-gray-300 text-sm leading-relaxed"
                 style={{ borderColor: race.theme.primary }}
               >
                 {t(`races.${race.id}Intro`)}
               </GlassPanel>
             </div>
           </div>
-          
+
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
             {/* Search */}
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder={t('ui.searchUnits')}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -248,7 +267,7 @@ export default function RaceUnitGridPage() {
             <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-3 py-2">
               <SortAsc className="w-4 h-4 text-gray-500" />
               <span className="text-xs text-gray-500 uppercase font-bold">{t('ui.sortBy')}:</span>
-              <select 
+              <select
                 value={sortBy}
                 onChange={(e) => {
                   const val = e.target.value;
@@ -260,10 +279,18 @@ export default function RaceUnitGridPage() {
                 }}
                 className="bg-transparent text-white text-sm focus:outline-none cursor-pointer"
               >
-                <option value="name" className="bg-slate-900">{t('ui.name')}</option>
-                <option value="minerals" className="bg-slate-900">{t('ui.minerals')}</option>
-                <option value="gas" className="bg-slate-900">{t('ui.gas')}</option>
-                <option value="buildTime" className="bg-slate-900">{t('ui.buildTime')}</option>
+                <option value="name" className="bg-slate-900">
+                  {t('ui.name')}
+                </option>
+                <option value="minerals" className="bg-slate-900">
+                  {t('ui.minerals')}
+                </option>
+                <option value="gas" className="bg-slate-900">
+                  {t('ui.gas')}
+                </option>
+                <option value="buildTime" className="bg-slate-900">
+                  {t('ui.buildTime')}
+                </option>
               </select>
             </div>
 
@@ -277,11 +304,11 @@ export default function RaceUnitGridPage() {
 
         {/* Role Filter Chips */}
         <div className="flex flex-wrap gap-2 mb-8 bg-slate-950/40 p-3 rounded-xl border border-white/5">
-          {roles.map(role => {
+          {roles.map((role) => {
             const isActive = selectedRole === role;
             const filterKey = `filter${role.charAt(0).toUpperCase() + role.slice(1)}`;
             const label = t(`ui.${filterKey}`);
-            
+
             return (
               <button
                 key={role}
@@ -297,7 +324,11 @@ export default function RaceUnitGridPage() {
                     ? 'bg-blue-600 text-white shadow-lg border border-blue-500'
                     : 'bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 border border-white/5'
                 }`}
-                style={isActive ? { backgroundColor: race.theme.primary, borderColor: race.theme.primary } : {}}
+                style={
+                  isActive
+                    ? { backgroundColor: race.theme.primary, borderColor: race.theme.primary }
+                    : {}
+                }
               >
                 {label}
               </button>
@@ -310,16 +341,14 @@ export default function RaceUnitGridPage() {
           <GlassPanel className="p-12 text-center">
             <Info className="w-12 h-12 text-gray-600 mx-auto mb-4" />
             <h2 className="text-xl font-bold text-white mb-2">{t('ui.dataNotFound')}</h2>
-            <p className="text-gray-500 max-w-md mx-auto">
-              {t('ui.noUnitsFoundSearch')}
-            </p>
+            <p className="text-gray-500 max-w-md mx-auto">{t('ui.noUnitsFoundSearch')}</p>
           </GlassPanel>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredUnits.map((unit) => {
               const unitName = t(`units.${unit.id}.name`);
               const shortDescription = t(`units.${unit.id}.shortDescription`);
-              
+
               return (
                 <motion.div
                   key={unit.id}
@@ -329,7 +358,7 @@ export default function RaceUnitGridPage() {
                   transition={{ duration: 0.3 }}
                   className="h-full"
                 >
-                  <Link 
+                  <Link
                     href={`/units/${unit.slug}`}
                     onClick={() => {
                       trackEvent('unit_card_clicked', 'engagement', unit.slug, undefined, {
@@ -339,12 +368,15 @@ export default function RaceUnitGridPage() {
                     }}
                     className="cursor-pointer h-full block"
                   >
-                    <GlassPanel hoverable className="p-0 border-white/5 overflow-hidden group h-full flex flex-col">
+                    <GlassPanel
+                      hoverable
+                      className="p-0 border-white/5 overflow-hidden group h-full flex flex-col"
+                    >
                       {/* Unit Image */}
-                      <UnitCardImage 
-                        imageSrc={unit.assets.imageSrc} 
-                        unitName={unitName} 
-                        roles={unit.role} 
+                      <UnitCardImage
+                        imageSrc={unit.assets.imageSrc}
+                        unitName={unitName}
+                        roles={unit.role}
                         onRoleClick={(role) => {
                           setSelectedRole(role);
                           trackEvent('role_filter_used', 'filter', role, undefined, {
@@ -361,13 +393,15 @@ export default function RaceUnitGridPage() {
                         <p className="text-gray-500 text-xs line-clamp-2 mb-6 flex-grow">
                           {shortDescription}
                         </p>
-                        
+
                         <div className="grid grid-cols-3 gap-2 pt-4 border-t border-white/5 mt-auto">
                           <div className="flex flex-col">
                             <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest flex items-center gap-1">
                               <Box className="w-2.5 h-2.5" /> Min
                             </span>
-                            <span className="text-sm font-bold text-white">{unit.cost.minerals}</span>
+                            <span className="text-sm font-bold text-white">
+                              {unit.cost.minerals}
+                            </span>
                           </div>
                           <div className="flex flex-col">
                             <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest flex items-center gap-1">
@@ -379,12 +413,14 @@ export default function RaceUnitGridPage() {
                             <span className="text-[10px] text-gray-600 uppercase font-bold tracking-widest flex items-center gap-1">
                               <Clock className="w-2.5 h-2.5 text-red-400" /> Time
                             </span>
-                            <span className="text-sm font-bold text-white">{unit.cost.buildTime || '—'}s</span>
+                            <span className="text-sm font-bold text-white">
+                              {unit.cost.buildTime || '—'}s
+                            </span>
                           </div>
                         </div>
-                        
+
                         <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                           <div className="w-8 h-8 rounded border border-blue-500/50 bg-blue-500/10 flex items-center justify-center">
+                          <div className="w-8 h-8 rounded border border-blue-500/50 bg-blue-500/10 flex items-center justify-center">
                             <ChevronRight className="w-4 h-4 text-blue-400" />
                           </div>
                         </div>
@@ -400,4 +436,3 @@ export default function RaceUnitGridPage() {
     </div>
   );
 }
-

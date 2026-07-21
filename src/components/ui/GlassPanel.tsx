@@ -14,16 +14,15 @@ export const GlassPanel = ({ children, className, hoverable = false, style }: Gl
       style={style}
       className={cn(
         'relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-md transition-all duration-300',
-        hoverable && 'hover:border-white/20 hover:bg-black/50 hover:shadow-2xl hover:shadow-blue-500/10',
-        className
+        hoverable &&
+          'hover:border-white/20 hover:bg-black/50 hover:shadow-2xl hover:shadow-blue-500/10',
+        className,
       )}
     >
       {/* Subtle Inner Glow */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-white/5 to-transparent" />
-      
-      <div className="relative z-10 p-4">
-        {children}
-      </div>
+
+      <div className="relative z-10 p-4">{children}</div>
     </div>
   );
 };

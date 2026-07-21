@@ -1,20 +1,20 @@
-import { MetadataRoute } from "next";
+import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const isIndexingEnabled = process.env.NEXT_PUBLIC_INDEXING_ENABLED === "true";
+  const isIndexingEnabled = process.env.NEXT_PUBLIC_INDEXING_ENABLED === 'true';
 
   if (isIndexingEnabled) {
     return {
       rules: {
-        userAgent: "*",
-        allow: "/",
+        userAgent: '*',
+        allow: '/',
       },
     };
   } else {
     return {
       rules: {
-        userAgent: "*",
-        disallow: "/",
+        userAgent: '*',
+        disallow: '/',
       },
     };
   }

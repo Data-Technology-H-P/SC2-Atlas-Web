@@ -24,7 +24,7 @@ const Model = ({ src }: { src: string }) => {
 
 const BoxPlaceholder = () => {
   const meshRef = React.useRef<THREE.Mesh>(null);
-  
+
   useFrame((state, delta) => {
     if (meshRef.current) {
       meshRef.current.rotation.y += delta * 0.5;
@@ -39,7 +39,12 @@ const BoxPlaceholder = () => {
   );
 };
 
-export const UnitModelViewer = ({ modelSrc, imageSrc, fallbackImageSrc, unitName }: UnitModelViewerProps) => {
+export const UnitModelViewer = ({
+  modelSrc,
+  imageSrc,
+  fallbackImageSrc,
+  unitName,
+}: UnitModelViewerProps) => {
   const { disable3D, setDisable3D } = useSettings();
   const [src, setSrc] = React.useState<string | undefined>(imageSrc || fallbackImageSrc);
   const t = useTranslations('ui');
@@ -52,17 +57,23 @@ export const UnitModelViewer = ({ modelSrc, imageSrc, fallbackImageSrc, unitName
     <div className="relative w-full h-[300px] md:h-[500px] bg-slate-900/50 rounded-2xl overflow-hidden border border-white/5 shadow-2xl flex items-center justify-center">
       {/* Background Grid */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none bg-grid-white" />
-      
+
       {/* Holographic scanner laser line overlay */}
       <div className="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30 shadow-[0_0_10px_#3b82f6] animate-scan z-10 pointer-events-none" />
- 
+
       {disable3D ? (
         /* 2D Hologram Viewer */
         <div className="relative w-full h-full flex items-center justify-center p-8 z-0 select-none">
           {/* Circular scanner overlay backdrop */}
-          <div className="absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] rounded-full border border-blue-500/10 bg-blue-500/[0.01] animate-ping opacity-30 pointer-events-none" style={{ animationDuration: '6s' }} />
-          <div className="absolute w-[150px] h-[150px] md:w-[280px] md:h-[280px] rounded-full border border-dashed border-blue-500/15 animate-spin opacity-45 pointer-events-none" style={{ animationDuration: '25s' }} />
-          
+          <div
+            className="absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] rounded-full border border-blue-500/10 bg-blue-500/[0.01] animate-ping opacity-30 pointer-events-none"
+            style={{ animationDuration: '6s' }}
+          />
+          <div
+            className="absolute w-[150px] h-[150px] md:w-[280px] md:h-[280px] rounded-full border border-dashed border-blue-500/15 animate-spin opacity-45 pointer-events-none"
+            style={{ animationDuration: '25s' }}
+          />
+
           {src ? (
             <motion.img
               initial={{ opacity: 0, scale: 0.8 }}
@@ -81,30 +92,33 @@ export const UnitModelViewer = ({ modelSrc, imageSrc, fallbackImageSrc, unitName
               }}
             />
           ) : (
-            <div className="text-gray-500 font-bold uppercase tracking-wider text-xs z-10">{t('noReconImage')}</div>
+            <div className="text-gray-500 font-bold uppercase tracking-wider text-xs z-10">
+              {t('noReconImage')}
+            </div>
           )}
         </div>
       ) : (
         /* 3D Scene */
-        <Suspense fallback={
-          <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
-            <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
-          </div>
-        }>
-          <Canvas shadows={{ type: THREE.PCFShadowMap }} gl={{ antialias: true, preserveDrawingBuffer: true }}>
+        <Suspense
+          fallback={
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
+              <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
+            </div>
+          }
+        >
+          <Canvas
+            shadows={{ type: THREE.PCFShadowMap }}
+            gl={{ antialias: true, preserveDrawingBuffer: true }}
+          >
             <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={50} />
             <Stage environment="city" intensity={0.5} adjustCamera={1.2}>
-               {modelSrc ? (
-                 <Model src={modelSrc} />
-               ) : (
-                 <BoxPlaceholder />
-               )}
+              {modelSrc ? <Model src={modelSrc} /> : <BoxPlaceholder />}
             </Stage>
-            <OrbitControls 
-              enablePan={false} 
-              enableZoom={true} 
-              minPolarAngle={Math.PI / 4} 
-              maxPolarAngle={Math.PI / 1.5} 
+            <OrbitControls
+              enablePan={false}
+              enableZoom={true}
+              minPolarAngle={Math.PI / 4}
+              maxPolarAngle={Math.PI / 1.5}
             />
           </Canvas>
         </Suspense>
@@ -113,8 +127,12 @@ export const UnitModelViewer = ({ modelSrc, imageSrc, fallbackImageSrc, unitName
       {/* HUD Overlays (Shared between 2D and 3D) */}
       <div className="absolute top-6 left-6 pointer-events-none z-20">
         <div className="flex flex-col gap-1">
-          <span className="text-[10px] text-blue-500 font-bold uppercase tracking-widest">{t('visualRecon')}</span>
-          <span className="text-xl font-black text-white italic tracking-tighter uppercase">{unitName}</span>
+          <span className="text-[10px] text-blue-500 font-bold uppercase tracking-widest">
+            {t('visualRecon')}
+          </span>
+          <span className="text-xl font-black text-white italic tracking-tighter uppercase">
+            {unitName}
+          </span>
         </div>
       </div>
 

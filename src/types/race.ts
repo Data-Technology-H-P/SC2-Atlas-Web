@@ -13,4 +13,3 @@ export interface Race {
   emblemSrc?: string;
   iconSrc?: string;
 }
-

@@ -1,29 +1,25 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "../globals.css";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { Geist, Geist_Mono } from 'next/font/google';
+import '../globals.css';
+import { SiteHeader } from '@/components/layout/SiteHeader';
+import { SiteFooter } from '@/components/layout/SiteFooter';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
-import CookieConsent from "@/components/analytics/CookieConsent";
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+import CookieConsent from '@/components/analytics/CookieConsent';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
-export async function generateMetadata({
-  params
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
   return {
@@ -32,14 +28,14 @@ export async function generateMetadata({
   };
 }
 
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { SettingsProvider } from "@/context/SettingsContext";
+import { SettingsProvider } from '@/context/SettingsContext';
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -66,9 +62,7 @@ export default async function RootLayout({
             <GoogleAnalytics />
             <CookieConsent />
             <SiteHeader />
-            <main className="flex-grow pt-16">
-              {children}
-            </main>
+            <main className="flex-grow pt-16">{children}</main>
             <SiteFooter />
           </SettingsProvider>
         </NextIntlClientProvider>

@@ -7,6 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "check-all": "npm run format:check && npm run lint",
+    "fix-all": "npm run format:write && npm run lint:fix",
     "clean": "chmod -R u+rwx .next 2>/dev/null; rm -rf .next",
     "fresh": "pkill -f 'next' 2>/dev/null; sleep 1; npm run clean && npm run dev"
   },
@@ -33,6 +38,8 @@
     "@types/three": "^0.184.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

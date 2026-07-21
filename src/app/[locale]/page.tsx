@@ -31,7 +31,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div 
+    <div
       className="relative min-h-screen bg-slate-950"
       style={{
         backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.95)), url('/assets/backgrounds/global_hex_bg.png')`,
@@ -65,7 +65,7 @@ export default function LandingPage() {
             >
               {t.rich('landing.heroTitle', {
                 br: () => <br />,
-                blue: (chunks) => <span className="text-blue-500">{chunks}</span>
+                blue: (chunks) => <span className="text-blue-500">{chunks}</span>,
               })}
             </motion.h1>
 
@@ -94,26 +94,40 @@ export default function LandingPage() {
             <div className="block lg:hidden w-full max-w-sm">
               <div className="p-4 rounded-xl border border-white/5 bg-slate-900/40 backdrop-blur-md shadow-2xl flex items-center justify-between gap-4 text-left">
                 <div className="flex-1 pr-2">
-                  <span className="text-xs font-bold text-white block uppercase tracking-wider mb-0.5">{t('ui.disable3D')}</span>
-                  <span className="text-[10px] text-gray-400 block leading-tight">{t('ui.disable3DDesc')}</span>
+                  <span className="text-xs font-bold text-white block uppercase tracking-wider mb-0.5">
+                    {t('ui.disable3D')}
+                  </span>
+                  <span className="text-[10px] text-gray-400 block leading-tight">
+                    {t('ui.disable3DDesc')}
+                  </span>
                 </div>
                 <button
                   onClick={() => {
                     const next = !disable3D;
                     setDisable3D(next);
-                    trackEvent('toggle_3d_mode', 'preferences', next ? 'disabled' : 'enabled', undefined, {
-                      mode: next ? '2d' : '3d',
-                    });
+                    trackEvent(
+                      'toggle_3d_mode',
+                      'preferences',
+                      next ? 'disabled' : 'enabled',
+                      undefined,
+                      {
+                        mode: next ? '2d' : '3d',
+                      },
+                    );
                   }}
-                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${disable3D ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]' : 'bg-slate-700'
-                    }`}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
+                    disable3D
+                      ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]'
+                      : 'bg-slate-700'
+                  }`}
                   role="switch"
                   aria-checked={disable3D}
                   aria-label="Toggle 3D Models"
                 >
                   <span
-                    className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${disable3D ? 'translate-x-5' : 'translate-x-0'
-                      }`}
+                    className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
+                      disable3D ? 'translate-x-5' : 'translate-x-0'
+                    }`}
                   />
                 </button>
               </div>
@@ -132,7 +146,9 @@ export default function LandingPage() {
               >
                 <Link
                   href={`/races/${race.id}`}
-                  onClick={() => trackEvent('race_selected', 'engagement', race.id, undefined, { race: race.id })}
+                  onClick={() =>
+                    trackEvent('race_selected', 'engagement', race.id, undefined, { race: race.id })
+                  }
                   className="block h-full group"
                 >
                   <div className="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950/40 backdrop-blur-md transition-all duration-300 hover:border-white/20 hover:bg-slate-950/70 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col h-full">
@@ -154,13 +170,16 @@ export default function LandingPage() {
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-25 transition-opacity duration-500 z-10"
                         style={{
-                          background: `radial-gradient(circle at center, ${race.theme.primary} 0%, transparent 70%)`
+                          background: `radial-gradient(circle at center, ${race.theme.primary} 0%, transparent 70%)`,
                         }}
                       />
 
                       {/* Race Name Overlayed at the bottom of the image container */}
                       <div className="absolute bottom-4 left-6 z-20">
-                        <h3 className="text-3xl font-black text-white uppercase italic tracking-tighter transition-all duration-300 group-hover:translate-x-1" style={{ textShadow: `0 0 20px ${race.theme.glow}` }}>
+                        <h3
+                          className="text-3xl font-black text-white uppercase italic tracking-tighter transition-all duration-300 group-hover:translate-x-1"
+                          style={{ textShadow: `0 0 20px ${race.theme.glow}` }}
+                        >
                           {t(`races.${race.id}`)}
                         </h3>
                       </div>
@@ -205,7 +224,9 @@ export default function LandingPage() {
               <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mb-6 border border-yellow-500/20">
                 <Zap className="w-6 h-6 text-yellow-500" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">{t('landing.tacticalAbilities')}</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">
+                {t('landing.tacticalAbilities')}
+              </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 {t('landing.tacticalAbilitiesDesc')}
               </p>

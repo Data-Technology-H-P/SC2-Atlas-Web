@@ -3,10 +3,10 @@ export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 // Helper to verify if tracking is active (both by environment variable and user consent)
 const isTrackingAllowed = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const envEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true';
   const userConsent = localStorage.getItem('sc2-atlas-analytics-enabled') !== 'false';
-  
+
   return envEnabled && !!GA_TRACKING_ID && userConsent;
 };
 
@@ -25,7 +25,7 @@ export const trackEvent = (
   category: string,
   label?: string,
   value?: number,
-  additionalParams?: Record<string, any>
+  additionalParams?: Record<string, any>,
 ) => {
   if (isTrackingAllowed() && (window as any).gtag) {
     (window as any).gtag('event', action, {
